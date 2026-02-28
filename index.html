@@ -1,70 +1,94 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brad Dollar</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #111;
-    color: #ffffff;
-    text-align: center;
+:root{
+  --bg:#0e0f11;
+  --panel:#16181b;
+  --text:#f2f2f2;
+  --muted:#9ca3af;
+  --lime:#8aff00;
 }
 
-.header {
-    padding: 60px 20px;
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  text-align:center;
+  padding:20px;
 }
 
-h1 {
-    font-size: 42px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+.container{
+  max-width:720px;
+  width:100%;
 }
 
-p {
-    max-width: 600px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-    font-size: 18px;
+h1{
+  font-size:44px;
+  letter-spacing:2px;
+  margin:0 0 18px 0;
 }
 
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
+.tagline{
+  font-size:18px;
+  line-height:1.6;
+  color:var(--muted);
+  margin-bottom:36px;
 }
 
-.button:hover {
-    background-color: #ffffff;
-    color: #111;
+.button{
+  display:inline-block;
+  padding:12px 26px;
+  border:1px solid var(--lime);
+  border-radius:999px;
+  color:var(--lime);
+  text-decoration:none;
+  font-size:15px;
+  transition:all .2s ease;
 }
 
-.footer {
-    margin-top: 80px;
-    font-size: 14px;
-    opacity: 0.6;
+.button:hover{
+  background:var(--lime);
+  color:#111;
+}
+
+.footer{
+  margin-top:70px;
+  font-size:13px;
+  opacity:.5;
+}
+
+@media (max-width:520px){
+  h1{ font-size:34px; }
+  .tagline{ font-size:16px; }
 }
 </style>
 </head>
+
 <body>
 
-<div class="header">
-    <h1>BRAD DOLLAR</h1>
-    <p>
-        Music producer. Guitarist. Creative operator.
-        Building timeless work across recording, songwriting, and artist development.
-    </p>
-    <a class="button" href="credits.html">View Credits</a>
-</div>
+<div class="container">
+  <h1>BRAD DOLLAR</h1>
 
-<div class="footer">
+  <div class="tagline">
+    Music producer. Guitarist. Creative operator.<br>
+    Building timeless work across recording, songwriting, and artist development.
+  </div>
+
+  <a class="button" href="credits.html">View Credits</a>
+
+  <div class="footer">
     © 2026 Brad Dollar
+  </div>
 </div>
 
 </body>
