@@ -5,155 +5,130 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Credits - Brad Dollar</title>
 <style>
-  :root {
-    --bg: #111;
-    --fg: #fff;
-    --muted: rgba(255,255,255,0.72);
-    --line: rgba(255,255,255,0.16);
-    --panel: rgba(255,255,255,0.04);
-  }
+:root{
+  --bg:#0e0f11;
+  --panel:#16181b;
+  --text:#f2f2f2;
+  --muted:#9ca3af;
+  --line:rgba(255,255,255,0.08);
+  --lime:#8aff00;
+}
 
-  .topbar{
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+.wrap{
+  max-width:980px;
+  margin:0 auto;
+  padding:40px 20px 50px 20px;
+}
+
+/* Top Right Home Button */
+.topbar{
   display:flex;
   justify-content:flex-end;
-  margin-bottom:10px;
+  margin-bottom:16px;
 }
 
 .home-btn{
   text-decoration:none;
-  border:1px solid #8aff00;
-  color:#8aff00;
+  border:1px solid var(--lime);
+  color:var(--lime);
   padding:6px 14px;
-  border-radius:20px;
+  border-radius:999px;
   font-size:14px;
   transition:all .2s ease;
 }
 
 .home-btn:hover{
-  background:#8aff00;
+  background:var(--lime);
   color:#111;
 }
 
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--bg);
-    color: var(--fg);
-  }
-
-  .wrap{
-  max-width:980px;
-  margin:0 auto;
-  padding:40px 20px 30px 20px;
+/* Headings */
+h1{
+  margin:0;
+  font-size:42px;
+  letter-spacing:1px;
 }
-  }
 
-  h1 {
-    text-align: center;
-    font-size: 42px;
-    letter-spacing: 2px;
-    margin: 0 0 10px 0;
-  }
+.sub{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:14px;
+}
 
-  .sub {
-    text-align: center;
-    font-size: 14px;
-    color: var(--muted);
-    line-height: 1.6;
-    margin-bottom: 18px;
-  }
+.legend{
+  margin-top:20px;
+  background:var(--panel);
+  padding:14px 18px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  font-size:14px;
+}
 
-  .legend {
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 12px 14px;
-    font-size: 14px;
-    color: var(--muted);
-    line-height: 1.6;
-    margin: 0 auto 18px auto;
-    background: var(--panel);
-  }
+/* Jump Nav */
+.yearNav{
+  margin:30px 0 20px 0;
+}
 
-  .sticky {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: rgba(17,17,17,0.92);
-    backdrop-filter: blur(8px);
-    border-top: 1px solid rgba(255,255,255,0.06);
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-    padding: 10px 0;
-    margin: 18px 0 26px 0;
-  }
+.yearNav a{
+  display:inline-block;
+  margin:4px 6px 4px 0;
+  padding:6px 12px;
+  border:1px solid var(--lime);
+  border-radius:999px;
+  text-decoration:none;
+  color:var(--lime);
+  font-size:13px;
+  background:rgba(138,255,0,0.05);
+  transition:all .2s ease;
+}
 
-  .yearNav {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.yearNav a:hover{
+  background:var(--lime);
+  color:#111;
+}
 
-  .yearNav .label {
-    font-size: 12px;
-    color: var(--muted);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-right: 6px;
-  }
+/* Year Sections */
+.yearBlock{
+  background:var(--panel);
+  border-radius:14px;
+  padding:24px 28px;
+  margin-bottom:32px;
+  border:1px solid var(--line);
+}
 
-  .yearNav a {
-    display: inline-block;
-    padding: 6px 10px;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    text-decoration: none;
-    color: var(--fg);
-    font-size: 13px;
-    background: rgba(255,255,255,0.02);
-  }
+.yearBlock h2{
+  margin:0 0 16px 0;
+  font-size:24px;
+  border-bottom:1px solid rgba(138,255,0,0.35);
+  padding-bottom:12px;
+  color:var(--lime);
+}
 
-  .yearNav a:hover {
-    background: rgba(255,255,255,0.08);
-  }
+.yearBlock p{
+  margin:8px 0;
+  font-size:14px;
+  line-height:1.6;
+}
 
-  .yearBlock {
-    padding: 18px 16px;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: rgba(255,255,255,0.02);
-    margin-bottom: 18px;
-  }
+/* Back Link */
+.back-link{
+  margin-top:40px;
+  text-align:center;
+}
 
-  .yearBlock h2 {
-    margin: 0 0 12px 0;
-    font-size: 22px;
-    border-bottom: 1px solid rgba(255,255,255,0.10);
-    padding-bottom: 10px;
-    letter-spacing: 1px;
-  }
-
-  .credit {
-    font-size: 14px;
-    line-height: 1.75;
-    margin: 0 0 6px 0;
-    white-space: pre-wrap;
-    word-break: break-word;
-  }
-
-  .back {
-    text-align: center;
-    margin-top: 34px;
-    font-size: 14px;
-    color: var(--muted);
-  }
-
-  .back a {
-    color: var(--fg);
-    text-decoration: underline;
-  }
+.back-link a{
+  color:var(--lime);
+  text-decoration:none;
+  border-bottom:1px solid var(--lime);
+  padding-bottom:2px;
+}
 </style>
 </head>
 <body>
