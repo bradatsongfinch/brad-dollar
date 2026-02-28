@@ -132,7 +132,7 @@
       max-width: 780px;
     }
 
-    /* Headshot + card */
+    /* Card */
     .card {
       margin: 26px auto 0;
       border-radius: var(--radius);
@@ -147,7 +147,6 @@
       overflow: hidden;
     }
 
-    /* subtle texture image behind the card, easy to swap */
     .card::before{
       content:"";
       position:absolute;
@@ -159,7 +158,6 @@
       background-size: cover;
       background-position: center;
       opacity: 0.22;
-      filter: blur(0px);
       pointer-events:none;
     }
 
@@ -175,7 +173,7 @@
       margin-bottom: 18px;
     }
 
-    .avatar {
+    .avatar-wrap {
       width: 84px;
       height: 84px;
       border-radius: 999px;
@@ -183,14 +181,14 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.35);
       overflow: hidden;
       background: rgba(0,0,0,0.2);
-      flex: 0 0 auto;
     }
 
-    .avatar img {
+    .avatar-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transform: translateY(-2px);
+      display: block;
     }
 
     .who-title {
@@ -228,41 +226,6 @@
 
     .bio p:last-child { margin-bottom: 0; }
 
-    /* ACTIONS */
-    .actions {
-      margin-top: 18px;
-      padding-top: 16px;
-      border-top: 1px solid var(--line);
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 12px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.18);
-      background: rgba(0,0,0,0.35);
-      text-decoration: none;
-      font-size: 14px;
-      color: rgba(255,255,255,0.92);
-    }
-
-    .btn:hover{
-      border-color: rgba(124,255,58,0.85);
-      background: rgba(0,0,0,0.5);
-    }
-
-    .btn.primary{
-      border-color: rgba(124,255,58,0.75);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-    }
-
     .footer {
       margin-top: 26px;
       text-align: center;
@@ -275,8 +238,7 @@
     @media (max-width: 720px){
       .hero { padding: 84px 14px 48px; }
       .identity { grid-template-columns: 70px 1fr; }
-      .avatar { width: 70px; height: 70px; }
-      .actions { justify-content: center; }
+      .avatar-wrap { width: 70px; height: 70px; }
       .card { text-align: left; padding: 22px 16px 18px; }
       .topbar { top: 14px; }
       .pill { font-size: 13px; padding: 9px 11px; }
@@ -290,16 +252,13 @@
 
 <body>
   <section class="hero">
-    <!-- Top row quick links -->
     <div class="topbar">
       <div class="pillrow">
         <a class="pill" href="credits.html"><strong>Credits</strong> full archive</a>
         <a class="pill" href="mailto:producedbybraddollar@gmail.com"><strong>Contact</strong> email</a>
         <a class="pill" href="https://youtube.com/braddollar" target="_blank" rel="noopener"><strong>YouTube</strong> subscribe</a>
       </div>
-      <div class="pillrow">
-        <!-- Optional: keep empty or add another link later -->
-      </div>
+      <div class="pillrow"></div>
     </div>
 
     <div class="wrap">
@@ -308,44 +267,28 @@
 
       <div class="card">
         <div class="identity">
-          <div class="avatar">
+          <div class="avatar-wrap">
             <img src="headshot.jpg" alt="Brad Dollar" />
           </div>
           <div>
             <p class="who-title">WHO I AM</p>
-        </div>
-
-        <div>
-          <div class="section-title">WHO I AM</div>
-         <div class="bio-card">
-  <div class="bio-grid">
-
-    <aside class="bio-left">
-      <img class="avatar" src="Brad headshot - polish.png" alt="Brad Dollar headshot" />
-      <div class="section-label">WHO I AM</div>
-      <a class="tab active" href="#who">WHO I AM</a>
-    </aside>
-
-    <main class="bio-right" id="who">
-      <h2 class="bio-title">WHO I AM</h2>
-      <div class="bio-copy">
-        <p>Oakland born and raised, I’ve kept music and artists at the center of my life since I was a kid. My mission is simple: replenish artists &amp; music organizations with new possibilities in the studio and beyond. I geek out on equipping others to turn creativity into real audience connection. Long term, I'm going to do everything I can to help transform the music industry into something more compassionate, equitable, and sustainable.</p>
-
-        <p>I've been lucky to make music with the best. Grateful Dead, Bob Weir, G-Eazy, Lukas Nelson, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National, among many others. I’ve also helped connect major platforms including Amazon, MTV, Airbnb, HBO, and Jack Daniels to original music and emerging voices.</p>
-
-        <p>I’m an active coach to creators worldwide and co-developed the nonprofit accelerator ZOOLABS, helping hundreds of artists and startups align their art, business, and purpose. In 2021, I began building the next gen song collaboration experience platform for artists and fans, Songfinch.</p>
-
-        <p>Today, I live in Nashville where I work with artists, run a growing YouTube channel, and continue to open faucets of possibilities for music creators and facilitators everywhere.</p>
-      </div>
-    </main>
-
-  </div>
-</div>
-
-          <div class="footer">
-            © 2026 Brad Dollar
+            <p class="who-sub">Producer, engineer, mixer, writer, and coach helping artists build work that connects.</p>
           </div>
         </div>
+
+        <div class="section-title">WHO I AM</div>
+
+        <div class="bio">
+          <p>Oakland born and raised, I’ve kept music and artists at the center of my life since I was a kid. My mission is simple: replenish artists &amp; music organizations with new possibilities in the studio and beyond. I geek out on equipping others to turn creativity into real audience connection. Long term, I'm going to do everything I can to help transform the music industry into something more compassionate, equitable, and sustainable.</p>
+
+          <p>I've been lucky to make music with the best. Grateful Dead, Bob Weir, G-Eazy, Lukas Nelson, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National, among many others. I’ve also helped connect major platforms including Amazon, MTV, Airbnb, HBO, and Jack Daniels to original music and emerging voices.</p>
+
+          <p>I’m an active coach to creators worldwide and co-developed the nonprofit accelerator ZOOLABS, helping hundreds of artists and startups align their art, business, and purpose. In 2021, I began building the next gen song collaboration experience platform for artists and fans, Songfinch.</p>
+
+          <p>Today, I live in Nashville where I work with artists, run a growing YouTube channel, and continue to open faucets of possibilities for music creators and facilitators everywhere.</p>
+        </div>
+
+        <div class="footer">© 2026 Brad Dollar</div>
       </div>
     </div>
   </section>
