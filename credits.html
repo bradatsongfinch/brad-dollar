@@ -1,4 +1,3 @@
-credits
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,30 +10,47 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #111;
     color: #ffffff;
-    text-align: center;
     padding: 60px 20px;
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-    margin: 0 auto;
+.legend {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 60px;
 }
 
-li {
-    margin-bottom: 15px;
-    font-size: 18px;
+.year {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+.year h2 {
+    font-size: 26px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.credit {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 a {
     color: #ffffff;
-    text-decoration: underline;
+}
+
+.back {
+    text-align: center;
+    margin-top: 60px;
 }
 </style>
 </head>
@@ -42,13 +58,38 @@ a {
 
 <h1>Selected Credits</h1>
 
-<ul>
-    <li>Artist Name – Production</li>
-    <li>Artist Name – Guitar</li>
-    <li>Artist Name – Mixing</li>
-</ul>
+<div class="legend">
+p = produce | e = engineer | m = mix | w = write | c = coach | g = guitar
+</div>
 
-<p><a href="index.html">Back to Home</a></p>
+<div class="year">
+<h2>2025</h2>
+<div class="credit">Aisha Fukushima – There's A Sky Above Your Roof (p, e, m)</div>
+<div class="credit">Songfinch – A Songfinch Christmas (p, e)</div>
+<div class="credit">Brad $ – Never The Way It Is (Turnstile x Celine Dion remix) (p, e, m)</div>
+<div class="credit">Real Name – PH2 (p, e, m, w, g)</div>
+<div class="credit">Brad $ – Flexcalibur (p, e, m, w, g)</div>
+<div class="credit">Southside Jake – One of Those Days (p, m, e)</div>
+</div>
+
+<div class="year">
+<h2>2024</h2>
+<div class="credit">Dani Stacy – Loveless Man (p, e, m)</div>
+<div class="credit">Brad Sample – Time Machine (p, e, m)</div>
+<div class="credit">Near Futures – Not the Man (p, e, m)</div>
+<div class="credit">Real Name – Gimme More (p, e, m, w)</div>
+</div>
+
+<div class="year">
+<h2>2023</h2>
+<div class="credit">Southside Jake – Whiskey Man (p, e, m, w, g)</div>
+<div class="credit">Bonner Black / Sonia Leigh – Queen of Swords (p, e, m, w, g)</div>
+<div class="credit">Songfinch – STEM Compilation (m)</div>
+</div>
+
+<div class="back">
+<a href="index.html">Back to Home</a>
+</div>
 
 </body>
 </html>
