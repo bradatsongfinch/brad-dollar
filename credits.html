@@ -147,11 +147,22 @@ h1{
 </div>
 
 <div class="sticky">
-  <div class="yearNav" id="yearNav">
-    <span class="label">Jump to year</span>
-  </div>
+  <div class="credits-container">
+  <div id="yearNav" class="year-nav"></div>
 </div>
+.credits-container {
+  width: 100%;
+  max-width: 1020px;   /* match your year cards */
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
+.year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start; /* or center if you want */
+}
 <div class="wrap">
   <div id="creditsRender"></div>
 
