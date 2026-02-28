@@ -13,6 +13,27 @@
     --panel: rgba(255,255,255,0.04);
   }
 
+  .topbar{
+  display:flex;
+  justify-content:flex-end;
+  margin-bottom:10px;
+}
+
+.home-btn{
+  text-decoration:none;
+  border:1px solid #8aff00;
+  color:#8aff00;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:14px;
+  transition:all .2s ease;
+}
+
+.home-btn:hover{
+  background:#8aff00;
+  color:#111;
+}
+
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -137,7 +158,9 @@
 </head>
 <body>
 
-<div class="wrap">
+<div class="topbar">
+  <a href="index.html" class="home-btn">Home</a>
+</div>
   <h1>Credits</h1>
   <div class="sub">Full chronological archive</div>
 
