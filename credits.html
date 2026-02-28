@@ -1,145 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Credits | Brad Dollar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credits | Brad Dollar</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0b0c0f;
-  color: #ffffff;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0b0c0f;
+      color: #ffffff;
+    }
 
-.container {
-  width: 100%;
-  max-width: 1020px;
-  margin: 0 auto;
-  padding: 32px 16px 60px 16px;
-}
+    .container {
+      width: 100%;
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 32px 16px 60px 16px;
+    }
 
-h1 {
-  font-size: 52px;
-  margin-bottom: 6px;
-}
+    h1 {
+      font-size: 52px;
+      margin: 0 0 6px 0;
+    }
 
-.subtitle {
-  color: rgba(255,255,255,0.65);
-  margin-bottom: 18px;
-}
+    .subtitle {
+      color: rgba(255,255,255,0.65);
+      margin: 0 0 18px 0;
+    }
 
-.legend {
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 14px;
-  padding: 14px 16px;
-  margin-bottom: 18px;
-  background: rgba(255,255,255,0.04);
-}
+    .legend {
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 0 0 18px 0;
+      background: rgba(255,255,255,0.04);
+    }
 
-.year-nav-wrap {
-  margin-bottom: 20px;
-}
+    .year-nav-wrap {
+      margin: 0 0 20px 0;
+    }
 
-.year-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+    .year-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
 
-.year-btn {
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid #7CFF3A;
-  color: #7CFF3A;
-  text-decoration: none;
-  font-size: 14px;
-}
+    .year-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid #7CFF3A;
+      color: #7CFF3A;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 1;
+    }
 
-.year-btn:hover {
-  background: rgba(124,255,58,0.12);
-}
+    .year-btn:hover {
+      background: rgba(124,255,58,0.12);
+    }
 
-.years {
-  display: grid;
-  gap: 18px;
-}
+    .years {
+      display: grid;
+      gap: 18px;
+    }
 
-.year-card {
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 18px;
-  padding: 18px;
-  background: rgba(255,255,255,0.05);
-}
+    .year-card {
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(255,255,255,0.05);
+    }
 
-.year-head {
-  text-align: center;
-  border-bottom: 1px solid rgba(124,255,58,0.35);
-  padding-bottom: 10px;
-  margin-bottom: 12px;
-}
+    .year-head {
+      text-align: center;
+      border-bottom: 1px solid rgba(124,255,58,0.35);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
 
-.year-num {
-  font-size: 28px;
-  color: #7CFF3A;
-  font-weight: bold;
-}
+    .year-num {
+      font-size: 28px;
+      color: #7CFF3A;
+      font-weight: bold;
+    }
 
-.credit-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+    .credit-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.credit-list li {
-  padding: 3px 0;
-  font-size: 15px;
-}
+    .credit-list li {
+      padding: 3px 0;
+      font-size: 15px;
+    }
 
-.home-btn {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-}
+    .home-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 10;
+    }
 
-.home-btn a {
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid #7CFF3A;
-  color: #7CFF3A;
-  text-decoration: none;
-  font-size: 14px;
-}
+    .home-btn a {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #7CFF3A;
+      color: #7CFF3A;
+      text-decoration: none;
+      font-size: 14px;
+      background: rgba(0,0,0,0.25);
+      backdrop-filter: blur(6px);
+    }
 
-.home-btn a:hover {
-  background: rgba(124,255,58,0.12);
-}
-</style>
+    .home-btn a:hover {
+      background: rgba(124,255,58,0.12);
+    }
+  </style>
 </head>
 
 <body>
-
-<div class="home-btn">
-  <a href="index.html">Home</a>
-</div>
-
-<div class="container">
-  <h1>Credits</h1>
-  <div class="subtitle">Full chronological archive</div>
-
-  <div class="legend">
-    <strong>Legend:</strong> p = produce, e = engineer, m = mix, w = write, c = coach, g = guitar
+  <div class="home-btn">
+    <a href="index.html">Home</a>
   </div>
 
-  <div class="year-nav-wrap">
-    <div class="year-nav" id="yearNav"></div>
+  <div class="container">
+    <h1>Credits</h1>
+    <div class="subtitle">Full chronological archive</div>
+
+    <div class="legend">
+      <strong>Legend:</strong> p = produce, e = engineer, m = mix, w = write, c = coach, g = guitar
+    </div>
+
+    <div class="year-nav-wrap">
+      <div class="year-nav" id="yearNav"></div>
+    </div>
+
+    <div class="years" id="years"></div>
   </div>
 
-  <div class="years" id="years"></div>
-</div>
-
-<script>
+  <script>
 const CREDITS_TEXT = `
 Real Name – Met Ya On Your Birthday [2026] (p, e, w)
 Real Name – Keep On Loving You (soundtrack version) [2026] (p, e, w)
