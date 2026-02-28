@@ -1,0 +1,54 @@
+credits
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credits - Brad Dollar</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h1>Selected Credits</h1>
+
+<ul>
+    <li>Artist Name – Production</li>
+    <li>Artist Name – Guitar</li>
+    <li>Artist Name – Mixing</li>
+</ul>
+
+<p><a href="index.html">Back to Home</a></p>
+
+</body>
+</html>
