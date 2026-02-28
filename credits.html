@@ -1,95 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Credits - Brad Dollar</title>
 <style>
-body {
+  :root {
+    --bg: #111;
+    --fg: #fff;
+    --muted: rgba(255,255,255,0.72);
+    --line: rgba(255,255,255,0.16);
+    --panel: rgba(255,255,255,0.04);
+  }
+
+  body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #111;
-    color: #ffffff;
-    padding: 60px 20px;
-}
+    background: var(--bg);
+    color: var(--fg);
+  }
 
-h1 {
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 20px 70px 20px;
+  }
+
+  h1 {
     text-align: center;
     font-size: 42px;
-    margin-bottom: 10px;
-}
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+  }
 
-.legend {
+  .sub {
     text-align: center;
     font-size: 14px;
-    opacity: 0.7;
-    margin-bottom: 60px;
-}
-
-.year {
-    max-width: 900px;
-    margin: 0 auto 50px auto;
-}
-
-.year h2 {
-    font-size: 26px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.credit {
-    margin-bottom: 10px;
-    font-size: 16px;
+    color: var(--muted);
     line-height: 1.6;
-}
+    margin-bottom: 18px;
+  }
 
-a {
-    color: #ffffff;
-}
+  .legend {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 auto 18px auto;
+    background: var(--panel);
+  }
 
-.back {
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(17,17,17,0.92);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    padding: 10px 0;
+    margin: 18px 0 26px 0;
+  }
+
+  .yearNav {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .yearNav .label {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+
+  .yearNav a {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--fg);
+    font-size: 13px;
+    background: rgba(255,255,255,0.02);
+  }
+
+  .yearNav a:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  .yearBlock {
+    padding: 18px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.02);
+    margin-bottom: 18px;
+  }
+
+  .yearBlock h2 {
+    margin: 0 0 12px 0;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .credit {
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0 0 6px 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .back {
     text-align: center;
-    margin-top: 60px;
-}
+    margin-top: 34px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .back a {
+    color: var(--fg);
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
 
-<h1>Selected Credits</h1>
+<div class="wrap">
+  <h1>Credits</h1>
+  <div class="sub">Full chronological archive</div>
 
-<div class="legend">
-p = produce | e = engineer | m = mix | w = write | c = coach | g = guitar
+  <div class="legend">
+    Legend: p = produce, e = engineer, m = mix, w = write, c = coach, g = guitar
+  </div>
 </div>
 
-<div class="year">
-<h2>2025</h2>
-<div class="credit">Aisha Fukushima – There's A Sky Above Your Roof (p, e, m)</div>
-<div class="credit">Songfinch – A Songfinch Christmas (p, e)</div>
-<div class="credit">Brad $ – Never The Way It Is (Turnstile x Celine Dion remix) (p, e, m)</div>
-<div class="credit">Real Name – PH2 (p, e, m, w, g)</div>
-<div class="credit">Brad $ – Flexcalibur (p, e, m, w, g)</div>
-<div class="credit">Southside Jake – One of Those Days (p, m, e)</div>
+<div class="sticky">
+  <div class="yearNav" id="yearNav">
+    <span class="label">Jump to year</span>
+  </div>
 </div>
 
-<div class="year">
-<h2>2024</h2>
-<div class="credit">Dani Stacy – Loveless Man (p, e, m)</div>
-<div class="credit">Brad Sample – Time Machine (p, e, m)</div>
-<div class="credit">Near Futures – Not the Man (p, e, m)</div>
-<div class="credit">Real Name – Gimme More (p, e, m, w)</div>
+<div class="wrap">
+  <div id="creditsRender"></div>
+
+  <div class="back">
+    <a href="index.html">Back to Home</a>
+  </div>
 </div>
 
-<div class="year">
-<h2>2023</h2>
-<div class="credit">Southside Jake – Whiskey Man (p, e, m, w, g)</div>
-<div class="credit">Bonner Black / Sonia Leigh – Queen of Swords (p, e, m, w, g)</div>
-<div class="credit">Songfinch – STEM Compilation (m)</div>
-</div>
+<script>
+/*
+  Paste your full credits list into CREDITS_TEXT below.
+  The script will:
+  - Extract [YYYY]
+  - Group entries by year
+  - Build a sticky year nav
+  - Render year sections with anchors
+*/
 
-<div class="back">
-<a href="index.html">Back to Home</a>
-</div>
+const CREDITS_TEXT = `
+PASTE YOUR FULL CREDITS LIST HERE
+`;
+
+function extractYear(line) {
+  const m = line.match(/\[(\d{4})\]/);
+  return m ? m[1] : null;
+}
+
+function escapeHTML(s) {
+  return s
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
+function build() {
+  const raw = CREDITS_TEXT.trim();
+  const renderEl = document.getElementById("creditsRender");
+  const navEl = document.getElementById("yearNav");
+
+  if (!raw || raw === "PASTE YOUR FULL CREDITS LIST HERE") {
+    renderEl.innerHTML = '<div style="color:rgba(255,255,255,0.7);">Paste your credits list into the CREDITS_TEXT block in credits.html, then commit.</div>';
+    return;
+  }
+
+  const lines = raw.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+
+  const byYear = new Map();
+  let currentYear = null;
+
+  for (const line of lines) {
+    const y = extractYear(line);
+    if (y) currentYear = y;
+
+    if (!currentYear) continue; // ignore lines before the first [YYYY]
+    if (!byYear.has(currentYear)) byYear.set(currentYear, []);
+    byYear.get(currentYear).push(line);
+  }
+
+  const years = Array.from(byYear.keys()).sort((a,b) => Number(b) - Number(a));
+
+  // Build nav
+  const fragNav = document.createDocumentFragment();
+  for (const y of years) {
+    const a = document.createElement("a");
+    a.href = `#y${y}`;
+    a.textContent = y;
+    fragNav.appendChild(a);
+  }
+  navEl.appendChild(fragNav);
+
+  // Build sections
+  const frag = document.createDocumentFragment();
+  for (const y of years) {
+    const block = document.createElement("section");
+    block.className = "yearBlock";
+    block.id = `y${y}`;
+
+    const h2 = document.createElement("h2");
+    h2.textContent = y;
+    block.appendChild(h2);
+
+    const entries = byYear.get(y) || [];
+    for (const entry of entries) {
+      const p = document.createElement("div");
+      p.className = "credit";
+      p.innerHTML = escapeHTML(entry);
+      block.appendChild(p);
+    }
+
+    frag.appendChild(block);
+  }
+
+  renderEl.innerHTML = "";
+  renderEl.appendChild(frag);
+}
+
+build();
+</script>
 
 </body>
 </html>
