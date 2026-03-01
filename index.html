@@ -32,7 +32,6 @@
 
     a { color: inherit; }
 
-    /* HERO BACKGROUND */
     .hero {
       position: relative;
       min-height: 100vh;
@@ -66,7 +65,6 @@
       pointer-events:none;
     }
 
-    /* TOP NAV */
     .topbar {
       position: absolute;
       top: 18px;
@@ -102,14 +100,17 @@
       white-space: nowrap;
     }
 
-    .pill strong { color: var(--lime); font-weight: 700; letter-spacing: 0.4px; }
+    .pill strong {
+      color: var(--lime);
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
 
     .pill:hover{
       border-color: rgba(124,255,58,0.9);
       background: rgba(0,0,0,0.48);
     }
 
-    /* MAIN CARD */
     .wrap {
       position: relative;
       z-index: 2;
@@ -132,7 +133,6 @@
       max-width: 780px;
     }
 
-    /* Card */
     .card {
       margin: 26px auto 0;
       border-radius: var(--radius);
@@ -145,20 +145,6 @@
       max-width: 980px;
       position: relative;
       overflow: hidden;
-    }
-
-    .card::before{
-      content:"";
-      position:absolute;
-      inset:-40px;
-      background:
-        radial-gradient(700px 420px at 20% 10%, rgba(124,255,58,0.10), transparent 60%),
-        linear-gradient(to bottom, rgba(0,0,0,0.20), rgba(0,0,0,0.55)),
-        url("image.jpeg");
-      background-size: cover;
-      background-position: center;
-      opacity: 0.22;
-      pointer-events:none;
     }
 
     .card > * { position: relative; z-index: 1; }
@@ -178,16 +164,13 @@
       height: 84px;
       border-radius: 999px;
       border: 2px solid rgba(124,255,58,0.6);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
       overflow: hidden;
-      background: rgba(0,0,0,0.2);
     }
 
     .avatar-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transform: translateY(-2px);
       display: block;
     }
 
@@ -198,7 +181,7 @@
       color: rgba(255,255,255,0.65);
     }
 
-    .who-sub {
+    .who-description {
       margin: 4px 0 0;
       font-size: 16px;
       color: rgba(255,255,255,0.88);
@@ -217,34 +200,26 @@
     .bio {
       font-size: 16.5px;
       color: rgba(255,255,255,0.88);
-      letter-spacing: 0.2px;
     }
 
-    .bio p {
-      margin: 0 0 14px;
-    }
-
-    .bio p:last-child { margin-bottom: 0; }
+    .bio p { margin: 0 0 14px; }
 
     .footer {
       margin-top: 26px;
       text-align: center;
       font-size: 13px;
       color: var(--muted-2);
-      opacity: 0.9;
     }
 
-    /* MOBILE */
     @media (max-width: 720px){
       .hero { padding: 84px 14px 48px; }
       .identity { grid-template-columns: 70px 1fr; }
       .avatar-wrap { width: 70px; height: 70px; }
-      .card { text-align: left; padding: 22px 16px 18px; }
+      .card { padding: 22px 16px 18px; }
       .topbar { top: 14px; }
       .pill { font-size: 13px; padding: 9px 11px; }
     }
 
-    /* On small screens, hide only the secondary explainer text */
     @media (max-width: 420px){
       .pill span { display: none; }
     }
@@ -253,19 +228,19 @@
 
 <body>
   <section class="hero">
+
     <div class="topbar">
       <div class="pillrow">
         <a class="pill" href="credits.html"><strong>Credits</strong> <span>my life in music</span></a>
         <a class="pill" href="mailto:producedbybraddollar@gmail.com"><strong>Contact</strong> <span>email</span></a>
-        <a class="pill" href="https://youtube.com/braddollar" target="_blank" rel="noopener"><strong>YouTube</strong> <span>subscribe</span></a>
-        <a class="pill" href="https://instagram.com/bradkdollar" target="_blank" rel="noopener"><strong>Instagram</strong> <span>follow</span></a>
+        <a class="pill" href="https://youtube.com/braddollar" target="_blank"><strong>YouTube</strong> <span>subscribe</span></a>
+        <a class="pill" href="https://instagram.com/bradkdollar" target="_blank"><strong>Instagram</strong> <span>follow</span></a>
       </div>
-      <div class="pillrow"></div>
     </div>
 
     <div class="wrap">
       <h1 class="title">BRAD DOLLAR</h1>
-      <div class="tagline"> NASHVILLE | OAKLAND | CHICAGO </div>
+      <div class="tagline">NASHVILLE | OAKLAND | CHICAGO</div>
 
       <div class="card">
         <div class="identity">
@@ -281,10 +256,19 @@
         <div class="section-title">WHO I AM</div>
 
         <div class="bio">
-          <p>Oakland Bay Area born and raised, I’ve kept music and artists at the center of my life since I was a kid. My mission is simple: replenish artists &amp; music organizations with new possibilities in the studio and beyond. I geek out on equipping others to turn creativity into real audience connection. Long term, I'm going to do everything I can to help transform the music industry into something more compassionate, equitable, and sustainable.</p>
+          <p>Oakland Bay Area born and raised, I’ve kept music and artists at the center of my life since I was a kid. My mission is simple: replenish artists &amp; music organizations with new possibilities in the studio and beyond.</p>
 
-          <p>From playing guitar in ska-punk bands, to working in the biggest recording studios in the world - I've been lucky to make music with the best of the best. Grateful Dead, Bob Weir, G-Eazy, Lukas Nelson, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National, among many others. I’ve also helped connect major platforms including Amazon, MTV, Airbnb, HBO, and Jack Daniels to original music and emerging voices.</p>
+          <p>From playing guitar in ska-punk bands to working in the biggest recording studios in the world, I’ve been lucky to make music with the best of the best.</p>
 
-          <p>I’m an active coach to creators worldwide and co-developed the nonprofit accelerator ZOOLABS, helping hundreds of artists and startups align their art, business, and purpose. In 2021, I began building the next gen song collaboration experience platform for artists and fans, Songfinch.</p>
+          <p>Today, I live in Nashville where I work with artists, run a growing YouTube channel, and continue opening faucets of possibility for music creators everywhere.</p>
 
-          <p>Today, I live
+          <p>I’d love to help you get to where you want to go with your music. Reach out anytime.</p>
+        </div>
+
+        <div class="footer">© 2026 Brad Dollar</div>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
