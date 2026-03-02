@@ -152,6 +152,50 @@ Blank lines are fine.
 */
 
 const CREDITS_TEXT = `
+const HIGHLIGHTS_TEXT = `
+Grateful Dead
+Bob Weir
+Bill Kreutzmann
+Mickey Hart
+John Perry Barlow
+The National
+Furthur
+Ratdog
+7 Walkers
+G-Eazy
+Primus
+Van Morrison
+Journey
+Night Ranger
+Chickenfoot
+Slightly Stoopid
+Lukas Nelson
+Lukas Nelson & Promise of the Real
+John Scofield
+Keb Mo
+Rodrigo y Gabriela
+Mark Hoppus
+Father John Misty
+Jenny O
+Oz Noy
+Dave Weckl
+George Pajon
+Tyler Childers
+Robert Earl Keen
+Rodney Atkins
+Vincent Neil Emerson
+Gangstagrass
+Lillie Mae
+Drayton Farley
+Joshua Hedley
+Jesse Daniel
+Trousdale
+Malik Yusef
+Parmalee
+Bill Walton
+Jay Lane
+`;
+
 Real Name – Met Ya On Your Birthday [2026] (p, e, w)
 Real Name – Keep On Loving You (soundtrack version) [2026] (p, e, w)
 
@@ -603,6 +647,45 @@ function buildCredits() {
 
   navEl.innerHTML = "";
   yearsEl.innerHTML = "";
+
+  // Highlights pill
+const hBtn = document.createElement("a");
+hBtn.className = "year-btn";
+hBtn.href = "#highlights";
+hBtn.textContent = "Highlights";
+navEl.appendChild(hBtn);
+
+// Highlights card
+const hCard = document.createElement("section");
+hCard.className = "year-card";
+hCard.id = "highlights";
+
+const hHead = document.createElement("div");
+hHead.className = "year-head";
+
+const hNum = document.createElement("div");
+hNum.className = "year-num";
+hNum.textContent = "Studio Highlights";
+
+hHead.appendChild(hNum);
+hCard.appendChild(hHead);
+
+const hUl = document.createElement("ul");
+hUl.className = "credit-list";
+
+const hLines = HIGHLIGHTS_TEXT
+  .split(/\r?\n/)
+  .map(l => l.trim())
+  .filter(Boolean);
+
+for (const entry of hLines) {
+  const li = document.createElement("li");
+  li.textContent = entry;
+  hUl.appendChild(li);
+}
+
+hCard.appendChild(hUl);
+yearsEl.appendChild(hCard);
 
   const lines = CREDITS_TEXT
     .split(/\r?\n/)
