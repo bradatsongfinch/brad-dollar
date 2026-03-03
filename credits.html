@@ -145,13 +145,7 @@
 </div>
 
 <script>
-/*
-Format for credits:
-Title [YYYY] (roles)
-Blank lines are fine.
-*/
-
-const HIGHLIGHTS_TEXT = `
+  const HIGHLIGHTS_TEXT = `
 Grateful Dead
 Bob Weir
 Bill Kreutzmann
@@ -195,99 +189,555 @@ Bill Walton
 Jay Lane
 `;
 
-/* PASTE YOUR FULL CREDITS LIST BELOW */
-const CREDITS_TEXT = `
-PASTE YOUR FULL CREDITS HERE
+  const CREDITS_TEXT = `
+Real Name - Met Ya On Your Birthday [2026] (p, e, w)
+Real Name - Keep On Loving You (soundtrack version) [2026] (p, e, w)
+
+Aisha Fukushima - There's A Sky Above Your Roof [2025] (p, e, m)
+Songfinch - A Songfinch Christmas [2025] (p, e)
+Brad $ - Never The Way It Is (Turnstile x Celine Dion remix) [2025] (p, e, m)
+ABBA-CONDA X4XX - Hotel California [2025] (m, e)
+Crazyaimone - Sinking In The Floor [2025] (m, e)
+ELIXE - ELIXE ep [2025] (c)
+ABBA-CONDA X4XX - Ice [2025] (c)
+Southside Jake - One of Those Days [2025] (p, m, e)
+Real Name - PH2 [2025] (p, e, m, w, g)
+Brad $ - Flexcalibur [2025] (p, e, m, w, g)
+Earth Laser - Van Halen & Nirvana Are Friends [2025] (e)
+Brad $ - Reunion [2025] (p, e, m, w, g)
+Ojas Music - All Night [2025] (c)
+Timothy Lee - Simple Times [2025] (c)
+Pete Osa - Snow Falling [2025] (c)
+
+Dani Stacy - Loveless Man [2024] (p, e, m)
+Brad Sample - Time Machine [2024] (p, e, m)
+Devin Croda - Midnight Oil [2024] (g, m)
+Aisha Fukushima - Morning Light [2024] (p, e, m)
+Brad $ - Roughs the Album [2024] (p, e, m, w)
+Near Futures - Not the Man [2024] (p, e, m)
+Real Name - Gimme More [2024] (p, e, m, w)
+Brad $ - Florida!!! (Taylor Swift Remix) [2024] (p, e, m)
+
+Southside Jake - Whiskey Man [2023] (p, e, m, w, g)
+Parry Ace - Not Many Days [2023] (m)
+Aisha Fukushima - Women's Equality Day [2023] (m)
+Kyle Pruzina + ABC - Let's Make A Deal [2023] (e, m)
+Laney Lou & the Bird Dogs - Coyote [2023] (p, e)
+Rafe Pearlman [2023] (c)
+Nehoda - Dissolution [2023] (m)
+Sonia Leigh / Gina Venier - St. Valentine [2023] (w)
+Nehoda - Good News / End of the World Blues [2023] (m)
+Bonner Black / Sonia Leigh - Queen of Swords [2023] (p, e, m, w, g)
+Nehoda - Hide Your Ways [2023] (m)
+Nehoda - What Would Kurt Do [2023] (m)
+Brad $ - Fall In 2 U [2023] (p, e, m, w, g)
+Caitlin Cannon - Songfinch tracks [2023] (p, e, m, w, g)
+Scott Porter - Songfinch tracks [2023] (p, e, m, w, g)
+Songfinch - Songfinch STEM Compilation (59 artists) [2023] (m)
+
+Kim Kylland - Soundtrack for HBO's The Anarchists [2022] (p, e, m, g)
+LANN - Like the Rest [2022] (p, e, m)
+NHL/Blackhawks Insider - Theme Song [2022] (p, e, m, w)
+Brad $ - This Isn't Over (ft. Jay Lane) [2022] (p, e, m, w, g)
+Don't Put Her Down: The Life & Songs of Hazel Dickens [2022] (e)
+JP Cormier - Alvarez 2023 Promo [2022] (e)
+LR Baggs - Trousdale [2022] (e)
+LR Baggs - Jesse Daniel [2022] (e)
+LR Baggs - Joshua Hedley [2022] (e)
+LR Baggs - Drayton Farley [2022] (e)
+Brad $ - Blackout (ft. Parry Ace) [2022] (p, e, m, w, g)
+LR Baggs - Lore [2022] (e)
+Brad $ - 23 [2022] (p, e, m, w, g)
+LR Baggs - Among Savages [2022] (e)
+Brad $ - Summer Dust [2022] (p, e, m, w, g)
+LR Baggs - Tyler Childers [2022] (m)
+LANN - Next Girl [2022] (p, e, m)
+Near Futures - Orange Sky [2022] (p, e, m)
+LR Baggs - Robert Earl Keen [2022] (m)
+LR Baggs - Lillie Mae [2022] (e, m)
+LR Baggs - Doc Oliver [2022] (e, m)
+Brad $ - Waiting On My Angel (Jamie Principle cover) [2022] (e, m)
+Brad $ - Head Over Hills (Kate Bush x Tear for Fears Remix) [2022] (p, e, m, g)
+Pete Sahaidachny - Voice In Your Heart [2022] (m)
+Chris Taylor [2022] (c)
+Brad $ - Apparitions [2022] (p, e, m, w, g)
+Southside Jake - Get There [2022] (p, e, m, w, g)
+Nathan Hartono - There Has Always Been A Story [2022] (p, e, m)
+Daphne Suitcase - Even The Angels [2022] (p, e, m)
+
+Nathan Hartono - Y Be Ok [2021] (p, e, m)
+Josh Moore - The Cost [2021] (p, e, m)
+Paul McDonald + Taylor McCall - God's Work [2021] (e, p)
+Olivia Wolf - Good Smoke [2021] (e, p)
+Sakyboi & Lil B - Ice Cold [2021] (p, m)
+Real Name - Christmas (Only Comes Once A Year) [2021] (p, e, m, w)
+LR Baggs - Taylor Rae [2021] (e, m)
+LR Baggs - Nate Frederick [2021] (e, m)
+LR Baggs - Ida Mae [2021] (e, m)
+LR Baggs - Rodney Atkins [2021] (e, m)
+LR Baggs - Gangstagrass [2021] (e, m)
+LR Baggs - Vincent Neil Emerson [2021] (e, m)
+Mipsterz - ALHAMDU [2021] (p, e)
+Near Futures - Don't Let It Happen [2021] (p, m)
+Near Futures - Timelines [2021] (p, m)
+Near Futures - Bell [2021] (p, m)
+Chi the Realist - Flaws [2021] (m)
+Rachel Lark - Coming Soon [2021] (m)
+Dave Pahanish & John Goolsby [2021] (e)
+Laney Lou & the Bird Dogs - Through The Smoke [2021] (p, e, m)
+Aisha Fukushima - Future Ancestors [2021] (p, m)
+Patrick Nehoda [2021] (c)
+Julian Borrego [2021] (c)
+PSYCHe - Podcast (new season) [2021] (e, m)
+Maddy Clifford [2021] (c)
+Alison Harris [2021] (c)
+Christina Shih [2021] (c)
+Jason Heninger [2021] (c)
+Pete Sahaidachny - Skeletons [2021] (p, m)
+Mic Ramsey - Touch [2021] (m)
+Pete Sahaidachny - Messages [2021] (p, m)
+
+Bleeding Audio: The Matches - appearance as self [2020] (p, e)
+Olivia Wolf + Allen Tolbert - Pickin' [2020] (e, m)
+Ismay - Hazel Dickens Tribute [2020] (e, m)
+Brad $ - Stay Awake Until the End [2020] (p, e, m, w, g)
+Songs for Good w/ Rachael Major - New Day [2020] (p, e, m)
+Omni Sound Studios - Nashville, TN [2020]
+Aaron English [2020] (c)
+Len Shaffer & Friends - The Extra Ordinary Me [2020] (p, e, m)
+Aisha Fukushima - Pandemic Song [2020] (p, m)
+John Goolsby [2020] (e)
+Strike Five Films [2020] (c)
+Kyle Teese [2020] (c)
+Loco Bloco [2020] (c)
+Near Futures [2020] (p, m)
+PSYCHe - Podcast [2020] (e, m)
+Don't Fear the Reverb - Podcast [2020] (p, e, m)
+Lord Goldie feat. MUJA [2020] (e, m)
+Kristin Center [2020] (c)
+Robin Applewood - Feeling the Bern (feat. Bernie Sanders) [2020] (m)
+Ratskin Records [2020] (c)
+W.O.C. [2020] (c)
+Gold Beams [2020] (c)
+Jules Leyhe [2020] (c)
+Didier Sylvain [2020] (c)
+
+Laney Lou & the Bird Dogs - Sweet Little Lies [2019] (p, e, m)
+Dovydas - I Chase Dreams [2019] (p, e, m, w)
+The Record Shop - Nashville, TN [2019]
+The Outer Vibe - Turn Me Up With Money [2019] (p, e, m)
+Mike Stanton feat. MUJA - Improhop [2019] (e, m)
+PSYCHe Podcast [2019] (e, m)
+Rachel Lark - Sex & Balances [2019] (e)
+Valerie Troutt - Find Your Light [2019] (e, c)
+ASTU [2019] (c)
+Divinity Roxx [2019] (e, c)
+Danielle Wertz & Mark Meadows [2019] (e, c)
+MAJO w/ Hector STONETAPE Hernandez [2019] (e, c)
+Aisha Fukushima - Raptivism [2019] (e, c)
+Dame Drummer [2019] (e, c)
+Aubrey Haddard [2019] (e, c)
+Aneesa Strings - The Awakening [2019] (p, e)
+SOL Development - The SOL of Black Folk [2019] (p, e, m)
+Hummingbird Hill - Franklin, TN [2019]
+25th St Recording - Oakland, CA [2019]
+Dovydas - I Wanna Fly Away [2019] (p, e, m, w)
+Dovydas - Jump on the Dragons [2019] (p, e, m)
+Ellis Dean + Rachel Greenberg - Cold As Ice [2019] (p, e)
+Catch Prichard - Utter Disbelief [2019] (p, e, m)
+Brad $ - Ghost of California [2019] (p, e, m, w)
+Brad $ - Standing on the Moon [2019] (p, e, m, w)
+Danny Passmore - Outside the Lines [2019] (m)
+Joannah Bourne [2019] (p, e, m)
+Jennifer Johns [2019] (c)
+Jonathan Pierce Band - Monopoly [2019] (m)
+
+H.O.M.E. - Nashville, TN [2018]
+Prairie Sun Recording - Cotati, CA [2018]
+Brad $ - Christmas Comes Once A Year (feat. WillKey) [2018] (p, e, m, w)
+Malik Yusef - The Matte Blaque Experience: Ballad of An American Dopeboy [2018] (p, e, m, w)
+Parmalee - Hotdamalama Remix (w/ Dee Jay Silver) [2018] (p, m)
+Electra Mustaine - Being Me [2018] (p, e, m, w)
+Constantine - Vodka & Lime [2018] (p, m)
+SOL Development - Helicopter [2018] (p, e, m)
+Connor Muncil [2018] (p, m)
+Kylland - Bloom [2018] (p, e, m)
+Mino Yanci - Mino Yanci [2018] (p, e)
+The Sagas - Gypsy [2018] (m)
+David Romero - The Field [2018] (m)
+Emily Afton [2018] (c)
+
+Cellista - End of Time [2017] (e)
+Leslie Mendelson - Love & Murder [2017] (e)
+Pancho Morris - The Great Again LP [2017] (e)
+Richard Bivens & Grief Thief - Laugh Tracks [2017] (p, e)
+Alphabet Rockers - Rise Shine Woke [2017] (p, e)
+Skrapps - Tracks for app [2017] (p, e, m)
+Shawni Rae - To Get By [2017] (p, e, m)
+Shawni Rae - Dreamer [2017] (p, e, m)
+Catch Prichard - Don't Want It [2017] (p, e, m)
+Lil B - Risk Session [2017] (p, e, m)
+
+Catch This Music - Nashville, TN [2016]
+Fuze the MC (Lance Coleman) - Lance is a Genius [2016] (p, e)
+Madame Gandhi - Gandhi Blues [2016] (p, e)
+Madame Gandhi - Voices [2016] (p, e)
+Cathedrals - Howling (featured in Amazon's Jack Ryan) [2016] (p, e)
+Catch Prichard - Eskota [2016] (p, e, m, g)
+Eskota Studios - Eskota, TX [2016]
+VANDA - Young For Life [2016] (p, e, m, g)
+VANDA - Feet First [2016] (p, e, m, w, g)
+Bob Weir - Blue Mountain [2016] (e)
+The Easy Leaves - The Wheels [2016] (p, e, m)
+Slightly Stoopid - Live From Roberto's The Return [2016] (e, m)
+Insignificant Figures - EP [2016] (m)
+G-Eazy - When It's Dark Out [RCA Records, 2015] (e)
+
+Alphabet Rockers - Playground Zone [2015] (p, e, m)
+Finish Ticket - When Night Becomes Day [2015] (p, e, m)
+NVO - Night Vision Odyssey [2015] (p, e)
+Curious Quail - Rallying Cry [2015] (m)
+The Fourth Messenger - The Fourth Messenger (w/ Vienna Teng) [2015] (p, e, m)
+WAGES - L'oeil [2015] (p, e, m)
+John Travoltage - John Travoltage [2015] (p, e, m)
+RIVVRS - Terrified (feat. in MTV's Finding Carter) [2015] (p, e, m)
+Mad Satta - Break Me Free [2015] (p, e, m)
+The Outer Vibe - Full Circle [2015] (p, e, m)
+Pharaoh's House - Grand Rapids, MI [2015]
+Sisters - Hero, Trails, Family & Mold [2015] (p, e, m)
+The Easy Leaves - Fresno [2015] (p, e, m)
+Mary Bragg - Edge of This Town [2015] (p, e, m)
+XUXA Santamaria - Billionair Rainbow [2015] (p, e, m)
+The Outer Vibe - Pass It On [2015] (p, e, m)
+Alison Harris - Walker Road [2015] (p, e, m)
+J Burn - Burnt Blue [2015] (p, e, m)
+The School House - Petaluma, CA [2015]
+RIVVRS - Save My Soul (feat. in CW's Reign) [2015] (p, e, m)
+The Sagas - The Sagas [2015] (p, e, m)
+
+Kid Beyond [2014] (c)
+To The Wedding - Silver Currents [2014] (p, e, m)
+Anadel - Clementine's Theme from The Walking Dead [Telltale Games, 2014] (p, e, m)
+Mad Satta - Zoo Labs [2014] (c)
+WAGES - Blusher Era/Zoo Labs [2014] (p, e, m)
+MAUI - This Isn't Over [2014] (p, e, m, w, g)
+ElectroSpit - Now Is So Last Year [2014] (p, e, m)
+RIVVRS - Hold On [2014] (p, e, m)
+To The Wedding - Silver Currents [2014] (e, m)
+Mr. Kind - Wide Awake / Open Hands [2014] (p, e, m)
+The Boston Boys - Idea of Love [2014] (e, m)
+Bodhi Setchko - Peace Is Now [2014] (e)
+8th Grader - Strangerhood [2014] (m)
+Lia Rose - Last Mountain [2014] (e)
+Myiesha Lincoln feat. Ya Boy + Bailey - Sober [2014] (e, m)
+RIVVRS - Bringing On The Heartbreak [2014] (p, e, m, g)
+Halcyonaire - Weeping Canopy [2014] (p, e, m)
+Mr. Kind - Edge of the World EP [2014] (p, e, m)
+J Burn - Major Melodies, Backwards Beginnings [2014] (p, e, m)
+Urban Patterns - Ceilings [2014] (p, e, m)
+The Electric Magpie - Begins LP [Lolipop Records, 2014] (p, e, m)
+
+Primus - Sailing the Seas of Cheese Deluxe Edition [2013] (e)
+Soundtrack for HBO's 50 Children [2013] (e)
+Zoo Labs - Oakland, CA [2013]
+Urban Patterns - Tides [2013] (p, e, m)
+Ghost & Gale - Ghost & Gale [2013] (p, e, m)
+Mr. Kind - Maliced Hearts [2013] (p, e, m)
+River Shiver - Raw [Jewel Tour Exclusive] [2013] (p, e, m)
+Lover Lover Playerboy - Last Train [2013] (m)
+Finish Ticket - Bring the Rain [live @ Dirtroom] [2013] (p, e, m)
+Finish Ticket - Pockets [live @ Dirtroom] [2013] (p, e, m)
+Picture Atlantic + Mr. Kind - You Got Yr Cherry Bomb (Spoon Cover) [2013] (p, e, m)
+FLWRS w/ Maralisa - Muddy Your Feet [2013] (m)
+holychild + Mr. Kind - Clark Gable (Postal Service Cover) [2013] (p, e, m)
+Ghost & Gale - Take Me To The Fire [2013] (p, e, m)
+River Shiver - Lies [2013] (p, e, m)
+Caleb Garling - Tall Fires [2013] (m)
+The Dirt Room - El Cerrito, CA [2013]
+Dameene Dedrick - Dameene [2013] (m)
+
+The National & Bob Weir - The Bridge Sessions [2012] (e)
+Finish Ticket - Jingle Bell Rock #CHRISTMAS [2012] (p, e, m)
+River Shiver - A Merry Little Xmas #CHRISTMAS [2012] (p, e, m)
+Mr. Kind - Ballad of Mall Santa #CHRISTMAS [2012] (p, e, m)
+The Plastic Arts - O Holy Night #CHRISTMAS [2012] (p, m)
+Mothball Fleet - Beginning to Look Like Xmas #CHRISTMAS [2012] (p, m)
+Marqiss - Holiday Love #CHRISTMAS [2012] (p, m)
+Night Ranger - 24 Strings & A Drummer [2012] (e)
+Desiree Wattis & 100 Dollar Horse - For Home [2012] (p, e, m)
+Studio Trilogy - San Francisco, CA [2012]
+Jarvis Mobile Studio - San Francisco, CA [2012]
+Desiree Wattis & 100 Dollar Horse - Biladeau Lane [2012] (e, m)
+Repeater Pan - Together LP [2012] (p, e, m)
+Tiny Telephone (SF) - San Francisco, CA [2012]
+Dan Bern w/ Common Rotation - Doubleheader [2012] (e)
+Mr. Kind - OK [2012] (p, e, m)
+Lukas Nelson - Civilized Hell [2012] (e, m)
+WAR (Nacho Matzo) - Nasty Single [2012] (e)
+Oz Noy / Dave Weckl - TRI + Two Rock Sessions [2012] (e, m)
+Loudtalkers - Open Mouth, Insert Foot [2012] (p, e, m)
+Philm - TRI Live From [2012] (e)
+Father John Misty - TRI Live From [2012] (e)
+George Pajon Evolving - Inspired [2012] (e)
+Jenny O - TRI Live From [2012] (e)
+Life Like Figures - The Pursuit of Babbiness [2012] (p, e, m)
+The Nest - El Sobrante, CA [2012]
+Marley's Ghost - TRI Live From [2012] (e)
+Lukas Nelson & the Promise of the Real - TRI [2012] (e)
+Alphabet Soup - TRI Live From [2012] (e)
+Dan Bern & Common Rotation - TRI Live From [2012] (e)
+Ratdog - TRI Live From [2012] (e)
+The Outlaws - TRI Live From [2012] (e)
+Matt Schofield Trio - TRI Live From [2012] (e)
+George Pajon Evolving - Two Rock / NAMM Promo [2012] (e)
+Scaring the Children - TRI Live From Holiday EP [2012] (e, m)
+Sycamore Slough String Band - TRI Live From [2012] (e)
+
+Mark Hoppus - Hoppus on Music: The Fresh and Onlys [2011] (e)
+Bird by Bird - Decades EP [2011] (p, e, m)
+Jazzanova - Jazzanova [2011] (p, e, m)
+Matthew & the Atlas - TRI Live From [2011] (e)
+David Mayfield Parade - TRI Live From [2011] (e)
+Lauren Shera Band - TRI Live From [2011] (e)
+Party Truck - Party Truck [2011] (p, e, m)
+REX Foundation - Bill Walton, Bob Weir, Mickey Hart, John Perry Barlow, Mountain Girl [2011] (e)
+John Scofield - Two Rock [2011] (e, m)
+Chickenfoot - TRI Live From [2011] (e)
+Slightly Stoopid w/ Don Carlos, Ivan Neville, Ian Neville & Bob Weir - Live From Roberto's [2011] (e)
+Fog w/ Jeff Chimenti - TRI Sessions [2011] (e, m)
+Keb Mo - CBS Mike & Molly [2011] (e, m)
+Furthur - TRI Live From [2011] (e)
+Bob Weir & Friends - TRI Live From [2011] (e)
+Bob Weir & Jackie Greene - TRI Live From [2011] (e)
+The Fall Risk - Cross My Heart [2011] (e)
+Mike MacGuire - Self Titled [2011] (p, e, m)
+Bird by Bird - While You Sleep [2011] (p, e, m)
+Journey - TRI Live From [2011] (e, m)
+Bob Weir & Marin Symphony Orchestra - Live [2011] (e)
+Marin Civic Center - San Rafael, CA [2011]
+Maiden Lane - Maiden Lane [2011] (e, m)
+The Stone Foxes - King Bee (Jack Daniels Promo) [2011] (p, e, m)
+Moksha - The Measure of All Things (TRI Live From) [2011] (e)
+Marco D'Ambrosio - Have You Heard from Johannesburg [2011] (e)
+
+TRI Studios (v2.0) - San Rafael, CA [2010]
+Marin Children's Choir - MCC [2010] (e, m)
+Dollar Wilke Gee - Rocketdad [2010] (p, e, m, w, g)
+McIntosh Audio Labs - Bob Weir Web Ad [2010] (e, m)
+Grateful Dead - Formerly the Warlocks [2010] (m)
+Blue Light River - The Revelry Inn [2010] (p, e, m)
+Bellamy - Rebel [2010] (p, e, m)
+A Class Act - Last of the Petty Cash [2010] (p, e, m, w, g)
+Liberty Gymnastics - Floor Cuts [2010] (e, m)
+Matt Roads Jazz Trio - Christmas [2010] (p, e, m)
+Cal State East Bay - Hayward, CA [2010]
+Alameda Christmas - Christmas [2010] (p, e, m)
+7 Walkers - 7 Walkers (Bill Kreutzmann) [2010] (e, m)
+To The Wedding - Self-Titled EP [2010] (e)
+minipop. - Automatic Love [2010] (e, m)
+Bird by Bird - Albatross [2010] (p, e, m)
+The Site - San Rafael, CA [2010]
+Bob Weir - Weir Here iPhone App [2010] (e, m)
+Miranda Jones - Sweetlady Em [2010] (e, m)
+Grateful Dead - Crimson, White & Indigo [2010] (m)
+TRI Studios (Kerner) - San Rafael, CA [2010]
+Ganzz Band - Nothing Comes Easy [2010] (p, w, g)
+Kathleen J Nelson - Take a Chance [2010] (e)
+Old Hyde Farm - Old Hyde Farm [2010] (p, e, m)
+Mystery Dope - Mystery Dope [2010] (p, e, m)
+Fort Worth Stockyards - Audio Tour [2010] (e)
+Live Oak Studio - Berkeley, CA [2010]
+Mattziumo Family - Tape Transfer [2010] (e)
+Allen Chiu - Renegades [2010] (p, e, m)
+
+Kathi Macdonald - Live at BASS [2009] (e)
+Miller Creek Middle - Jazz [2009] (e, m)
+MTV's The Hills - Tracy Johnson [2009] (e, m)
+Lars Fredriksen & The Disciples (Red, White & Blue) [2009] (e)
+Skyline Studios - Oakland, CA [2009]
+Revenant - Revenant [2009] (e)
+Eldon Brown Band - Smoke Em if You Got Em [2009] (e)
+Katherine Keats - Ensemble [2009] (e)
+Conti Music - Birthday [2009] (e)
+Ned Lagin - Ned Lagin [2009] (e)
+Shiloh Hobel - Pain in Paradise [2009] (e)
+Salvi & Jackie King - Abraham's Grave [2009] (e)
+Kerry Johnson - Cosmic Steel [2009] (e, m)
+Wayward Guns - 10 Steps Ahead of You EP [2009] (p, e, m)
+Repeater Pan - Repeater Pan [2009] (p, e, m)
+Mello feat. Alysa Vanderheym - Mello [2009] (p, e, m)
+Saiz - Entre Mar y Cielo [2009] (p, e, m)
+Skywalker Sound - San Rafael, CA [2009]
+Mike Sweetland - StringsOnGruvs [2009] (e)
+Saturday Jamaica - Drop-In [2009] (e)
+Commodore Callahan - Love Is Here [2009] (e)
+Sons of the Pacific - Seedy CD [2009] (p, e, m)
+Terry Haggerty & Miles Schon - B&A EP [2009] (e, m)
+Peck the Town Crier - Star Sign [2009] (p, e, m)
+Bay Area Sound Studios - San Rafael, CA [2009]
+The Mix Room - San Rafael, CA [2009]
+
+PBS - Balancing Acts (Bill Susman) [2008] (e)
+Built for the Sea - Mise En Scene [2008] (p, e, m)
+Fleeting Trance - Cheap Motel + Easy Wind [2008] (p, e, m)
+Rodrigo y Gabriela - Orion Rehearsals [2008] (e)
+Attack Plan - Attack Plan [2008] (e)
+Blues Barons - Blues Deluxe Live Mix and Recording (FOH) [2008] (e)
+Brubeck Jazz Orchestra - Open World Project [2008] (e)
+The Matches - Live 105 Expression Session [2008] (e)
+Loren Davidson - Every Day's a Holiday [2008] (e)
+Laughing Tiger Studios - San Rafael, CA [2008]
+John Cross - Fine, Fine World [2008] (m)
+Cris2600 - More Than A Toy [2008] (p, e, m)
+
+Fantasy Studios - Berkeley, CA [2007]
+Van Morrison - Rehearsals [2007] (e)
+A Class Act - Keep Afloat [2007] (p, e, m, w, g)
+The Bingtones - Rancho Live [2007] (e)
+O Lucky Man - Self Titled EP [2007] (p, e, m)
+Ex'pression College Studios - Emeryville, CA [2007]
+The Sofa Kings - Cerulean Blue [2007] (m)
+Paradise Studios - Sacramento, CA [2007]
+A Class Act - Summer 2007 EP [2007] (p, e, m, w, g)
+Verge Showdown - A Class Act [2007] (e, w, g)
+The Classroom - San Pablo, CA [2007]
+
+Mark Gee - Mark Gee EP [2006] (p, e, m)
+Go Lay Down - Self Titled [2006] (e)
+Krebstar Studios - Pinole, CA [2006]
+Press Your Luck - Press Your Luck [2006] (p, e, m)
+
+Earhythmic Sound Studios - Hercules, CA [2005]
+A Class Act - Classy, Bro [2005] (p, e, w, g)
+The Tuesday Club - Disco Ball [2005] (e, m)
+Verge Showdown - Society's Edge [2005] (e, w, g)
+
+Heroes With Helmets - Hawaii's Not Punk [2004] (e)
+Heroes With Helmets - Suzie Teenager [2004] (e, m)
+Skanonymous - ABCD EP [2004] (e, m)
+
+Society's Edge - Ready to Roll [2003] (p, e, m, w, g)
+Pop Smear Studios - San Rafael, CA [2003]
+Society's Edge - Brad Got Something Expensive [2003] (p, e, m, w, g)
+28th & Garvin Studios - Richmond, CA [2003]
+Teriyaki Unknown - YUM [2003] (p, e, m)
+
+Dog Bark Studio - Pinole, CA [2001]
+Society's Edge - None In A Million [2001] (p, e, m, w, g)
+
+Society's Edge - First Demos [2000] (p, e, m, w, g)
+Jackson Street Studios - Oakland, CA [2000]
+Brad Dollar - First Demos [2000] (p, e, m, w, g)
 `;
 
-/* helpers */
-function extractYear(line) {
-  const m = line.match(/\[(\d{4})\]/);
-  return m ? m[1] : null;
-}
-
-function normalizeLines(text) {
-  return text
-    .split(/\r?\n/)
-    .map(l => l.trim())
-    .filter(Boolean);
-}
-
-function addNavPill(navEl, label, href) {
-  const a = document.createElement("a");
-  a.className = "year-btn";
-  a.href = href;
-  a.textContent = label;
-  navEl.appendChild(a);
-}
-
-function addCard(yearsEl, id, headerText, lines) {
-  const card = document.createElement("section");
-  card.className = "year-card";
-  card.id = id;
-
-  const head = document.createElement("div");
-  head.className = "year-head";
-
-  const num = document.createElement("div");
-  num.className = "year-num";
-  num.textContent = headerText;
-
-  head.appendChild(num);
-  card.appendChild(head);
-
-  const ul = document.createElement("ul");
-  ul.className = "credit-list";
-
-  for (const entry of lines) {
-    const li = document.createElement("li");
-    li.textContent = entry;
-    ul.appendChild(li);
+  function extractYear(line) {
+    const m = line.match(/\[(\d{4})\]/);
+    return m ? m[1] : null;
   }
 
-  card.appendChild(ul);
-  yearsEl.appendChild(card);
-}
+  function buildCredits() {
+    const navEl = document.getElementById("yearNav");
+    const yearsEl = document.getElementById("years");
 
-function buildCredits() {
-  const navEl = document.getElementById("yearNav");
-  const yearsEl = document.getElementById("years");
+    navEl.innerHTML = "";
+    yearsEl.innerHTML = "";
 
-  navEl.innerHTML = "";
-  yearsEl.innerHTML = "";
+    // Highlights pill
+    const hBtn = document.createElement("a");
+    hBtn.className = "year-btn";
+    hBtn.href = "#highlights";
+    hBtn.textContent = "Highlights";
+    navEl.appendChild(hBtn);
 
-  /* Highlights first */
-  const highlightLines = normalizeLines(HIGHLIGHTS_TEXT);
-  if (highlightLines.length) {
-    addNavPill(navEl, "Highlights", "#highlights");
-    addCard(yearsEl, "highlights", "Studio Highlights", highlightLines);
+    // Highlights card
+    const hCard = document.createElement("section");
+    hCard.className = "year-card";
+    hCard.id = "highlights";
+
+    const hHead = document.createElement("div");
+    hHead.className = "year-head";
+
+    const hNum = document.createElement("div");
+    hNum.className = "year-num";
+    hNum.textContent = "Studio Highlights";
+
+    hHead.appendChild(hNum);
+    hCard.appendChild(hHead);
+
+    const hUl = document.createElement("ul");
+    hUl.className = "credit-list";
+
+    const hLines = HIGHLIGHTS_TEXT
+      .split(/\r?\n/)
+      .map(l => l.trim())
+      .filter(Boolean);
+
+    for (const entry of hLines) {
+      const li = document.createElement("li");
+      li.textContent = entry;
+      hUl.appendChild(li);
+    }
+
+    hCard.appendChild(hUl);
+    yearsEl.appendChild(hCard);
+
+    // Credits
+    const lines = CREDITS_TEXT
+      .split(/\r?\n/)
+      .map(l => l.trim())
+      .filter(Boolean);
+
+    const byYear = new Map();
+
+    for (const line of lines) {
+      const y = extractYear(line);
+      if (!y) continue;
+      if (!byYear.has(y)) byYear.set(y, []);
+      byYear.get(y).push(line);
+    }
+
+    const years = Array.from(byYear.keys()).sort((a, b) => Number(b) - Number(a));
+
+    // Year pills
+    for (const y of years) {
+      const a = document.createElement("a");
+      a.className = "year-btn";
+      a.href = `#y${y}`;
+      a.textContent = y;
+      navEl.appendChild(a);
+    }
+
+    // Year cards
+    for (const y of years) {
+      const card = document.createElement("section");
+      card.className = "year-card";
+      card.id = `y${y}`;
+
+      const head = document.createElement("div");
+      head.className = "year-head";
+
+      const num = document.createElement("div");
+      num.className = "year-num";
+      num.textContent = y;
+
+      head.appendChild(num);
+      card.appendChild(head);
+
+      const ul = document.createElement("ul");
+      ul.className = "credit-list";
+
+      for (const entry of byYear.get(y)) {
+        const li = document.createElement("li");
+        li.textContent = entry;
+        ul.appendChild(li);
+      }
+
+      card.appendChild(ul);
+      yearsEl.appendChild(card);
+    }
   }
 
-  /* Parse credits by year */
-  const lines = normalizeLines(CREDITS_TEXT);
-  const byYear = new Map();
-
-  for (const line of lines) {
-    const y = extractYear(line);
-    if (!y) continue;
-    if (!byYear.has(y)) byYear.set(y, []);
-    byYear.get(y).push(line);
-  }
-
-  const years = Array.from(byYear.keys()).sort((a, b) => Number(b) - Number(a));
-
-  /* Year pills */
-  for (const y of years) {
-    addNavPill(navEl, y, `#y${y}`);
-  }
-
-  /* Year cards */
-  for (const y of years) {
-    addCard(yearsEl, `y${y}`, y, byYear.get(y));
-  }
-}
-
-buildCredits();
+  buildCredits();
 </script>
 
 </body>
