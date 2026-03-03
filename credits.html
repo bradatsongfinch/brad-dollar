@@ -12,7 +12,25 @@
     background-color: #0b0c0f;
     color: #ffffff;
   }
+/* Only for the Studio Highlights list */
+.highlights-grid{
+  column-count: 3;
+  column-gap: 42px;
+}
 
+.highlights-grid li{
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  margin: 0 0 6px 0;
+}
+
+/* Responsive: fewer columns on smaller screens */
+@media (max-width: 900px){
+  .highlights-grid{ column-count: 2; }
+}
+@media (max-width: 560px){
+  .highlights-grid{ column-count: 1; }
+}
   .container {
     width: 100%;
     max-width: 1020px;
@@ -665,7 +683,7 @@ Brad Dollar - First Demos [2000] (p, e, m, w, g)
     hCard.appendChild(hHead);
 
     const hUl = document.createElement("ul");
-    hUl.className = "credit-list";
+    hUl.className = "credit-list highlights-grid";
 
     const hLines = HIGHLIGHTS_TEXT
       .split(/\r?\n/)
