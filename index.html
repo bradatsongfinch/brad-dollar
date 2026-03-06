@@ -60,8 +60,8 @@
       padding: 0 22px;
       background: var(--sky);
       font-family: 'Black Han Sans', sans-serif;
-      font-size: 22px;
-      letter-spacing: 2px;
+      font-size: 16px;
+      letter-spacing: 3px;
       color: var(--black);
       text-decoration: none;
       white-space: nowrap;
@@ -109,7 +109,7 @@
 
     /* ── HERO ── */
     .hero {
-      min-height: 100vh;
+      min-height: auto;
       padding-top: 56px;
       display: grid;
       grid-template-rows: auto 1fr auto;
@@ -117,13 +117,43 @@
       overflow: hidden;
     }
 
-    /* Diagonal color split */
+    /* Studio photo background */
+    .hero-bg-photo {
+      position: absolute;
+      inset: 0;
+      min-height: 100%;
+      background-image: url('studio-hero.jpeg');
+      background-size: cover;
+      background-position: center 30%;
+      filter: brightness(0.28) saturate(0.7);
+      z-index: 0;
+    }
+
+    /* Diagonal color split over photo */
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(165deg, var(--sky) 0%, var(--sky) 38%, var(--black) 38.3%, var(--black) 100%);
-      z-index: 0;
+      background: linear-gradient(165deg, rgba(26,143,255,0.82) 0%, rgba(26,143,255,0.82) 38%, rgba(10,10,10,0.15) 38.3%, rgba(10,10,10,0.15) 100%);
+      z-index: 1;
+    }
+
+    /* Name flicker animation */
+    @keyframes flicker {
+      0%   { opacity: 1; }
+      3%   { opacity: 0.85; }
+      5%   { opacity: 1; }
+      10%  { opacity: 1; }
+      12%  { opacity: 0.7; }
+      14%  { opacity: 1; }
+      60%  { opacity: 1; }
+      62%  { opacity: 0.9; }
+      64%  { opacity: 1; }
+      100% { opacity: 1; }
+    }
+
+    .hero-name .line2 {
+      animation: flicker 5s infinite;
     }
 
     .hero-stripe {
@@ -141,13 +171,13 @@
 
     .hero-inner {
       position: relative;
-      z-index: 2;
+      z-index: 3;
       max-width: 1100px;
       margin: 0 auto;
       width: 100%;
-      padding: 60px 40px 80px;
+      padding: 48px 40px 60px;
       display: grid;
-      grid-template-columns: 1fr 340px;
+      grid-template-columns: 1fr;
       gap: 60px;
       align-items: center;
     }
@@ -176,22 +206,24 @@
       letter-spacing: 2px;
       color: var(--white);
       text-shadow: 6px 6px 0 var(--black);
+      animation: flicker 7s infinite 1.5s;
     }
 
     .hero-name .line2 {
       color: var(--lime);
       text-shadow: 6px 6px 0 rgba(0,0,0,0.5);
       display: block;
+      animation: flicker 5s infinite;
     }
 
     .hero-sub {
-      margin-top: 22px;
+      margin-top: 16px;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 600;
-      font-size: clamp(18px, 2.5vw, 24px);
-      letter-spacing: 2px;
+      font-size: clamp(13px, 1.6vw, 16px);
+      letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: var(--sky-pale);
+      color: rgba(245,245,240,0.45);
     }
 
     .hero-locs {
@@ -203,13 +235,13 @@
     .hero-loc {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 12px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: rgba(245,245,240,0.5);
-      padding-right: 14px;
-      margin-right: 14px;
-      border-right: 2px solid rgba(255,255,255,0.2);
+      color: rgba(245,245,240,0.3);
+      padding-right: 12px;
+      margin-right: 12px;
+      border-right: 1px solid rgba(255,255,255,0.15);
     }
 
     .hero-loc:last-child { border-right: none; }
@@ -224,11 +256,11 @@
     .btn {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 14px 26px;
+      gap: 6px;
+      padding: 9px 18px;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 16px;
+      font-size: 13px;
       letter-spacing: 2px;
       text-transform: uppercase;
       text-decoration: none;
@@ -670,21 +702,21 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo-block" href="#">BRAD DOLLAR</a>
+  <a class="nav-logo-block" href="#">🌎</a>
   <div class="nav-links">
     <a class="nav-link" href="credits.html">Credits</a>
     <a class="nav-link" href="#youtube">YouTube</a>
     <a class="nav-link" href="https://instagram.com/bradkdollar" target="_blank">Instagram</a>
-    <a class="nav-link cta" href="/cdn-cgi/l/email-protection#5323213c3726303637312a31213237373c3f3f322113343e323a3f7d303c3e">Let's Work</a>
+    <a class="nav-link cta" href="mailto:producedbybraddollar@gmail.com">Let's Work</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg-photo"></div>
   <div class="hero-stripe"></div>
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="hero-kicker">+ Oakland Bay Area + Nashville + Chicago +</div>
       <h1 class="hero-name">
         BRAD
         <span class="line2">DOLLAR</span>
@@ -696,18 +728,12 @@
         <span class="hero-loc">Chicago</span>
       </div>
       <div class="hero-cta-row">
-        <a class="btn btn-lime" href="/cdn-cgi/l/email-protection#f282809d9687919796908b90809396969d9e9e9380b2959f939b9edc919d9f">Let's Work</a>
+        <a class="btn btn-lime" href="mailto:producedbybraddollar@gmail.com">Let's Work</a>
         <a class="btn btn-sky" href="credits.html">View Credits</a>
         <a class="btn btn-outline" href="https://youtube.com/braddollar" target="_blank">YouTube</a>
       </div>
     </div>
 
-    <div class="hero-card">
-      <div class="hero-card-inner">
-        <img src="headshot.jpg" alt="Brad Dollar" />
-        <div class="hero-card-tag">@bradkdollar</div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -782,12 +808,12 @@
       <div class="stat-label">Years Active</div>
     </div>
     <div class="stat">
-      <div class="stat-num">400+</div>
-      <div class="stat-label">Credits</div>
+      <div class="stat-num">1000+</div>
+      <div class="stat-label">Released Titles</div>
     </div>
     <div class="stat">
-      <div class="stat-num">300+</div>
-      <div class="stat-label">Artists Coached</div>
+      <div class="stat-num">400+</div>
+      <div class="stat-label">Artists Collaborated With</div>
     </div>
     <div class="stat">
       <div class="stat-num">∞</div>
@@ -804,7 +830,12 @@
   </div>
 
   <div class="yt-grid" id="ytGrid">
-    <div class="yt-loading" id="ytLoading">Loading videos...</div>
+    <div class="yt-loading" id="ytLoading">
+      <div class="yt-loading-inner">
+        <div class="yt-loading-dots"><span></span><span></span><span></span></div>
+        Loading latest videos...
+      </div>
+    </div>
   </div>
 
   <div style="margin-top: 30px; text-align: center;">
@@ -823,13 +854,13 @@
       <a class="footer-link" href="credits.html">Credits</a>
       <a class="footer-link" href="https://youtube.com/braddollar" target="_blank">YouTube</a>
       <a class="footer-link" href="https://instagram.com/bradkdollar" target="_blank">Instagram</a>
-      <a class="footer-link" href="/cdn-cgi/l/email-protection#6414160b0011070100061d06160500000b08080516240309050d084a070b09">Email</a>
+      <a class="footer-link" href="mailto:producedbybraddollar@gmail.com">Email</a>
     </div>
     <div class="footer-copy">© 2026 Brad Dollar</div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // YouTube RSS via noembed / public RSS API approach
   // Using YouTube RSS feed via a public CORS proxy fallback
   const CHANNEL_ID = 'UCvKrCL9i9Hth8GkQm7X2e4w';
@@ -842,13 +873,32 @@
     try {
       // Use YouTube's public RSS feed via a CORS-friendly approach
       const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
-      const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=6`;
-
-      const res = await fetch(proxyUrl);
-      if (!res.ok) throw new Error('fetch failed');
-      const data = await res.json();
-
-      if (!data.items || data.items.length === 0) throw new Error('no items');
+      // Try rss2json first, then fall back to corsproxy
+      let data;
+      try {
+        const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=6&api_key=`;
+        const res = await fetch(proxyUrl);
+        if (!res.ok) throw new Error('rss2json failed');
+        data = await res.json();
+        if (!data.items || data.items.length === 0) throw new Error('no items');
+      } catch(e2) {
+        // Fallback: fetch raw XML via corsproxy.io
+        const xmlRes = await fetch(`https://corsproxy.io/?${encodeURIComponent(rssUrl)}`);
+        if (!xmlRes.ok) throw new Error('corsproxy failed');
+        const xml = await xmlRes.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(xml, 'text/xml');
+        const entries = Array.from(doc.querySelectorAll('entry'));
+        data = {
+          items: entries.map(e => ({
+            title: e.querySelector('title')?.textContent || '',
+            link: e.querySelector('link')?.getAttribute('href') || '',
+            pubDate: e.querySelector('published')?.textContent || '',
+            guid: e.querySelector('videoId')?.textContent || ''
+          }))
+        };
+        if (!data.items.length) throw new Error('no xml items');
+      }
 
       loading.remove();
 
