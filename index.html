@@ -369,6 +369,34 @@
       font-size: 12px;
     }
 
+
+    /* ── AVATAR ── */
+    .section-header-with-avatar {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .avatar-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 3px solid var(--lime);
+      overflow: hidden;
+      flex-shrink: 0;
+      margin-right: 16px;
+      box-shadow: 0 0 0 2px var(--black), 0 0 0 4px var(--sky);
+    }
+
+    .avatar-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
     /* ── BIO SECTION ── */
     .bio-section {
       max-width: 1100px;
@@ -779,7 +807,10 @@
 
 <!-- BIO -->
 <section class="bio-section">
-  <div class="section-header">
+  <div class="section-header section-header-with-avatar">
+    <div class="avatar-circle">
+      <img src="headshot.jpg" alt="Brad Dollar" />
+    </div>
     <div class="section-label-block">Who I Am</div>
     <div class="section-label-line"></div>
   </div>
@@ -830,12 +861,1003 @@
   </div>
 
   <div class="yt-grid" id="ytGrid">
-    <div class="yt-loading" id="ytLoading">
-      <div class="yt-loading-inner">
-        <div class="yt-loading-dots"><span></span><span></span><span></span></div>
-        Loading latest videos...
+
+    <a class="yt-card" href="https://www.youtube.com/watch?v=sNlTxCqQJoI" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/sNlTxCqQJoI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=6ILkirlSOHI" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/6ILkirlSOHI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=vNBe0B1ncf8" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/vNBe0B1ncf8/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=m5Qc1oyk5mI" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/m5Qc1oyk5mI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=pUYB7YzXZfE" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/pUYB7YzXZfE/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=dj7-7ELmNVk" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/dj7-7ELmNVk/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+  </div>
+
+  <div style="margin-top: 30px; text-align: center;">
+    <a class="btn btn-sky" href="https://youtube.com/braddollar" target="_blank" >
+      ▶ View All Videos on YouTube
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-checker"></div>
+  <div class="footer-inner">
+    <div class="footer-logo">BRAD <span>DOLLAR</span></div>
+    <div class="footer-links">
+      <a class="footer-link" href="credits.html">Credits</a>
+      <a class="footer-link" href="https://youtube.com/braddollar" target="_blank">YouTube</a>
+      <a class="footer-link" href="https://instagram.com/bradkdollar" target="_blank">Instagram</a>
+      <a class="footer-link" href="mailto:producedbybraddollar@gmail.com">Email</a>
+    </div>
+    <div class="footer-copy">© 2026 Brad Dollar</div>
+  </div>
+</footer>
+
+E html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brad Dollar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f5f5f0;
+      --sky: #1a8fff;
+      --sky-light: #5ab8ff;
+      --sky-pale: #c8e8ff;
+      --lime: #7fff2a;
+      --checker: #111111;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── CHECKER PATTERN ── */
+    .checker {
+      background-image:
+        repeating-conic-gradient(var(--checker) 0% 25%, var(--black) 0% 50%);
+      background-size: 18px 18px;
+    }
+
+    .checker-sm {
+      background-image:
+        repeating-conic-gradient(rgba(255,255,255,0.06) 0% 25%, transparent 0% 50%);
+      background-size: 10px 10px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      background: var(--black);
+      border-bottom: 3px solid var(--sky);
+      display: flex;
+      align-items: stretch;
+      height: 56px;
+    }
+
+    .nav-logo-block {
+      display: flex;
+      align-items: center;
+      padding: 0 22px;
+      background: var(--sky);
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 16px;
+      letter-spacing: 3px;
+      color: var(--black);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-left: auto;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 18px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(245,245,240,0.7);
+      text-decoration: none;
+      border-left: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.15s;
+    }
+
+    .nav-link:hover {
+      background: rgba(26,143,255,0.15);
+      color: var(--sky-light);
+    }
+
+    .nav-link.cta {
+      background: var(--lime);
+      color: var(--black);
+      font-weight: 800;
+      border-left: none;
+    }
+
+    .nav-link.cta:hover {
+      background: var(--lime);
+      color: var(--black);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: auto;
+      padding-top: 56px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Studio photo background */
+    .hero-bg-photo {
+      position: absolute;
+      inset: 0;
+      min-height: 100%;
+      background-image: url('studio-hero.jpeg');
+      background-size: cover;
+      background-position: center 30%;
+      filter: brightness(0.28) saturate(0.7);
+      z-index: 0;
+    }
+
+    /* Diagonal color split over photo */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(165deg, rgba(26,143,255,0.82) 0%, rgba(26,143,255,0.82) 38%, rgba(10,10,10,0.15) 38.3%, rgba(10,10,10,0.15) 100%);
+      z-index: 1;
+    }
+
+    /* Name flicker animation */
+    @keyframes flicker {
+      0%   { opacity: 1; }
+      3%   { opacity: 0.85; }
+      5%   { opacity: 1; }
+      10%  { opacity: 1; }
+      12%  { opacity: 0.7; }
+      14%  { opacity: 1; }
+      60%  { opacity: 1; }
+      62%  { opacity: 0.9; }
+      64%  { opacity: 1; }
+      100% { opacity: 1; }
+    }
+
+    .hero-name .line2 {
+      animation: flicker 5s infinite;
+    }
+
+    .hero-stripe {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 12px;
+      background: repeating-linear-gradient(90deg,
+        var(--sky) 0px, var(--sky) 24px,
+        var(--black) 24px, var(--black) 48px
+      );
+      z-index: 10;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 3;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 48px 40px 60px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-text {}
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--lime);
+      color: var(--black);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero-name {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: clamp(70px, 12vw, 140px);
+      line-height: 0.9;
+      letter-spacing: 2px;
+      color: var(--white);
+      text-shadow: 6px 6px 0 var(--black);
+      animation: flicker 7s infinite 1.5s;
+    }
+
+    .hero-name .line2 {
+      color: var(--lime);
+      text-shadow: 6px 6px 0 rgba(0,0,0,0.5);
+      display: block;
+      animation: flicker 5s infinite;
+    }
+
+    .hero-sub {
+      margin-top: 16px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: clamp(13px, 1.6vw, 16px);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(245,245,240,0.45);
+    }
+
+    .hero-locs {
+      display: flex;
+      gap: 0;
+      margin-top: 10px;
+    }
+
+    .hero-loc {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(245,245,240,0.3);
+      padding-right: 12px;
+      margin-right: 12px;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .hero-loc:last-child { border-right: none; }
+
+    .hero-cta-row {
+      display: flex;
+      gap: 14px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: transform 0.1s, box-shadow 0.1s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn:active { transform: translate(3px, 3px); }
+
+    .btn-sky {
+      background: var(--sky);
+      color: var(--white);
+      box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
+    }
+
+    .btn-sky:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.6); transform: translate(-2px,-2px); }
+
+    .btn-lime {
+      background: var(--lime);
+      color: var(--black);
+      box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
+    }
+
+    .btn-lime:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.6); transform: translate(-2px,-2px); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 3px solid var(--white);
+      box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+    }
+
+    .btn-outline:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.4); transform: translate(-2px,-2px); }
+
+    /* ── HERO PHOTO CARD ── */
+    .hero-card {
+      position: relative;
+    }
+
+    .hero-card-inner {
+      position: relative;
+      border: 4px solid var(--white);
+      box-shadow: 10px 10px 0 var(--black), 10px 10px 0 2px var(--sky);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+    }
+
+    .hero-card-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-card-tag {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 12px 16px;
+      background: var(--sky);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    /* ── TICKER ── */
+    .ticker-wrap {
+      background: var(--sky);
+      overflow: hidden;
+      padding: 12px 0;
+      border-top: 3px solid var(--black);
+      border-bottom: 3px solid var(--black);
+    }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: ticker 30s linear infinite;
+    }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .ticker-item {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--black);
+      padding: 0 30px;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .ticker-star {
+      color: var(--lime);
+      font-size: 12px;
+    }
+
+
+    /* ── AVATAR ── */
+    .section-header-with-avatar {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .avatar-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 3px solid var(--lime);
+      overflow: hidden;
+      flex-shrink: 0;
+      margin-right: 16px;
+      box-shadow: 0 0 0 2px var(--black), 0 0 0 4px var(--sky);
+    }
+
+    .avatar-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    /* ── BIO SECTION ── */
+    .bio-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 50px;
+    }
+
+    .section-label-block {
+      background: var(--sky);
+      padding: 10px 20px;
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .section-label-line {
+      flex: 1;
+      height: 4px;
+      background: var(--sky);
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .bio-block {
+      border: 3px solid rgba(255,255,255,0.12);
+      padding: 30px;
+      position: relative;
+    }
+
+    .bio-block::before {
+      content: '';
+      position: absolute;
+      top: -3px; left: -3px;
+      width: 40px; height: 40px;
+      border-top: 3px solid var(--sky);
+      border-left: 3px solid var(--sky);
+    }
+
+    .bio-block p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: rgba(245,245,240,0.82);
+      font-weight: 400;
+    }
+
+    .bio-block p strong {
+      color: var(--sky-light);
+      font-weight: 600;
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--lime);
+      border-top: 4px solid var(--black);
+      border-bottom: 4px solid var(--black);
+    }
+
+    .stats-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stat {
+      padding: 30px 20px;
+      border-right: 4px solid var(--black);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: background 0.15s;
+    }
+
+    .stat:last-child { border-right: none; }
+    .stat:hover { background: rgba(0,0,0,0.06); }
+
+    .stat-num {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 52px;
+      line-height: 1;
+      color: var(--black);
+      letter-spacing: 1px;
+    }
+
+    .stat-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(0,0,0,0.6);
+    }
+
+    /* ── YOUTUBE SECTION ── */
+    .yt-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
+
+    .yt-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .yt-card {
+      display: block;
+      text-decoration: none;
+      color: var(--white);
+      border: 3px solid rgba(255,255,255,0.12);
+      transition: all 0.15s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .yt-card:hover {
+      border-color: var(--sky);
+      transform: translate(-3px, -3px);
+      box-shadow: 6px 6px 0 var(--sky);
+    }
+
+    .yt-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #1a1a1a;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .yt-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .yt-card:hover .yt-thumb img { transform: scale(1.04); }
+
+    .yt-play {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.3);
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+
+    .yt-card:hover .yt-play { opacity: 1; }
+
+    .yt-play-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--sky);
+      color: var(--white);
+      border: 3px solid var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .yt-info {
+      padding: 14px 16px;
+    }
+
+    .yt-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      line-height: 1.3;
+      color: var(--white);
+      margin-bottom: 6px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .yt-meta {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--sky-light);
+    }
+
+    .yt-loading {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 40px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(245,245,240,0.4);
+    }
+
+    .yt-error-state {
+      display: none;
+    }
+
+    .yt-fallback-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 24px;
+      padding: 14px 24px;
+      background: var(--sky);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+    }
+
+    .yt-fallback-link:hover {
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.5);
+      transform: translate(-2px,-2px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 4px solid var(--sky);
+    }
+
+    .footer-checker {
+      height: 14px;
+      background-image: repeating-conic-gradient(var(--sky) 0% 25%, var(--black) 0% 50%);
+      background-size: 14px 14px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 28px;
+      letter-spacing: 4px;
+      color: var(--white);
+    }
+
+    .footer-logo span {
+      color: var(--sky);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 0;
+    }
+
+    .footer-link {
+      padding: 10px 16px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(245,245,240,0.5);
+      text-decoration: none;
+      border-right: 1px solid rgba(255,255,255,0.1);
+      transition: color 0.15s;
+    }
+
+    .footer-link:last-child { border-right: none; }
+    .footer-link:hover { color: var(--sky-light); }
+
+    .footer-copy {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(245,245,240,0.3);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      nav { height: 50px; }
+      .nav-link:not(.cta) { display: none; }
+      .nav-link.cta { display: flex; }
+      .hero-inner { grid-template-columns: 1fr; padding: 40px 20px 60px; }
+      .hero-card { display: none; }
+      .hero::before { background: linear-gradient(170deg, var(--sky) 0%, var(--sky) 30%, var(--black) 30.5%, var(--black) 100%); }
+      .bio-grid { grid-template-columns: 1fr; gap: 24px; }
+      .bio-section { padding: 60px 20px; }
+      .yt-section { padding: 60px 20px; }
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+      .stat { border-bottom: 4px solid var(--black); }
+      .yt-grid { grid-template-columns: 1fr 1fr; }
+      .footer-inner { flex-direction: column; text-align: center; padding: 30px 20px; }
+      .footer-links { flex-wrap: wrap; justify-content: center; }
+    }
+
+    @media (max-width: 500px) {
+      .yt-grid { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+      .stat-num { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo-block" href="#">🌎</a>
+  <div class="nav-links">
+    <a class="nav-link" href="credits.html">Credits</a>
+    <a class="nav-link" href="#youtube">YouTube</a>
+    <a class="nav-link" href="https://instagram.com/bradkdollar" target="_blank">Instagram</a>
+    <a class="nav-link cta" href="mailto:producedbybraddollar@gmail.com">Let's Work</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-photo"></div>
+  <div class="hero-stripe"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1 class="hero-name">
+        BRAD
+        <span class="line2">DOLLAR</span>
+      </h1>
+      <div class="hero-sub">Music Production &amp; Artist Strategy</div>
+      <div class="hero-locs">
+        <span class="hero-loc">Nashville</span>
+        <span class="hero-loc">Oakland</span>
+        <span class="hero-loc">Chicago</span>
+      </div>
+      <div class="hero-cta-row">
+        <a class="btn btn-lime" href="mailto:producedbybraddollar@gmail.com">Let's Work</a>
+        <a class="btn btn-sky" href="credits.html">View Credits</a>
+        <a class="btn btn-outline" href="https://youtube.com/braddollar" target="_blank">YouTube</a>
       </div>
     </div>
+
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-item">Grateful Dead <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Bob Weir <span class="ticker-star">+</span></span>
+    <span class="ticker-item">G-Eazy <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Lukas Nelson <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Slightly Stoopid <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Alphabet Rockers <span class="ticker-star">+</span></span>
+    <span class="ticker-item">The National <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Primus <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Father John Misty <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Night Ranger <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Journey <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Keb Mo <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Madame Gandhi <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Chickenfoot <span class="ticker-star">+</span></span>
+    <span class="ticker-item">HBO <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Amazon <span class="ticker-star">+</span></span>
+    <span class="ticker-item">MTV <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Grateful Dead <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Bob Weir <span class="ticker-star">+</span></span>
+    <span class="ticker-item">G-Eazy <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Lukas Nelson <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Slightly Stoopid <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Alphabet Rockers <span class="ticker-star">+</span></span>
+    <span class="ticker-item">The National <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Primus <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Father John Misty <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Night Ranger <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Journey <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Keb Mo <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Madame Gandhi <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Chickenfoot <span class="ticker-star">+</span></span>
+    <span class="ticker-item">HBO <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Amazon <span class="ticker-star">+</span></span>
+    <span class="ticker-item">MTV <span class="ticker-star">+</span></span>
+  </div>
+</div>
+
+<!-- BIO -->
+<section class="bio-section">
+  <div class="section-header section-header-with-avatar">
+    <div class="avatar-circle">
+      <img src="headshot.jpg" alt="Brad Dollar" />
+    </div>
+    <div class="section-label-block">Who I Am</div>
+    <div class="section-label-line"></div>
+  </div>
+
+  <div class="bio-grid">
+    <div class="bio-block">
+      <p>Oakland Bay Area born and raised, I've kept <strong>music and artists at the center of my life</strong> since I was a kid. My mission is simple: replenish artists and music organizations with new possibilities in the studio and beyond. I geek out on equipping others to turn creativity into real audience connection.</p>
+    </div>
+    <div class="bio-block">
+      <p>From playing guitar in <strong>ska-punk bands</strong> to working in the biggest recording studios in the world — I've been lucky to make music with the best. <strong>Grateful Dead, Bob Weir, G-Eazy, Lukas Nelson, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National,</strong> and many others.</p>
+    </div>
+    <div class="bio-block">
+      <p>I'm an active coach to creators worldwide and co-developed the nonprofit accelerator <strong>ZOOLABS</strong>, helping hundreds of artists and startups align their art, business, and purpose. In 2021, began building <strong>Songfinch</strong> — the next gen song collaboration platform for artists and fans.</p>
+    </div>
+    <div class="bio-block">
+      <p>Long term, I'm going to do everything I can to help <strong>transform the music industry</strong> into something more compassionate, equitable, and sustainable. Reach out anytime — I'd love to help you get where you want to go with your music.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num">25+</div>
+      <div class="stat-label">Years Active</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">1000+</div>
+      <div class="stat-label">Released Titles</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">400+</div>
+      <div class="stat-label">Artists Collaborated With</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Still Going</div>
+    </div>
+  </div>
+</div>
+
+<!-- YOUTUBE SECTION -->
+<section class="yt-section" id="youtube">
+  <div class="section-header">
+    <div class="section-label-block">YouTube</div>
+    <div class="section-label-line"></div>
+  </div>
+
+  <div class="yt-grid" id="ytGrid">
+
+    <a class="yt-card" href="https://www.youtube.com/watch?v=sNlTxCqQJoI" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/sNlTxCqQJoI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=6ILkirlSOHI" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/6ILkirlSOHI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=vNBe0B1ncf8" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/vNBe0B1ncf8/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=m5Qc1oyk5mI" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/m5Qc1oyk5mI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=pUYB7YzXZfE" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/pUYB7YzXZfE/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
+    <a class="yt-card" href="https://www.youtube.com/watch?v=dj7-7ELmNVk" target="_blank" rel="noopener">
+      <div class="yt-thumb">
+        <img src="https://img.youtube.com/vi/dj7-7ELmNVk/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
+        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+      </div>
+      <div class="yt-info">
+        <div class="yt-meta">@braddollar</div>
+      </div>
+    </a>
   </div>
 
   <div style="margin-top: 30px; text-align: center;">
