@@ -1,211 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Credits | Brad Dollar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credits | Brad Dollar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0b0c0f;
-    color: #ffffff;
-  }
-/* Only for the Studio Highlights list */
-.highlights-grid{
-  column-count: 3;
-  column-gap: 42px;
-}
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f5f5f0;
+      --sky: #1a8fff;
+      --sky-light: #5ab8ff;
+      --sky-pale: #c8e8ff;
+      --yellow: #ffe033;
+      --orange: #ff6b1a;
+      --red: #ff2424;
+    }
 
-.highlights-grid li{
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  margin: 0 0 6px 0;
-}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
-/* Responsive: fewer columns on smaller screens */
-@media (max-width: 900px){
-  .highlights-grid{ column-count: 2; }
-}
-@media (max-width: 560px){
-  .highlights-grid{ column-count: 1; }
-}
-  .container {
-    width: 100%;
-    max-width: 1020px;
-    margin: 0 auto;
-    padding: 32px 16px 60px 16px;
-  }
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
 
-  h1 {
-    font-size: 52px;
-    margin: 0 0 6px 0;
-  }
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0; z-index: 200;
+      background: var(--black);
+      border-bottom: 3px solid var(--sky);
+      display: flex;
+      align-items: stretch;
+      height: 56px;
+    }
 
-  .subtitle {
-    color: rgba(255,255,255,0.65);
-    margin-bottom: 18px;
-  }
+    .nav-logo-block {
+      display: flex;
+      align-items: center;
+      padding: 0 22px;
+      background: var(--sky);
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: var(--black);
+      text-decoration: none;
+    }
 
-  .legend {
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 14px;
-    padding: 14px 16px;
-    margin-bottom: 18px;
-    background: rgba(255,255,255,0.04);
-  }
+    .nav-center {
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
 
-  .year-nav-wrap {
-    margin-bottom: 20px;
-  }
+    .nav-right {
+      margin-left: auto;
+      display: flex;
+      align-items: stretch;
+    }
 
-  .year-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-  }
+    .nav-back {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--sky-light);
+      text-decoration: none;
+      border-left: 1px solid rgba(255,255,255,0.1);
+      transition: background 0.15s;
+    }
 
-  .year-btn {
-    padding: 6px 12px;
-    border-radius: 999px;
-    border: 1px solid #7CFF3A;
-    color: #7CFF3A;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1;
-  }
+    .nav-back:hover { background: rgba(26,143,255,0.15); }
 
-  .year-btn:hover {
-    background: rgba(124,255,58,0.12);
-  }
+    /* ── PAGE LAYOUT ── */
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 0;
+      min-height: calc(100vh - 56px);
+    }
 
-  .years {
-    display: grid;
-    gap: 18px;
-  }
+    /* ── SIDEBAR ── */
+    .sidebar {
+      border-right: 3px solid rgba(255,255,255,0.1);
+      padding: 40px 28px;
+      position: sticky;
+      top: 56px;
+      height: calc(100vh - 56px);
+      overflow-y: auto;
+    }
 
-  .year-card {
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 18px;
-    padding: 18px;
-    background: rgba(255,255,255,0.05);
-  }
+    .sidebar::-webkit-scrollbar { width: 4px; }
+    .sidebar::-webkit-scrollbar-track { background: transparent; }
+    .sidebar::-webkit-scrollbar-thumb { background: var(--sky); }
 
-  .year-head {
-    text-align: center;
-    border-bottom: 1px solid rgba(124,255,58,0.35);
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-  }
+    .sidebar-title {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 52px;
+      line-height: 0.9;
+      letter-spacing: 3px;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
 
-  .year-num {
-    font-size: 28px;
-    color: #7CFF3A;
-    font-weight: bold;
-  }
+    .sidebar-sub {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(245,245,240,0.4);
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+      border-bottom: 3px solid var(--sky);
+    }
 
-  .credit-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+    .legend-head {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--sky);
+      margin-bottom: 10px;
+    }
 
-  .credit-list li {
-    padding: 3px 0;
-    font-size: 15px;
-  }
+    .legend-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      margin-bottom: 28px;
+    }
 
-  .home-btn {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    z-index: 10;
-  }
+    .legend-item {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      color: rgba(245,245,240,0.6);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
 
-  .home-btn a {
-    padding: 8px 14px;
-    border-radius: 999px;
-    border: 1px solid #7CFF3A;
-    color: #7CFF3A;
-    text-decoration: none;
-    font-size: 14px;
-    background: rgba(11,12,15,0.35);
-    backdrop-filter: blur(8px);
-  }
+    .lcode {
+      display: inline-block;
+      background: var(--sky);
+      color: var(--black);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 1px 6px;
+      letter-spacing: 1px;
+    }
 
-  .home-btn a:hover {
-    background: rgba(124,255,58,0.12);
-  }
-</style>
+    .nav-head {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--sky);
+      margin-bottom: 12px;
+    }
+
+    .year-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .yr-pill {
+      display: inline-block;
+      padding: 4px 10px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: rgba(245,245,240,0.5);
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.12);
+      transition: all 0.12s;
+    }
+
+    .yr-pill:hover, .yr-pill.hl {
+      background: var(--sky);
+      color: var(--black);
+      border-color: var(--sky);
+    }
+
+    /* ── MAIN ── */
+    .credits-main {
+      padding: 40px 40px 80px;
+    }
+
+    /* HIGHLIGHTS */
+    .highlights-block {
+      border: 3px solid var(--sky);
+      padding: 28px;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .highlights-block::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-conic-gradient(rgba(26,143,255,0.04) 0% 25%, transparent 0% 50%);
+      background-size: 10px 10px;
+      pointer-events: none;
+    }
+
+    .hl-head {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 20px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--sky);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hl-head::after {
+      content: '';
+      flex: 1;
+      height: 3px;
+      background: var(--sky);
+    }
+
+    .highlights-grid {
+      column-count: 3;
+      column-gap: 20px;
+      position: relative;
+    }
+
+    .highlights-grid li {
+      list-style: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      color: rgba(245,245,240,0.8);
+      padding: 4px 0;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .highlights-grid li::before {
+      content: '▶ ';
+      color: var(--sky);
+      font-size: 10px;
+    }
+
+    /* YEAR BLOCKS */
+    .year-block {
+      border: 2px solid rgba(255,255,255,0.1);
+      margin-bottom: 8px;
+      transition: border-color 0.15s;
+    }
+
+    .year-block:hover { border-color: rgba(26,143,255,0.4); }
+    .year-block.open { border-color: var(--sky); }
+
+    .year-toggle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 20px;
+      background: rgba(255,255,255,0.03);
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+      text-align: left;
+    }
+
+    .year-toggle:hover { background: rgba(26,143,255,0.08); }
+    .year-block.open .year-toggle { background: rgba(26,143,255,0.1); }
+
+    .year-num {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 32px;
+      letter-spacing: 2px;
+      color: var(--sky);
+      line-height: 1;
+      min-width: 80px;
+    }
+
+    .year-count {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(245,245,240,0.35);
+    }
+
+    .year-chevron {
+      margin-left: auto;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      color: rgba(245,245,240,0.3);
+      transition: transform 0.2s, color 0.15s;
+    }
+
+    .year-block.open .year-chevron {
+      transform: rotate(90deg);
+      color: var(--sky);
+    }
+
+    .year-credits {
+      display: none;
+      padding: 0 20px 16px;
+      border-top: 2px solid rgba(26,143,255,0.2);
+    }
+
+    .year-block.open .year-credits { display: block; }
+
+    .credit-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: background 0.1s;
+    }
+
+    .credit-row:last-child { border-bottom: none; }
+    .credit-row:hover { padding-left: 8px; }
+
+    .credit-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      color: rgba(245,245,240,0.82);
+      flex: 1;
+    }
+
+    .credit-roles {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--sky);
+      white-space: nowrap;
+      background: rgba(26,143,255,0.12);
+      padding: 2px 8px;
+    }
+
+    /* ── FOOTER STRIPE ── */
+    .footer-stripe {
+      height: 14px;
+      background-image: repeating-conic-gradient(var(--sky) 0% 25%, var(--black) 0% 50%);
+      background-size: 14px 14px;
+      border-top: 3px solid var(--sky);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .page { grid-template-columns: 1fr; }
+      .sidebar {
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 3px solid rgba(255,255,255,0.1);
+        padding: 28px 20px;
+      }
+      .sidebar-title { font-size: 40px; }
+      .credits-main { padding: 28px 20px 60px; }
+      .highlights-grid { column-count: 2; }
+    }
+
+    @media (max-width: 480px) {
+      .highlights-grid { column-count: 1; }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="home-btn">
-  <a href="index.html">Home</a>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo-block" href="index.html">BRAD$</a>
+  <div class="nav-center">Credits</div>
+  <div class="nav-right">
+    <a class="nav-back" href="index.html">← Home</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-title">CRED<br>ITS</div>
+    <div class="sidebar-sub">Full Archive · 2000–2026</div>
+
+    <div class="legend-head">Legend</div>
+    <div class="legend-grid">
+      <div class="legend-item"><span class="lcode">p</span> produce</div>
+      <div class="legend-item"><span class="lcode">e</span> engineer</div>
+      <div class="legend-item"><span class="lcode">m</span> mix</div>
+      <div class="legend-item"><span class="lcode">w</span> write</div>
+      <div class="legend-item"><span class="lcode">c</span> coach</div>
+      <div class="legend-item"><span class="lcode">g</span> guitar</div>
+    </div>
+
+    <div class="nav-head">Jump to Year</div>
+    <div class="year-pills" id="yearPills">
+      <a class="yr-pill hl" href="#highlights">+ Highlights</a>
+    </div>
+  </aside>
+
+  <!-- MAIN CREDITS -->
+  <main class="credits-main" id="creditsMain">
+
+    <!-- HIGHLIGHTS -->
+    <div class="highlights-block" id="highlights">
+      <div class="hl-head">Studio Highlights</div>
+      <ul class="highlights-grid">
+        <li>Grateful Dead</li>
+        <li>Bob Weir</li>
+        <li>Father John Misty</li>
+        <li>Journey</li>
+        <li>G-Eazy</li>
+        <li>Slightly Stoopid</li>
+        <li>Primus</li>
+        <li>Dovydas</li>
+        <li>Finish Ticket</li>
+        <li>Lukas Nelson</li>
+        <li>Parmalee</li>
+        <li>The National</li>
+        <li>Nathan Hartono</li>
+        <li>Lil B</li>
+        <li>The Matches</li>
+        <li>Night Ranger</li>
+        <li>John Scofield</li>
+        <li>Divinity Roxx</li>
+        <li>Keb Mo</li>
+        <li>Ratdog</li>
+        <li>Laney Lou &amp; the Bird Dogs</li>
+        <li>MTV</li>
+        <li>Furthur</li>
+        <li>The Outer Vibe</li>
+        <li>Dani Stacy</li>
+        <li>Oz Noy</li>
+        <li>Chickenfoot</li>
+        <li>Brad Sample</li>
+        <li>Dave Weckl</li>
+        <li>Amazon</li>
+        <li>Rodney Atkins</li>
+        <li>HBO</li>
+        <li>Alphabet Rockers</li>
+        <li>Jay Lane</li>
+        <li>The Walking Dead</li>
+        <li>Madame Gandhi</li>
+      </ul>
+    </div>
+
+  </main>
 </div>
 
-<div class="container">
-  <h1>Credits</h1>
-  <div class="subtitle">Full chronological archive</div>
-
-  <div class="legend">
-    <strong>Legend:</strong> p = produce, e = engineer, m = mix, w = write, c = coach, g = guitar
-  </div>
-
-  <div class="year-nav-wrap">
-    <div class="year-nav" id="yearNav"></div>
-  </div>
-
-  <div class="years" id="years"></div>
-</div>
+<div class="footer-stripe"></div>
 
 <script>
-  const HIGHLIGHTS_TEXT = `
-Grateful Dead
-Bob Weir
-Father John Misty
-Journey
-G-Eazy
-Slightly Stoopid
-Primus
-Dovydas
-Finish Ticket
-Lukas Nelson
-Parmalee
-The National
-Nathan Hartono
-Lil B
-The Matches
-Night Ranger
-John Scofield
-Divinity Roxx
-Keb Mo
-Ratdog
-Laney Lou & the Bird Dogs
-MTV 
-Furthur
-The Outer Vibe
-Dani Stacy
-Oz Noy
-Chickenfoot
-Brad Sample
-Dave Weckl
-Amazon
-Rodney Atkins
-HBO
-Alphabet Rockers
-Jay Lane
-The Walking Dead
-Madame Gandhi
-`;
-
-  const CREDITS_TEXT = `
-Real Name - Met Ya On Your Birthday [2026] (p, e, w)
+const CREDITS_TEXT = `Real Name - Met Ya On Your Birthday [2026] (p, e, w)
 Real Name - Keep On Loving You (soundtrack version) [2026] (p, e, w)
-
 Aisha Fukushima - There's A Sky Above Your Roof [2025] (p, e, m)
 Songfinch - A Songfinch Christmas [2025] (p, e)
 Brad $ - Never The Way It Is (Turnstile x Celine Dion remix) [2025] (p, e, m)
@@ -221,7 +503,6 @@ Brad $ - Reunion [2025] (p, e, m, w, g)
 Ojas Music - All Night [2025] (c)
 Timothy Lee - Simple Times [2025] (c)
 Pete Osa - Snow Falling [2025] (c)
-
 Dani Stacy - Loveless Man [2024] (p, e, m)
 Brad Sample - Time Machine [2024] (p, e, m)
 Devin Croda - Midnight Oil [2024] (g, m)
@@ -230,7 +511,6 @@ Brad $ - Roughs the Album [2024] (p, e, m, w)
 Near Futures - Not the Man [2024] (p, e, m)
 Real Name - Gimme More [2024] (p, e, m, w)
 Brad $ - Florida!!! (Taylor Swift Remix) [2024] (p, e, m)
-
 Southside Jake - Whiskey Man [2023] (p, e, m, w, g)
 Parry Ace - Not Many Days [2023] (m)
 Aisha Fukushima - Women's Equality Day [2023] (m)
@@ -247,7 +527,6 @@ Brad $ - Fall In 2 U [2023] (p, e, m, w, g)
 Caitlin Cannon - Songfinch tracks [2023] (p, e, m, w, g)
 Scott Porter - Songfinch tracks [2023] (p, e, m, w, g)
 Songfinch - Songfinch STEM Compilation (59 artists) [2023] (m)
-
 Kim Kylland - Soundtrack for HBO's The Anarchists [2022] (p, e, m, g)
 LANN - Like the Rest [2022] (p, e, m)
 NHL/Blackhawks Insider - Theme Song [2022] (p, e, m, w)
@@ -277,7 +556,6 @@ Brad $ - Apparitions [2022] (p, e, m, w, g)
 Southside Jake - Get There [2022] (p, e, m, w, g)
 Nathan Hartono - There Has Always Been A Story [2022] (p, e, m)
 Daphne Suitcase - Even The Angels [2022] (p, e, m)
-
 Nathan Hartono - Y Be Ok [2021] (p, e, m)
 Josh Moore - The Cost [2021] (p, e, m)
 Paul McDonald + Taylor McCall - God's Work [2021] (e, p)
@@ -309,7 +587,6 @@ Jason Heninger [2021] (c)
 Pete Sahaidachny - Skeletons [2021] (p, m)
 Mic Ramsey - Touch [2021] (m)
 Pete Sahaidachny - Messages [2021] (p, m)
-
 Bleeding Audio: The Matches - appearance as self [2020] (p, e)
 Olivia Wolf + Allen Tolbert - Pickin' [2020] (e, m)
 Ismay - Hazel Dickens Tribute [2020] (e, m)
@@ -334,7 +611,6 @@ W.O.C. [2020] (c)
 Gold Beams [2020] (c)
 Jules Leyhe [2020] (c)
 Didier Sylvain [2020] (c)
-
 Laney Lou & the Bird Dogs - Sweet Little Lies [2019] (p, e, m)
 Dovydas - I Chase Dreams [2019] (p, e, m, w)
 The Record Shop - Nashville, TN [2019]
@@ -364,7 +640,6 @@ Danny Passmore - Outside the Lines [2019] (m)
 Joannah Bourne [2019] (p, e, m)
 Jennifer Johns [2019] (c)
 Jonathan Pierce Band - Monopoly [2019] (m)
-
 H.O.M.E. - Nashville, TN [2018]
 Prairie Sun Recording - Cotati, CA [2018]
 Brad $ - Christmas Comes Once A Year (feat. WillKey) [2018] (p, e, m, w)
@@ -379,7 +654,6 @@ Mino Yanci - Mino Yanci [2018] (p, e)
 The Sagas - Gypsy [2018] (m)
 David Romero - The Field [2018] (m)
 Emily Afton [2018] (c)
-
 Cellista - End of Time [2017] (e)
 Leslie Mendelson - Love & Murder [2017] (e)
 Pancho Morris - The Great Again LP [2017] (e)
@@ -390,7 +664,6 @@ Shawni Rae - To Get By [2017] (p, e, m)
 Shawni Rae - Dreamer [2017] (p, e, m)
 Catch Prichard - Don't Want It [2017] (p, e, m)
 Lil B - Risk Session [2017] (p, e, m)
-
 Catch This Music - Nashville, TN [2016]
 Fuze the MC (Lance Coleman) - Lance is a Genius [2016] (p, e)
 Madame Gandhi - Gandhi Blues [2016] (p, e)
@@ -405,7 +678,6 @@ The Easy Leaves - The Wheels [2016] (p, e, m)
 Slightly Stoopid - Live From Roberto's The Return [2016] (e, m)
 Insignificant Figures - EP [2016] (m)
 G-Eazy - When It's Dark Out [RCA Records, 2015] (e)
-
 Alphabet Rockers - Playground Zone [2015] (p, e, m)
 Finish Ticket - When Night Becomes Day [2015] (p, e, m)
 NVO - Night Vision Odyssey [2015] (p, e)
@@ -427,7 +699,6 @@ J Burn - Burnt Blue [2015] (p, e, m)
 The School House - Petaluma, CA [2015]
 RIVVRS - Save My Soul (feat. in CW's Reign) [2015] (p, e, m)
 The Sagas - The Sagas [2015] (p, e, m)
-
 Kid Beyond [2014] (c)
 To The Wedding - Silver Currents [2014] (p, e, m)
 Anadel - Clementine's Theme from The Walking Dead [Telltale Games, 2014] (p, e, m)
@@ -449,7 +720,6 @@ Mr. Kind - Edge of the World EP [2014] (p, e, m)
 J Burn - Major Melodies, Backwards Beginnings [2014] (p, e, m)
 Urban Patterns - Ceilings [2014] (p, e, m)
 The Electric Magpie - Begins LP [Lolipop Records, 2014] (p, e, m)
-
 Primus - Sailing the Seas of Cheese Deluxe Edition [2013] (e)
 Soundtrack for HBO's 50 Children [2013] (e)
 Zoo Labs - Oakland, CA [2013]
@@ -468,7 +738,6 @@ River Shiver - Lies [2013] (p, e, m)
 Caleb Garling - Tall Fires [2013] (m)
 The Dirt Room - El Cerrito, CA [2013]
 Dameene Dedrick - Dameene [2013] (m)
-
 The National & Bob Weir - The Bridge Sessions [2012] (e)
 Finish Ticket - Jingle Bell Rock #CHRISTMAS [2012] (p, e, m)
 River Shiver - A Merry Little Xmas #CHRISTMAS [2012] (p, e, m)
@@ -505,7 +774,6 @@ Matt Schofield Trio - TRI Live From [2012] (e)
 George Pajon Evolving - Two Rock / NAMM Promo [2012] (e)
 Scaring the Children - TRI Live From Holiday EP [2012] (e, m)
 Sycamore Slough String Band - TRI Live From [2012] (e)
-
 Mark Hoppus - Hoppus on Music: The Fresh and Onlys [2011] (e)
 Bird by Bird - Decades EP [2011] (p, e, m)
 Jazzanova - Jazzanova [2011] (p, e, m)
@@ -532,7 +800,6 @@ Maiden Lane - Maiden Lane [2011] (e, m)
 The Stone Foxes - King Bee (Jack Daniels Promo) [2011] (p, e, m)
 Moksha - The Measure of All Things (TRI Live From) [2011] (e)
 Marco D'Ambrosio - Have You Heard from Johannesburg [2011] (e)
-
 TRI Studios (v2.0) - San Rafael, CA [2010]
 Marin Children's Choir - MCC [2010] (e, m)
 Dollar Wilke Gee - Rocketdad [2010] (p, e, m, w, g)
@@ -562,7 +829,6 @@ Fort Worth Stockyards - Audio Tour [2010] (e)
 Live Oak Studio - Berkeley, CA [2010]
 Mattziumo Family - Tape Transfer [2010] (e)
 Allen Chiu - Renegades [2010] (p, e, m)
-
 Kathi Macdonald - Live at BASS [2009] (e)
 Miller Creek Middle - Jazz [2009] (e, m)
 MTV's The Hills - Tracy Johnson [2009] (e, m)
@@ -589,7 +855,6 @@ Terry Haggerty & Miles Schon - B&A EP [2009] (e, m)
 Peck the Town Crier - Star Sign [2009] (p, e, m)
 Bay Area Sound Studios - San Rafael, CA [2009]
 The Mix Room - San Rafael, CA [2009]
-
 PBS - Balancing Acts (Bill Susman) [2008] (e)
 Built for the Sea - Mise En Scene [2008] (p, e, m)
 Fleeting Trance - Cheap Motel + Easy Wind [2008] (p, e, m)
@@ -602,7 +867,6 @@ Loren Davidson - Every Day's a Holiday [2008] (e)
 Laughing Tiger Studios - San Rafael, CA [2008]
 John Cross - Fine, Fine World [2008] (m)
 Cris2600 - More Than A Toy [2008] (p, e, m)
-
 Fantasy Studios - Berkeley, CA [2007]
 Van Morrison - Rehearsals [2007] (e)
 A Class Act - Keep Afloat [2007] (p, e, m, w, g)
@@ -614,143 +878,98 @@ Paradise Studios - Sacramento, CA [2007]
 A Class Act - Summer 2007 EP [2007] (p, e, m, w, g)
 Verge Showdown - A Class Act [2007] (e, w, g)
 The Classroom - San Pablo, CA [2007]
-
 Mark Gee - Mark Gee EP [2006] (p, e, m)
 Go Lay Down - Self Titled [2006] (e)
 Krebstar Studios - Pinole, CA [2006]
 Press Your Luck - Press Your Luck [2006] (p, e, m)
-
 Earhythmic Sound Studios - Hercules, CA [2005]
 A Class Act - Classy, Bro [2005] (p, e, w, g)
 The Tuesday Club - Disco Ball [2005] (e, m)
 Verge Showdown - Society's Edge [2005] (e, w, g)
-
 Heroes With Helmets - Hawaii's Not Punk [2004] (e)
 Heroes With Helmets - Suzie Teenager [2004] (e, m)
 Skanonymous - ABCD EP [2004] (e, m)
-
 Society's Edge - Ready to Roll [2003] (p, e, m, w, g)
 Pop Smear Studios - San Rafael, CA [2003]
 Society's Edge - Brad Got Something Expensive [2003] (p, e, m, w, g)
 28th & Garvin Studios - Richmond, CA [2003]
 Teriyaki Unknown - YUM [2003] (p, e, m)
-
 Dog Bark Studio - Pinole, CA [2001]
 Society's Edge - None In A Million [2001] (p, e, m, w, g)
-
 Society's Edge - First Demos [2000] (p, e, m, w, g)
 Jackson Street Studios - Oakland, CA [2000]
-Brad Dollar - First Demos [2000] (p, e, m, w, g)
-`;
+Brad Dollar - First Demos [2000] (p, e, m, w, g)`;
 
-  function extractYear(line) {
+function parseRoles(line) {
+  const m = line.match(/\(([^)]+)\)\s*$/);
+  return m ? m[1] : null;
+}
+
+function parseName(line) {
+  return line.replace(/\s*\[\d{4}\].*$/, '').trim();
+}
+
+function build() {
+  const main = document.getElementById('creditsMain');
+  const pills = document.getElementById('yearPills');
+
+  const lines = CREDITS_TEXT.split('\n').map(l => l.trim()).filter(Boolean);
+  const byYear = new Map();
+
+  lines.forEach(line => {
     const m = line.match(/\[(\d{4})\]/);
-    return m ? m[1] : null;
-  }
+    if (!m) return;
+    const y = m[1];
+    if (!byYear.has(y)) byYear.set(y, []);
+    byYear.get(y).push(line);
+  });
 
-  function buildCredits() {
-    const navEl = document.getElementById("yearNav");
-    const yearsEl = document.getElementById("years");
+  const years = [...byYear.keys()].sort((a, b) => +b - +a);
 
-    navEl.innerHTML = "";
-    yearsEl.innerHTML = "";
+  years.forEach((y, i) => {
+    const pill = document.createElement('a');
+    pill.className = 'yr-pill';
+    pill.href = `#y${y}`;
+    pill.textContent = y;
+    pills.appendChild(pill);
 
-    // Highlights pill
-    const hBtn = document.createElement("a");
-    hBtn.className = "year-btn";
-    hBtn.href = "#highlights";
-    hBtn.textContent = "Highlights";
-    navEl.appendChild(hBtn);
+    const block = document.createElement('div');
+    block.className = 'year-block' + (i === 0 ? ' open' : '');
+    block.id = `y${y}`;
 
-    // Highlights card
-    const hCard = document.createElement("section");
-    hCard.className = "year-card";
-    hCard.id = "highlights";
+    const entries = byYear.get(y);
 
-    const hHead = document.createElement("div");
-    hHead.className = "year-head";
+    const toggle = document.createElement('button');
+    toggle.className = 'year-toggle';
+    toggle.innerHTML = `
+      <span class="year-num">${y}</span>
+      <span class="year-count">${entries.length} credit${entries.length !== 1 ? 's' : ''}</span>
+      <span class="year-chevron">›</span>
+    `;
+    toggle.addEventListener('click', () => block.classList.toggle('open'));
 
-    const hNum = document.createElement("div");
-    hNum.className = "year-num";
-    hNum.textContent = "Studio Highlights";
+    const credits = document.createElement('div');
+    credits.className = 'year-credits';
 
-    hHead.appendChild(hNum);
-    hCard.appendChild(hHead);
+    entries.forEach(line => {
+      const row = document.createElement('div');
+      row.className = 'credit-row';
+      const roles = parseRoles(line);
+      const name = parseName(line);
+      row.innerHTML = `
+        <span class="credit-name">${name}</span>
+        ${roles ? `<span class="credit-roles">${roles}</span>` : ''}
+      `;
+      credits.appendChild(row);
+    });
 
-    const hUl = document.createElement("ul");
-    hUl.className = "credit-list highlights-grid";
+    block.appendChild(toggle);
+    block.appendChild(credits);
+    main.appendChild(block);
+  });
+}
 
-    const hLines = HIGHLIGHTS_TEXT
-      .split(/\r?\n/)
-      .map(l => l.trim())
-      .filter(Boolean);
-
-    for (const entry of hLines) {
-      const li = document.createElement("li");
-      li.textContent = entry;
-      hUl.appendChild(li);
-    }
-
-    hCard.appendChild(hUl);
-    yearsEl.appendChild(hCard);
-
-    // Credits
-    const lines = CREDITS_TEXT
-      .split(/\r?\n/)
-      .map(l => l.trim())
-      .filter(Boolean);
-
-    const byYear = new Map();
-
-    for (const line of lines) {
-      const y = extractYear(line);
-      if (!y) continue;
-      if (!byYear.has(y)) byYear.set(y, []);
-      byYear.get(y).push(line);
-    }
-
-    const years = Array.from(byYear.keys()).sort((a, b) => Number(b) - Number(a));
-
-    // Year pills
-    for (const y of years) {
-      const a = document.createElement("a");
-      a.className = "year-btn";
-      a.href = `#y${y}`;
-      a.textContent = y;
-      navEl.appendChild(a);
-    }
-
-    // Year cards
-    for (const y of years) {
-      const card = document.createElement("section");
-      card.className = "year-card";
-      card.id = `y${y}`;
-
-      const head = document.createElement("div");
-      head.className = "year-head";
-
-      const num = document.createElement("div");
-      num.className = "year-num";
-      num.textContent = y;
-
-      head.appendChild(num);
-      card.appendChild(head);
-
-      const ul = document.createElement("ul");
-      ul.className = "credit-list";
-
-      for (const entry of byYear.get(y)) {
-        const li = document.createElement("li");
-        li.textContent = entry;
-        ul.appendChild(li);
-      }
-
-      card.appendChild(ul);
-      yearsEl.appendChild(card);
-    }
-  }
-
-  buildCredits();
+build();
 </script>
 
 </body>
