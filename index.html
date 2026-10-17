@@ -554,6 +554,43 @@
       color: var(--lime);
     }
 
+    /* ── BIO SECTION ── */
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .bio-block {
+      border: 3px solid rgba(255, 255, 255, 0.12);
+      padding: 30px;
+      position: relative;
+      background: var(--panel);
+    }
+
+    .bio-block::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 40px;
+      height: 40px;
+      border-top: 3px solid var(--sky);
+      border-left: 3px solid var(--sky);
+    }
+
+    .bio-block p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: rgba(245, 245, 240, 0.85);
+      font-weight: 400;
+    }
+
+    .bio-block p strong {
+      color: var(--sky-light);
+      font-weight: 600;
+    }
+
     /* ── SERVICES / WORK WITH ME SECTION ── */
     .services-grid {
       display: grid;
@@ -844,43 +881,6 @@
 
     .world-workflow-text strong {
       color: var(--sky-light);
-    }
-
-    /* ── BIO SECTION ── */
-    .bio-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-
-    .bio-block {
-      border: 3px solid rgba(255, 255, 255, 0.12);
-      padding: 30px;
-      position: relative;
-      background: var(--panel);
-    }
-
-    .bio-block::before {
-      content: '';
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      width: 40px;
-      height: 40px;
-      border-top: 3px solid var(--sky);
-      border-left: 3px solid var(--sky);
-    }
-
-    .bio-block p {
-      font-size: 16px;
-      line-height: 1.75;
-      color: rgba(245, 245, 240, 0.85);
-      font-weight: 400;
-    }
-
-    .bio-block p strong {
-      color: var(--sky-light);
-      font-weight: 600;
     }
 
     /* ── STATS BAR ── */
@@ -1249,6 +1249,7 @@
     <span class="logo-text-mobile-hide">BRAD DOLLAR</span>
   </a>
   <div class="nav-links">
+    <a class="nav-link" href="#about">About</a>
     <a class="nav-link" href="#services">Services</a>
     <a class="nav-link hide-xs" href="#analog">Analog</a>
     <a class="nav-link hide-xs" href="#worldwide">Worldwide</a>
@@ -1342,8 +1343,34 @@
 </div>
 
 <main>
+  <!-- BIO / WHO I AM -->
+  <section class="section-wrap" id="about">
+    <div class="section-header section-header-with-avatar">
+      <div class="avatar-circle">
+        <img src="headshot.jpg" alt="Brad Dollar - Nashville Audio Engineer and Music Producer" width="64" height="64" />
+      </div>
+      <h2 class="section-label-block">Who I Am</h2>
+      <div class="section-label-line"></div>
+    </div>
+
+    <div class="bio-grid">
+      <div class="bio-block">
+        <p>Oakland Bay Area born and raised and now based in <strong>Nashville, Tennessee</strong>, I've kept <strong>music, guitar, and artists at the center of my life</strong> since I was a kid. My mission is simple: replenish artists and music organizations with new possibilities in the studio and beyond.</p>
+      </div>
+      <div class="bio-block">
+        <p>From playing guitar in <strong>ska-punk and rock bands</strong> to engineering on <strong>large-format consoles and analog tape</strong> in the biggest studios in the world, I've been lucky to make music with the best: <strong>Grateful Dead, Bob Weir, Lukas Nelson, Tyler Childers, Joe Bonamassa, G-Eazy, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National, Journey, Joe Satriani,</strong> and many more.</p>
+      </div>
+      <div class="bio-block">
+        <p>I'm an active strategist and coach to creators worldwide and co-developed the nonprofit music accelerator <strong>ZOOLABS</strong>, helping hundreds of artists and startups align their art, business, and purpose. In 2021, I helped build the artist experience at <strong>Songfinch</strong>, connecting thousands of artists and fans.</p>
+      </div>
+      <div class="bio-block">
+        <p>Whether we are cutting live tracks to tape, dialing in iconic <strong>electric and acoustic guitar tones</strong>, mixing your next record, or mapping out your career strategy, I'm dedicated to making the music industry more creative and sustainable.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- SERVICES & ANALOG PEDIGREE SECTION -->
-  <section class="section-wrap" id="services">
+  <section class="section-wrap" id="services" style="padding-top: 10px;">
     <div class="section-header">
       <h2 class="section-label-block">Work With Me</h2>
       <div class="section-label-line"></div>
@@ -1536,32 +1563,6 @@
     </div>
   </section>
 
-  <!-- BIO -->
-  <section class="section-wrap" id="about" style="padding-top: 10px;">
-    <div class="section-header section-header-with-avatar">
-      <div class="avatar-circle">
-        <img src="headshot.jpg" alt="Brad Dollar - Nashville Audio Engineer and Music Producer" width="64" height="64" />
-      </div>
-      <h2 class="section-label-block">Who I Am</h2>
-      <div class="section-label-line"></div>
-    </div>
-
-    <div class="bio-grid">
-      <div class="bio-block">
-        <p>Oakland Bay Area born and raised and now based in <strong>Nashville, Tennessee</strong>, I've kept <strong>music, guitar, and artists at the center of my life</strong> since I was a kid. My mission is simple: replenish artists and music organizations with new possibilities in the studio and beyond.</p>
-      </div>
-      <div class="bio-block">
-        <p>From playing guitar in <strong>ska-punk and rock bands</strong> to engineering on <strong>large-format consoles and analog tape</strong> in the biggest studios in the world, I've been lucky to make music with the best: <strong>Grateful Dead, Bob Weir, Lukas Nelson, Tyler Childers, Joe Bonamassa, G-Eazy, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National, Journey, Joe Satriani,</strong> and many more.</p>
-      </div>
-      <div class="bio-block">
-        <p>I'm an active strategist and coach to creators worldwide and co-developed the nonprofit music accelerator <strong>ZOOLABS</strong>, helping hundreds of artists and startups align their art, business, and purpose. In 2021, I helped build the artist experience at <strong>Songfinch</strong>, connecting thousands of artists and fans.</p>
-      </div>
-      <div class="bio-block">
-        <p>Whether we are cutting live tracks to tape, dialing in iconic <strong>electric and acoustic guitar tones</strong>, mixing your next record, or mapping out your career strategy, I'm dedicated to making the music industry more creative and sustainable.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- STATS -->
   <div class="stats-bar" aria-label="Career Statistics">
     <div class="stats-inner">
@@ -1689,6 +1690,7 @@
   <div class="footer-inner">
     <div class="footer-logo">BRAD <span>DOLLAR</span></div>
     <div class="footer-links">
+      <a class="footer-link" href="#about">About</a>
       <a class="footer-link" href="#services">Services</a>
       <a class="footer-link" href="#analog">Analog</a>
       <a class="footer-link" href="#worldwide">Worldwide</a>
