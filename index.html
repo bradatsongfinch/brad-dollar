@@ -3,14 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brad Dollar</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- INLINE EMOJI FAVICON (Prevents /favicon.ico 404 console error) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌎</text></svg>" />
+
+  <!-- PRIMARY SEO META TAGS -->
+  <title>Brad Dollar | Nashville Audio Engineer, Music Producer &amp; Guitar YouTube Creator</title>
+  <meta name="description" content="Brad Dollar is a Nashville-based audio engineer, record producer, mixer, and artist strategist (Grateful Dead, Bob Weir, Lukas Nelson, G-Eazy, Journey). Available for Nashville studio sessions, international &amp; Japan remote mixing/production (日本人アーティスト歓迎), and guitar tone &amp; vintage gear YouTube content." />
+  <meta name="keywords" content="Brad Dollar, Nashville audio engineer, Nashville music producer, mixing engineer Nashville, American music producer Japan, アメリカ 音楽プロデューサー, ナッシュビル レコーディングエンジニア, ミックスエンジニア 海外, guitar tone YouTube channel, vintage guitar gear, artist strategy, studio recording Nashville" />
+  <meta name="author" content="Brad Dollar" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://braddollar.com/" />
+
+  <!-- OPEN GRAPH / SOCIAL SHARING -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Brad Dollar" />
+  <meta property="og:title" content="Brad Dollar | Nashville Producer, Audio Engineer &amp; Guitar Creator" />
+  <meta property="og:description" content="25+ years, 1000+ releases. Nashville studio engineering, global &amp; Japan remote production, artist strategy, and deep-dive guitar tone &amp; gear videos." />
+  <meta property="og:url" content="https://braddollar.com/" />
+  <meta property="og:image" content="https://braddollar.com/studio-hero.jpeg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Brad Dollar | Music Producer, Audio Engineer &amp; Guitar YouTube" />
+  <meta name="twitter:description" content="Nashville Recording &amp; Mixing Engineer • Global Remote Production • Guitar Tone &amp; Gear YouTube Channel." />
+  <meta name="twitter:image" content="https://braddollar.com/studio-hero.jpeg" />
+
+  <!-- JSON-LD STRUCTURED DATA FOR GOOGLE SEARCH & LOCAL/GLOBAL DISCOVERY -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://braddollar.com/#braddollar",
+        "name": "Brad Dollar",
+        "jobTitle": [
+          "Audio Engineer",
+          "Record Producer",
+          "Mixing Engineer",
+          "Artist Strategist",
+          "YouTube Creator"
+        ],
+        "description": "Nashville-based audio engineer, record producer, artist strategist, and guitar gear YouTube creator with credits including Grateful Dead, Bob Weir, Lukas Nelson, G-Eazy, The National, and Journey.",
+        "url": "https://braddollar.com/",
+        "image": "https://braddollar.com/headshot.jpg",
+        "email": "mailto:producedbybraddollar@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nashville",
+          "addressRegion": "TN",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://youtube.com/@braddollar",
+          "https://youtube.com/braddollar",
+          "https://instagram.com/bradkdollar",
+          "https://open.spotify.com/artist/1ks7sy2RpFdZmnqhncQO6C"
+        ],
+        "knowsAbout": [
+          "Audio Engineering",
+          "Music Production",
+          "Mixing and Mastering",
+          "Electric and Acoustic Guitar Tone",
+          "Vintage Guitars and Amplifiers",
+          "Artist Development and Strategy",
+          "Pro Tools Recording"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://braddollar.com/#service",
+        "name": "Brad Dollar Music Production & Audio Engineering",
+        "url": "https://braddollar.com/",
+        "image": "https://braddollar.com/studio-hero.jpeg",
+        "email": "mailto:producedbybraddollar@gmail.com",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nashville",
+          "addressRegion": "TN",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://braddollar.com/#braddollar"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Nashville" },
+          { "@type": "City", "name": "Oakland" },
+          { "@type": "City", "name": "Chicago" },
+          { "@type": "City", "name": "Tokyo" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "Japan" }
+        ],
+        "serviceType": [
+          "Music Production",
+          "Audio Engineering",
+          "Mixing",
+          "Remote Session Guitar & Production",
+          "Artist Strategy & Coaching",
+          "Gear Reviews & Brand Partnerships"
+        ],
+        "availableLanguage": ["en", "ja"]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
     :root {
       --black: #0a0a0a;
+      --panel: #121212;
       --white: #f5f5f0;
       --sky: #1a8fff;
       --sky-light: #5ab8ff;
@@ -19,33 +128,30 @@
       --checker: #111111;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 76px;
+    }
 
     body {
-      font-family: 'Barlow', sans-serif;
+      font-family: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--black);
       color: var(--white);
       overflow-x: hidden;
     }
 
-    /* ── CHECKER PATTERN ── */
-    .checker {
-      background-image:
-        repeating-conic-gradient(var(--checker) 0% 25%, var(--black) 0% 50%);
-      background-size: 18px 18px;
-    }
-
-    .checker-sm {
-      background-image:
-        repeating-conic-gradient(rgba(255,255,255,0.06) 0% 25%, transparent 0% 50%);
-      background-size: 10px 10px;
-    }
-
     /* ── NAV ── */
     nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 200;
       background: var(--black);
       border-bottom: 3px solid var(--sky);
@@ -57,20 +163,21 @@
     .nav-logo-block {
       display: flex;
       align-items: center;
-      padding: 0 22px;
+      gap: 8px;
+      padding: 0 20px;
       background: var(--sky);
       font-family: 'Black Han Sans', sans-serif;
-      font-size: 16px;
-      letter-spacing: 3px;
+      font-size: 15px;
+      letter-spacing: 2px;
       color: var(--black);
       text-decoration: none;
       white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .nav-links {
       display: flex;
-      align-items: center;
-      gap: 0;
+      align-items: stretch;
       margin-left: auto;
     }
 
@@ -78,20 +185,21 @@
       display: flex;
       align-items: center;
       height: 100%;
-      padding: 0 18px;
+      padding: 0 16px;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
       font-size: 14px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: rgba(245,245,240,0.7);
+      color: rgba(245, 245, 240, 0.78);
       text-decoration: none;
-      border-left: 1px solid rgba(255,255,255,0.1);
-      transition: all 0.15s;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
     }
 
     .nav-link:hover {
-      background: rgba(26,143,255,0.15);
+      background: rgba(26, 143, 255, 0.15);
       color: var(--sky-light);
     }
 
@@ -103,21 +211,19 @@
     }
 
     .nav-link.cta:hover {
-      background: var(--lime);
+      background: #98ff55;
       color: var(--black);
     }
 
     /* ── HERO ── */
     .hero {
-      min-height: auto;
       padding-top: 56px;
-      display: grid;
-      grid-template-rows: auto 1fr auto;
+      display: flex;
+      align-items: center;
       position: relative;
       overflow: hidden;
     }
 
-    /* Studio photo background */
     .hero-bg-photo {
       position: absolute;
       inset: 0;
@@ -129,16 +235,20 @@
       z-index: 0;
     }
 
-    /* Diagonal color split over photo */
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(165deg, rgba(26,143,255,0.82) 0%, rgba(26,143,255,0.82) 38%, rgba(10,10,10,0.15) 38.3%, rgba(10,10,10,0.15) 100%);
+      background: linear-gradient(
+        165deg,
+        rgba(26, 143, 255, 0.82) 0%,
+        rgba(26, 143, 255, 0.82) 38%,
+        rgba(10, 10, 10, 0.22) 38.3%,
+        rgba(10, 10, 10, 0.48) 100%
+      );
       z-index: 1;
     }
 
-    /* Name flicker animation */
     @keyframes flicker {
       0%   { opacity: 1; }
       3%   { opacity: 0.85; }
@@ -152,19 +262,18 @@
       100% { opacity: 1; }
     }
 
-    .hero-name .line2 {
-      animation: flicker 5s infinite;
-    }
-
     .hero-stripe {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       height: 12px;
-      background: repeating-linear-gradient(90deg,
-        var(--sky) 0px, var(--sky) 24px,
-        var(--black) 24px, var(--black) 48px
+      background: repeating-linear-gradient(
+        90deg,
+        var(--sky) 0px,
+        var(--sky) 24px,
+        var(--black) 24px,
+        var(--black) 48px
       );
       z-index: 10;
     }
@@ -175,14 +284,8 @@
       max-width: 1100px;
       margin: 0 auto;
       width: 100%;
-      padding: 48px 40px 60px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 60px;
-      align-items: center;
+      padding: 52px 40px 68px;
     }
-
-    .hero-text {}
 
     .hero-kicker {
       display: inline-flex;
@@ -193,15 +296,16 @@
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
       font-size: 13px;
-      letter-spacing: 3px;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
       padding: 6px 14px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
     }
 
     .hero-name {
       font-family: 'Black Han Sans', sans-serif;
-      font-size: clamp(70px, 12vw, 140px);
+      font-size: clamp(68px, 11.5vw, 136px);
       line-height: 0.9;
       letter-spacing: 2px;
       color: var(--white);
@@ -211,124 +315,115 @@
 
     .hero-name .line2 {
       color: var(--lime);
-      text-shadow: 6px 6px 0 rgba(0,0,0,0.5);
+      text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
       display: block;
       animation: flicker 5s infinite;
     }
 
     .hero-sub {
-      margin-top: 16px;
+      margin-top: 18px;
       font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 600;
-      font-size: clamp(13px, 1.6vw, 16px);
+      font-weight: 700;
+      font-size: clamp(16px, 2vw, 21px);
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: rgba(245,245,240,0.45);
+      color: var(--white);
+    }
+
+    .hero-desc {
+      margin-top: 10px;
+      max-width: 680px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: rgba(245, 245, 240, 0.85);
     }
 
     .hero-locs {
       display: flex;
-      gap: 0;
-      margin-top: 10px;
+      flex-wrap: wrap;
+      row-gap: 6px;
+      margin-top: 14px;
     }
 
     .hero-loc {
       font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 600;
-      font-size: 12px;
+      font-weight: 700;
+      font-size: 13px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: rgba(245,245,240,0.3);
+      color: var(--sky-pale);
       padding-right: 12px;
       margin-right: 12px;
-      border-right: 1px solid rgba(255,255,255,0.15);
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
     }
 
-    .hero-loc:last-child { border-right: none; }
+    .hero-loc:last-child {
+      border-right: none;
+      margin-right: 0;
+      padding-right: 0;
+    }
 
     .hero-cta-row {
       display: flex;
       gap: 14px;
-      margin-top: 36px;
+      margin-top: 32px;
       flex-wrap: wrap;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 9px 18px;
+      gap: 8px;
+      padding: 11px 20px;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 13px;
+      font-size: 14px;
       letter-spacing: 2px;
       text-transform: uppercase;
       text-decoration: none;
-      transition: transform 0.1s, box-shadow 0.1s;
+      transition: transform 0.1s, box-shadow 0.1s, border-color 0.15s, color 0.15s;
       cursor: pointer;
       border: none;
     }
 
-    .btn:active { transform: translate(3px, 3px); }
+    .btn:active {
+      transform: translate(3px, 3px);
+    }
 
     .btn-sky {
       background: var(--sky);
       color: var(--white);
-      box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.6);
     }
 
-    .btn-sky:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.6); transform: translate(-2px,-2px); }
+    .btn-sky:hover {
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.6);
+      transform: translate(-2px, -2px);
+    }
 
     .btn-lime {
       background: var(--lime);
       color: var(--black);
-      box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.6);
     }
 
-    .btn-lime:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.6); transform: translate(-2px,-2px); }
+    .btn-lime:hover {
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.6);
+      transform: translate(-2px, -2px);
+    }
 
     .btn-outline {
-      background: transparent;
+      background: rgba(10, 10, 10, 0.55);
       color: var(--white);
       border: 3px solid var(--white);
-      box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
     }
 
-    .btn-outline:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.4); transform: translate(-2px,-2px); }
-
-    /* ── HERO PHOTO CARD ── */
-    .hero-card {
-      position: relative;
-    }
-
-    .hero-card-inner {
-      position: relative;
-      border: 4px solid var(--white);
-      box-shadow: 10px 10px 0 var(--black), 10px 10px 0 2px var(--sky);
-      overflow: hidden;
-      aspect-ratio: 3/4;
-    }
-
-    .hero-card-inner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .hero-card-tag {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 12px 16px;
-      background: var(--sky);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--white);
+    .btn-outline:hover {
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+      transform: translate(-2px, -2px);
+      border-color: var(--lime);
+      color: var(--lime);
     }
 
     /* ── TICKER ── */
@@ -343,12 +438,16 @@
     .ticker-track {
       display: flex;
       width: max-content;
-      animation: ticker 30s linear infinite;
+      animation: ticker 35s linear infinite;
+    }
+
+    .ticker-wrap:hover .ticker-track {
+      animation-play-state: paused;
     }
 
     @keyframes ticker {
       from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+      to   { transform: translateX(-50%); }
     }
 
     .ticker-item {
@@ -357,7 +456,7 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       color: var(--black);
-      padding: 0 30px;
+      padding: 0 28px;
       white-space: nowrap;
       display: flex;
       align-items: center;
@@ -366,16 +465,26 @@
 
     .ticker-star {
       color: var(--lime);
-      font-size: 12px;
+      font-size: 14px;
     }
 
+    /* ── SHARED SECTION HEADERS ── */
+    .section-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
 
-    /* ── AVATAR ── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
     .section-header-with-avatar {
       display: flex;
       align-items: center;
-      gap: 0;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       position: relative;
     }
 
@@ -397,19 +506,6 @@
       object-position: center top;
       display: block;
     }
-    /* ── BIO SECTION ── */
-    .bio-section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 80px 40px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      margin-bottom: 50px;
-    }
 
     .section-label-block {
       background: var(--sky);
@@ -419,6 +515,7 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       color: var(--white);
+      margin: 0;
     }
 
     .section-label-line {
@@ -427,23 +524,186 @@
       background: var(--sky);
     }
 
+    .section-intro {
+      font-size: 17px;
+      line-height: 1.7;
+      color: rgba(245, 245, 240, 0.82);
+      max-width: 820px;
+      margin-bottom: 36px;
+    }
+
+    .section-intro strong {
+      color: var(--lime);
+    }
+
+    /* ── SERVICES / WORK WITH ME SECTION ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .service-card {
+      background: var(--panel);
+      border: 3px solid rgba(255, 255, 255, 0.14);
+      padding: 32px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .service-card:hover {
+      border-color: var(--sky);
+      transform: translate(-3px, -3px);
+      box-shadow: 6px 6px 0 var(--sky);
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 36px;
+      height: 36px;
+      border-top: 3px solid var(--lime);
+      border-left: 3px solid var(--lime);
+    }
+
+    .service-tag {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--black);
+      background: var(--lime);
+      padding: 4px 10px;
+      margin-bottom: 14px;
+      align-self: flex-start;
+    }
+
+    .service-title {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 24px;
+      letter-spacing: 1px;
+      color: var(--white);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .service-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245, 245, 240, 0.82);
+      margin-bottom: 20px;
+    }
+
+    .service-desc strong {
+      color: var(--sky-light);
+    }
+
+    .service-list {
+      list-style: none;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .service-list li {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: rgba(245, 245, 240, 0.85);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    /* ── JAPAN / INTERNATIONAL CALLOUT BANNER ── */
+    .intl-banner {
+      margin-top: 36px;
+      border: 3px solid var(--sky);
+      background: linear-gradient(135deg, rgba(26, 143, 255, 0.14) 0%, rgba(10, 10, 10, 0.95) 100%);
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 30px;
+      align-items: center;
+      box-shadow: 8px 8px 0 rgba(26, 143, 255, 0.25);
+    }
+
+    .intl-badge {
+      display: inline-block;
+      background: var(--sky);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      margin-bottom: 12px;
+    }
+
+    .intl-title {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 26px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      color: var(--white);
+    }
+
+    .intl-text {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245, 245, 240, 0.85);
+    }
+
+    .intl-jp-box {
+      border-left: 3px solid var(--lime);
+      padding-left: 24px;
+      font-family: 'Barlow', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+      font-size: 14px;
+      line-height: 1.85;
+      color: rgba(245, 245, 240, 0.92);
+    }
+
+    .intl-jp-box h4 {
+      font-family: 'Barlow Condensed', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: var(--lime);
+      margin-bottom: 8px;
+    }
+
+    /* ── BIO SECTION ── */
     .bio-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      gap: 32px;
     }
 
     .bio-block {
-      border: 3px solid rgba(255,255,255,0.12);
+      border: 3px solid rgba(255, 255, 255, 0.12);
       padding: 30px;
       position: relative;
+      background: var(--panel);
     }
 
     .bio-block::before {
       content: '';
       position: absolute;
-      top: -3px; left: -3px;
-      width: 40px; height: 40px;
+      top: -3px;
+      left: -3px;
+      width: 40px;
+      height: 40px;
       border-top: 3px solid var(--sky);
       border-left: 3px solid var(--sky);
     }
@@ -451,7 +711,7 @@
     .bio-block p {
       font-size: 16px;
       line-height: 1.75;
-      color: rgba(245,245,240,0.82);
+      color: rgba(245, 245, 240, 0.85);
       font-weight: 400;
     }
 
@@ -483,8 +743,13 @@
       transition: background 0.15s;
     }
 
-    .stat:last-child { border-right: none; }
-    .stat:hover { background: rgba(0,0,0,0.06); }
+    .stat:last-child {
+      border-right: none;
+    }
+
+    .stat:hover {
+      background: rgba(0, 0, 0, 0.06);
+    }
 
     .stat-num {
       font-family: 'Black Han Sans', sans-serif;
@@ -496,18 +761,31 @@
 
     .stat-label {
       font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 13px;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: rgba(0,0,0,0.6);
+      color: rgba(0, 0, 0, 0.72);
     }
 
     /* ── YOUTUBE SECTION ── */
-    .yt-section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 80px 40px;
+    .yt-topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .yt-pill {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      background: rgba(26, 143, 255, 0.12);
+      border: 1px solid var(--sky);
+      color: var(--sky-pale);
     }
 
     .yt-grid {
@@ -521,8 +799,9 @@
       display: block;
       text-decoration: none;
       color: var(--white);
-      border: 3px solid rgba(255,255,255,0.12);
-      transition: all 0.15s;
+      border: 3px solid rgba(255, 255, 255, 0.12);
+      background: var(--panel);
+      transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
       position: relative;
       overflow: hidden;
     }
@@ -535,7 +814,7 @@
 
     .yt-thumb {
       width: 100%;
-      aspect-ratio: 16/9;
+      aspect-ratio: 16 / 9;
       background: #1a1a1a;
       position: relative;
       overflow: hidden;
@@ -549,7 +828,9 @@
       transition: transform 0.3s;
     }
 
-    .yt-card:hover .yt-thumb img { transform: scale(1.04); }
+    .yt-card:hover .yt-thumb img {
+      transform: scale(1.04);
+    }
 
     .yt-play {
       position: absolute;
@@ -557,12 +838,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(0,0,0,0.3);
+      background: rgba(0, 0, 0, 0.3);
       opacity: 0;
       transition: opacity 0.15s;
     }
 
-    .yt-card:hover .yt-play { opacity: 1; }
+    .yt-card:hover .yt-play {
+      opacity: 1;
+    }
 
     .yt-play-icon {
       width: 52px;
@@ -583,7 +866,7 @@
     .yt-title {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 16px;
       letter-spacing: 0.5px;
       line-height: 1.3;
       color: var(--white);
@@ -597,995 +880,34 @@
     .yt-meta {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 12px;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
       color: var(--sky-light);
-    }
-
-    .yt-loading {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 40px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(245,245,240,0.4);
-    }
-
-    .yt-error-state {
-      display: none;
-    }
-
-    .yt-fallback-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 24px;
-      padding: 14px 24px;
-      background: var(--sky);
-      color: var(--white);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-decoration: none;
-      box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
-    }
-
-    .yt-fallback-link:hover {
-      box-shadow: 6px 6px 0 rgba(0,0,0,0.5);
-      transform: translate(-2px,-2px);
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      border-top: 4px solid var(--sky);
-    }
-
-    .footer-checker {
-      height: 14px;
-      background-image: repeating-conic-gradient(var(--sky) 0% 25%, var(--black) 0% 50%);
-      background-size: 14px 14px;
-    }
-
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .footer-logo {
-      font-family: 'Black Han Sans', sans-serif;
-      font-size: 28px;
-      letter-spacing: 4px;
-      color: var(--white);
-    }
-
-    .footer-logo span {
-      color: var(--sky);
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 0;
-    }
-
-    .footer-link {
-      padding: 10px 16px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(245,245,240,0.5);
-      text-decoration: none;
-      border-right: 1px solid rgba(255,255,255,0.1);
-      transition: color 0.15s;
-    }
-
-    .footer-link:last-child { border-right: none; }
-    .footer-link:hover { color: var(--sky-light); }
-
-    .footer-copy {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(245,245,240,0.3);
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 860px) {
-      nav { height: 50px; }
-      .nav-link:not(.cta) { display: none; }
-      .nav-link.cta { display: flex; }
-      .hero-inner { grid-template-columns: 1fr; padding: 40px 20px 60px; }
-      .hero-card { display: none; }
-      .hero::before { background: linear-gradient(170deg, var(--sky) 0%, var(--sky) 30%, var(--black) 30.5%, var(--black) 100%); }
-      .bio-grid { grid-template-columns: 1fr; gap: 24px; }
-      .bio-section { padding: 60px 20px; }
-      .yt-section { padding: 60px 20px; }
-      .stats-inner { grid-template-columns: 1fr 1fr; }
-      .stat { border-bottom: 4px solid var(--black); }
-      .yt-grid { grid-template-columns: 1fr 1fr; }
-      .footer-inner { flex-direction: column; text-align: center; padding: 30px 20px; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
-    }
-
-    @media (max-width: 500px) {
-      .yt-grid { grid-template-columns: 1fr; }
-      .stats-inner { grid-template-columns: 1fr 1fr; }
-      .stat-num { font-size: 38px; }
     }
 
     /* ── SPOTIFY ── */
     .spotify-section {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 0 40px 70px;
-    }
-  </style>
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <a class="nav-logo-block" href="#">🌎</a>
-  <div class="nav-links">
-    <a class="nav-link" href="credits.html">Credits</a>
-    <a class="nav-link" href="#youtube">YouTube</a>
-    <a class="nav-link" href="https://instagram.com/bradkdollar" target="_blank">Instagram</a>
-    <a class="nav-link cta" href="mailto:producedbybraddollar@gmail.com">Let's Work</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg-photo"></div>
-  <div class="hero-stripe"></div>
-  <div class="hero-inner">
-    <div class="hero-text">
-      <h1 class="hero-name">
-        BRAD
-        <span class="line2">DOLLAR</span>
-      </h1>
-      <div class="hero-sub">Music Production &amp; Artist Strategy</div>
-      <div class="hero-locs">
-        <span class="hero-loc">Nashville</span>
-        <span class="hero-loc">Oakland</span>
-        <span class="hero-loc">Chicago</span>
-      </div>
-      <div class="hero-cta-row">
-        <a class="btn btn-lime" href="mailto:producedbybraddollar@gmail.com">Let's Work</a>
-        <a class="btn btn-sky" href="credits.html">View Credits</a>
-        <a class="btn btn-outline" href="https://youtube.com/braddollar" target="_blank">YouTube</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- TICKER -->
-<div class="ticker-wrap">
-  <div class="ticker-track" id="tickerTrack">
-    <span class="ticker-item">Grateful Dead <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Madame Gandhi <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Bob Weir <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Lil B <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Lukas Nelson <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Journey <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Aisha Fukushima <span class="ticker-star">+</span></span>
-    <span class="ticker-item">The National <span class="ticker-star">+</span></span>
-    <span class="ticker-item">G-Eazy <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Sammy Hagar <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Primus <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Father John Misty <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Night Ranger <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Slightly Stoopid <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Joe Satriani <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Dovydas <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Kenny Aronoff <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Alphabet Rockers <span class="ticker-star">+</span></span>
-  </div>
-</div>
-
-<!-- BIO -->
-<section class="bio-section">
-  <div class="section-header section-header-with-avatar">
-    <div class="avatar-circle">
-      <img src="headshot.jpg" alt="Brad Dollar" />
-    </div>
-    <div class="section-label-block">Who I Am</div>
-    <div class="section-label-line"></div>
-  </div>
-
-  <div class="bio-grid">
-    <div class="bio-block">
-      <p>Oakland Bay Area born and raised, I've kept <strong>music and artists at the center of my life</strong> since I was a kid. My mission is simple: replenish artists and music organizations with new possibilities. I'm obsessed with equipping others to turn their creativity into real music connection for others.</p>
-    </div>
-    <div class="bio-block">
-      <p>From playing guitar in <strong>ska-punk bands</strong> to working in the biggest recording studios in the world, I've been lucky to make music with the best. <strong>Grateful Dead, Bob Weir, G-Eazy, Lukas Nelson, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National,</strong> and many others.</p>
-    </div>
-    <div class="bio-block">
-      <p>I'm an active coach to creators worldwide and co-developed the nonprofit accelerator <strong>ZOOLABS</strong>, helping hundreds of artists and startups align their art, business, and purpose. In 2021, I began building the artist experience at <strong>Songfinch</strong>, the next gen song collaboration platform for artists and fans.</p>
-    </div>
-    <div class="bio-block">
-      <p>Long term, I'm going to do everything I can to help <strong>transform the music industry</strong> into something more compassionate, creative, and sustainable. Reach out anytime! I'd love to help you get where you want to go with your music.</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat">
-      <div class="stat-num">25+</div>
-      <div class="stat-label">Years Active</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">1000+</div>
-      <div class="stat-label">Released Titles</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">400+</div>
-      <div class="stat-label">Artists Collaborated With</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">∞</div>
-      <div class="stat-label">Still Going</div>
-    </div>
-  </div>
-</div>
-
-<!-- YOUTUBE SECTION -->
-<section class="yt-section" id="youtube">
-  <div class="section-header">
-    <div class="section-label-block">YouTube</div>
-    <div class="section-label-line"></div>
-  </div>
-
-  <div class="yt-grid" id="ytGrid">
-
-    <a class="yt-card" href="https://www.youtube.com/watch?v=sNlTxCqQJoI" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/sNlTxCqQJoI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=6ILkirlSOHI" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/6ILkirlSOHI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=vNBe0B1ncf8" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/vNBe0B1ncf8/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=m5Qc1oyk5mI" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/m5Qc1oyk5mI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=pUYB7YzXZfE" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/pUYB7YzXZfE/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=dj7-7ELmNVk" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/dj7-7ELmNVk/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-  </div>
-
-  <div style="margin-top: 30px; text-align: center;">
-    <a class="btn btn-sky" href="https://youtube.com/braddollar" target="_blank" >
-      ▶ View All Videos on YouTube
-    </a>
-  </div>
-</section>
-
-<!-- SPOTIFY -->
-<section class="spotify-section">
-  <div class="section-header">
-    <div class="section-label-block">Listen</div>
-    <div class="section-label-line"></div>
-  </div>
-  <iframe style="border-radius:12px; display:block; margin-bottom:12px;" src="https://open.spotify.com/embed/artist/1ks7sy2RpFdZmnqhncQO6C?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2HAZM1fCLIIVu7Nf4TV4ht?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-checker"></div>
-  <div class="footer-inner">
-    <div class="footer-logo">BRAD <span>DOLLAR</span></div>
-    <div class="footer-links">
-      <a class="footer-link" href="credits.html">Credits</a>
-      <a class="footer-link" href="https://youtube.com/braddollar" target="_blank">YouTube</a>
-      <a class="footer-link" href="https://instagram.com/bradkdollar" target="_blank">Instagram</a>
-      <a class="footer-link" href="mailto:producedbybraddollar@gmail.com">Email</a>
-    </div>
-    <div class="footer-copy">© 2026 Brad Dollar</div>
-  </div>
-</footer>
-
-E html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brad Dollar</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --black: #0a0a0a;
-      --white: #f5f5f0;
-      --sky: #1a8fff;
-      --sky-light: #5ab8ff;
-      --sky-pale: #c8e8ff;
-      --lime: #7fff2a;
-      --checker: #111111;
+      padding: 0 40px 80px;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Barlow', sans-serif;
-      background: var(--black);
-      color: var(--white);
-      overflow-x: hidden;
-    }
-
-    /* ── CHECKER PATTERN ── */
-    .checker {
-      background-image:
-        repeating-conic-gradient(var(--checker) 0% 25%, var(--black) 0% 50%);
-      background-size: 18px 18px;
-    }
-
-    .checker-sm {
-      background-image:
-        repeating-conic-gradient(rgba(255,255,255,0.06) 0% 25%, transparent 0% 50%);
-      background-size: 10px 10px;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 200;
-      background: var(--black);
-      border-bottom: 3px solid var(--sky);
-      display: flex;
-      align-items: stretch;
-      height: 56px;
-    }
-
-    .nav-logo-block {
-      display: flex;
-      align-items: center;
-      padding: 0 22px;
-      background: var(--sky);
-      font-family: 'Black Han Sans', sans-serif;
-      font-size: 16px;
-      letter-spacing: 3px;
-      color: var(--black);
-      text-decoration: none;
-      white-space: nowrap;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      margin-left: auto;
-    }
-
-    .nav-link {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      padding: 0 18px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: rgba(245,245,240,0.7);
-      text-decoration: none;
-      border-left: 1px solid rgba(255,255,255,0.1);
-      transition: all 0.15s;
-    }
-
-    .nav-link:hover {
-      background: rgba(26,143,255,0.15);
-      color: var(--sky-light);
-    }
-
-    .nav-link.cta {
-      background: var(--lime);
-      color: var(--black);
-      font-weight: 800;
-      border-left: none;
-    }
-
-    .nav-link.cta:hover {
-      background: var(--lime);
-      color: var(--black);
-    }
-
-    /* ── HERO ── */
-    .hero {
-      min-height: auto;
-      padding-top: 56px;
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Studio photo background */
-    .hero-bg-photo {
-      position: absolute;
-      inset: 0;
-      min-height: 100%;
-      background-image: url('studio-hero.jpeg');
-      background-size: cover;
-      background-position: center 30%;
-      filter: brightness(0.28) saturate(0.7);
-      z-index: 0;
-    }
-
-    /* Diagonal color split over photo */
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(165deg, rgba(26,143,255,0.82) 0%, rgba(26,143,255,0.82) 38%, rgba(10,10,10,0.15) 38.3%, rgba(10,10,10,0.15) 100%);
-      z-index: 1;
-    }
-
-    /* Name flicker animation */
-    @keyframes flicker {
-      0%   { opacity: 1; }
-      3%   { opacity: 0.85; }
-      5%   { opacity: 1; }
-      10%  { opacity: 1; }
-      12%  { opacity: 0.7; }
-      14%  { opacity: 1; }
-      60%  { opacity: 1; }
-      62%  { opacity: 0.9; }
-      64%  { opacity: 1; }
-      100% { opacity: 1; }
-    }
-
-    .hero-name .line2 {
-      animation: flicker 5s infinite;
-    }
-
-    .hero-stripe {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 12px;
-      background: repeating-linear-gradient(90deg,
-        var(--sky) 0px, var(--sky) 24px,
-        var(--black) 24px, var(--black) 48px
-      );
-      z-index: 10;
-    }
-
-    .hero-inner {
-      position: relative;
-      z-index: 3;
-      max-width: 1100px;
-      margin: 0 auto;
-      width: 100%;
-      padding: 48px 40px 60px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .hero-text {}
-
-    .hero-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--lime);
-      color: var(--black);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      margin-bottom: 20px;
-    }
-
-    .hero-name {
-      font-family: 'Black Han Sans', sans-serif;
-      font-size: clamp(70px, 12vw, 140px);
-      line-height: 0.9;
-      letter-spacing: 2px;
-      color: var(--white);
-      text-shadow: 6px 6px 0 var(--black);
-      animation: flicker 7s infinite 1.5s;
-    }
-
-    .hero-name .line2 {
-      color: var(--lime);
-      text-shadow: 6px 6px 0 rgba(0,0,0,0.5);
+    .spotify-embed {
+      border: 0;
+      border-radius: 12px;
       display: block;
-      animation: flicker 5s infinite;
-    }
-
-    .hero-sub {
-      margin-top: 16px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 600;
-      font-size: clamp(13px, 1.6vw, 16px);
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: rgba(245,245,240,0.45);
-    }
-
-    .hero-locs {
-      display: flex;
-      gap: 0;
-      margin-top: 10px;
-    }
-
-    .hero-loc {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 600;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(245,245,240,0.3);
-      padding-right: 12px;
-      margin-right: 12px;
-      border-right: 1px solid rgba(255,255,255,0.15);
-    }
-
-    .hero-loc:last-child { border-right: none; }
-
-    .hero-cta-row {
-      display: flex;
-      gap: 14px;
-      margin-top: 36px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 9px 18px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: transform 0.1s, box-shadow 0.1s;
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn:active { transform: translate(3px, 3px); }
-
-    .btn-sky {
-      background: var(--sky);
-      color: var(--white);
-      box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
-    }
-
-    .btn-sky:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.6); transform: translate(-2px,-2px); }
-
-    .btn-lime {
-      background: var(--lime);
-      color: var(--black);
-      box-shadow: 4px 4px 0 rgba(0,0,0,0.6);
-    }
-
-    .btn-lime:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.6); transform: translate(-2px,-2px); }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      border: 3px solid var(--white);
-      box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
-    }
-
-    .btn-outline:hover { box-shadow: 6px 6px 0 rgba(0,0,0,0.4); transform: translate(-2px,-2px); }
-
-    /* ── HERO PHOTO CARD ── */
-    .hero-card {
-      position: relative;
-    }
-
-    .hero-card-inner {
-      position: relative;
-      border: 4px solid var(--white);
-      box-shadow: 10px 10px 0 var(--black), 10px 10px 0 2px var(--sky);
-      overflow: hidden;
-      aspect-ratio: 3/4;
-    }
-
-    .hero-card-inner img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+      height: 152px;
     }
 
-    .hero-card-tag {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 12px 16px;
-      background: var(--sky);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 13px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--white);
-    }
-
-    /* ── TICKER ── */
-    .ticker-wrap {
-      background: var(--sky);
-      overflow: hidden;
-      padding: 12px 0;
-      border-top: 3px solid var(--black);
-      border-bottom: 3px solid var(--black);
-    }
-
-    .ticker-track {
-      display: flex;
-      width: max-content;
-      animation: ticker 30s linear infinite;
-    }
-
-    @keyframes ticker {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-
-    .ticker-item {
-      font-family: 'Black Han Sans', sans-serif;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--black);
-      padding: 0 30px;
-      white-space: nowrap;
-      display: flex;
-      align-items: center;
-      gap: 24px;
-    }
-
-    .ticker-star {
-      color: var(--lime);
-      font-size: 12px;
-    }
-
-
-    /* ── AVATAR ── */
-    .section-header-with-avatar {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      margin-bottom: 50px;
-      position: relative;
-    }
-
-    .avatar-circle {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      border: 3px solid var(--lime);
-      overflow: hidden;
-      flex-shrink: 0;
-      margin-right: 16px;
-      box-shadow: 0 0 0 2px var(--black), 0 0 0 4px var(--sky);
-    }
-
-    .avatar-circle img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-    }
-    /* ── BIO SECTION ── */
-    .bio-section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 80px 40px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      margin-bottom: 50px;
-    }
-
-    .section-label-block {
-      background: var(--sky);
-      padding: 10px 20px;
-      font-family: 'Black Han Sans', sans-serif;
-      font-size: 20px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--white);
-    }
-
-    .section-label-line {
-      flex: 1;
-      height: 4px;
-      background: var(--sky);
-    }
-
-    .bio-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-
-    .bio-block {
-      border: 3px solid rgba(255,255,255,0.12);
-      padding: 30px;
-      position: relative;
-    }
-
-    .bio-block::before {
-      content: '';
-      position: absolute;
-      top: -3px; left: -3px;
-      width: 40px; height: 40px;
-      border-top: 3px solid var(--sky);
-      border-left: 3px solid var(--sky);
-    }
-
-    .bio-block p {
-      font-size: 16px;
-      line-height: 1.75;
-      color: rgba(245,245,240,0.82);
-      font-weight: 400;
-    }
-
-    .bio-block p strong {
-      color: var(--sky-light);
-      font-weight: 600;
-    }
-
-    /* ── STATS BAR ── */
-    .stats-bar {
-      background: var(--lime);
-      border-top: 4px solid var(--black);
-      border-bottom: 4px solid var(--black);
-    }
-
-    .stats-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .stat {
-      padding: 30px 20px;
-      border-right: 4px solid var(--black);
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      transition: background 0.15s;
-    }
-
-    .stat:last-child { border-right: none; }
-    .stat:hover { background: rgba(0,0,0,0.06); }
-
-    .stat-num {
-      font-family: 'Black Han Sans', sans-serif;
-      font-size: 52px;
-      line-height: 1;
-      color: var(--black);
-      letter-spacing: 1px;
-    }
-
-    .stat-label {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: rgba(0,0,0,0.6);
-    }
-
-    /* ── YOUTUBE SECTION ── */
-    .yt-section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 80px 40px;
-    }
-
-    .yt-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 10px;
-    }
-
-    .yt-card {
-      display: block;
-      text-decoration: none;
-      color: var(--white);
-      border: 3px solid rgba(255,255,255,0.12);
-      transition: all 0.15s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .yt-card:hover {
-      border-color: var(--sky);
-      transform: translate(-3px, -3px);
-      box-shadow: 6px 6px 0 var(--sky);
-    }
-
-    .yt-thumb {
-      width: 100%;
-      aspect-ratio: 16/9;
-      background: #1a1a1a;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .yt-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s;
-    }
-
-    .yt-card:hover .yt-thumb img { transform: scale(1.04); }
-
-    .yt-play {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0,0,0,0.3);
-      opacity: 0;
-      transition: opacity 0.15s;
-    }
-
-    .yt-card:hover .yt-play { opacity: 1; }
-
-    .yt-play-icon {
-      width: 52px;
-      height: 52px;
-      background: var(--sky);
-      color: var(--white);
-      border: 3px solid var(--white);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-    }
-
-    .yt-info {
-      padding: 14px 16px;
-    }
-
-    .yt-title {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 15px;
-      letter-spacing: 0.5px;
-      line-height: 1.3;
-      color: var(--white);
-      margin-bottom: 6px;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .yt-meta {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 12px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--sky-light);
-    }
-
-    .yt-loading {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 40px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(245,245,240,0.4);
-    }
-
-    .yt-error-state {
-      display: none;
-    }
-
-    .yt-fallback-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 24px;
-      padding: 14px 24px;
-      background: var(--sky);
-      color: var(--white);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-decoration: none;
-      box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
-    }
-
-    .yt-fallback-link:hover {
-      box-shadow: 6px 6px 0 rgba(0,0,0,0.5);
-      transform: translate(-2px,-2px);
+    .spotify-embed + .spotify-embed {
+      margin-top: 12px;
     }
 
     /* ── FOOTER ── */
     footer {
       border-top: 4px solid var(--sky);
+      background: #070707;
     }
 
     .footer-checker {
@@ -1616,6 +938,16 @@ E html>
       color: var(--sky);
     }
 
+    .footer-seo-tagline {
+      width: 100%;
+      font-size: 13px;
+      color: rgba(245, 245, 240, 0.45);
+      line-height: 1.6;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 18px;
+      margin-top: 8px;
+    }
+
     .footer-links {
       display: flex;
       gap: 0;
@@ -1628,256 +960,479 @@ E html>
       font-size: 13px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: rgba(245,245,240,0.5);
+      color: rgba(245, 245, 240, 0.65);
       text-decoration: none;
-      border-right: 1px solid rgba(255,255,255,0.1);
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
       transition: color 0.15s;
     }
 
-    .footer-link:last-child { border-right: none; }
-    .footer-link:hover { color: var(--sky-light); }
+    .footer-link:last-child {
+      border-right: none;
+    }
+
+    .footer-link:hover {
+      color: var(--sky-light);
+    }
 
     .footer-copy {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 12px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: rgba(245,245,240,0.3);
+      color: rgba(245, 245, 240, 0.35);
+    }
+
+    /* ── ACCESSIBILITY: REDUCED MOTION ── */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      .hero-name,
+      .hero-name .line2,
+      .ticker-track {
+        animation: none !important;
+      }
     }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 860px) {
-      nav { height: 50px; }
-      .nav-link:not(.cta) { display: none; }
-      .nav-link.cta { display: flex; }
-      .hero-inner { grid-template-columns: 1fr; padding: 40px 20px 60px; }
-      .hero-card { display: none; }
-      .hero::before { background: linear-gradient(170deg, var(--sky) 0%, var(--sky) 30%, var(--black) 30.5%, var(--black) 100%); }
-      .bio-grid { grid-template-columns: 1fr; gap: 24px; }
-      .bio-section { padding: 60px 20px; }
-      .yt-section { padding: 60px 20px; }
-      .stats-inner { grid-template-columns: 1fr 1fr; }
-      .stat { border-bottom: 4px solid var(--black); }
-      .yt-grid { grid-template-columns: 1fr 1fr; }
-      .footer-inner { flex-direction: column; text-align: center; padding: 30px 20px; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
+      nav {
+        height: 50px;
+      }
+      .nav-logo-block {
+        padding: 0 14px;
+        font-size: 13px;
+      }
+      .nav-link {
+        padding: 0 12px;
+        font-size: 12px;
+      }
+      .hero-inner {
+        padding: 40px 20px 60px;
+      }
+      .hero::before {
+        background: linear-gradient(
+          170deg,
+          rgba(26, 143, 255, 0.85) 0%,
+          rgba(26, 143, 255, 0.85) 30%,
+          rgba(10, 10, 10, 0.4) 30.5%,
+          rgba(10, 10, 10, 0.85) 100%
+        );
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .intl-banner {
+        grid-template-columns: 1fr;
+      }
+      .intl-jp-box {
+        border-left: none;
+        border-top: 3px solid var(--lime);
+        padding-left: 0;
+        padding-top: 20px;
+      }
+      .bio-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .section-wrap {
+        padding: 60px 20px;
+      }
+      .spotify-section {
+        padding: 0 20px 60px;
+      }
+      .stats-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+      .stat:nth-child(2n) {
+        border-right: none;
+      }
+      .stat:nth-child(-n+2) {
+        border-bottom: 4px solid var(--black);
+      }
+      .yt-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+      .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
 
-    @media (max-width: 500px) {
-      .yt-grid { grid-template-columns: 1fr; }
-      .stats-inner { grid-template-columns: 1fr 1fr; }
-      .stat-num { font-size: 38px; }
+    @media (max-width: 540px) {
+      .nav-logo-block span.logo-text-mobile-hide {
+        display: none;
+      }
+      .nav-link.hide-xs {
+        display: none;
+      }
+      .nav-link {
+        padding: 0 10px;
+        font-size: 12px;
+      }
+      .yt-grid {
+        grid-template-columns: 1fr;
+      }
+      .stat-num {
+        font-size: 38px;
+      }
     }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
-  <a class="nav-logo-block" href="#">🌎</a>
+<nav aria-label="Primary Navigation">
+  <a class="nav-logo-block" href="#" aria-label="Brad Dollar Home">
+    <span>🌎</span>
+    <span class="logo-text-mobile-hide">BRAD DOLLAR</span>
+  </a>
   <div class="nav-links">
+    <a class="nav-link" href="#services">Services</a>
+    <a class="nav-link hide-xs" href="#japan">Global / 日本</a>
     <a class="nav-link" href="credits.html">Credits</a>
     <a class="nav-link" href="#youtube">YouTube</a>
-    <a class="nav-link" href="https://instagram.com/bradkdollar" target="_blank">Instagram</a>
-    <a class="nav-link cta" href="mailto:producedbybraddollar@gmail.com">Let's Work</a>
+    <a class="nav-link hide-xs" href="https://instagram.com/bradkdollar" target="_blank" rel="noopener">Instagram</a>
+    <a class="nav-link cta" href="mailto:producedbybraddollar@gmail.com?subject=Project%20Inquiry%20for%20Brad%20Dollar">Let's Work</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-bg-photo"></div>
+<header class="hero">
+  <div class="hero-bg-photo" role="img" aria-label="Brad Dollar in the recording studio"></div>
   <div class="hero-stripe"></div>
   <div class="hero-inner">
     <div class="hero-text">
+      <div class="hero-kicker">25+ Years • 1,000+ Releases • Nashville &amp; Worldwide</div>
       <h1 class="hero-name">
         BRAD
         <span class="line2">DOLLAR</span>
       </h1>
-      <div class="hero-sub">Music Production &amp; Artist Strategy</div>
-      <div class="hero-locs">
-        <span class="hero-loc">Nashville</span>
-        <span class="hero-loc">Oakland</span>
+      <p class="hero-sub">Nashville Audio Engineer, Record Producer, Artist Strategist &amp; Guitar Creator</p>
+      <p class="hero-desc">
+        Engineering, mixing, and producing records with world-class sonic depth — from Nashville tracking rooms to remote collaborations across the US, Japan, and the globe.
+      </p>
+      <div class="hero-locs" aria-label="Active Locations">
+        <span class="hero-loc">Nashville, TN</span>
+        <span class="hero-loc">Oakland / Bay Area</span>
         <span class="hero-loc">Chicago</span>
+        <span class="hero-loc">Tokyo / Remote Worldwide</span>
       </div>
       <div class="hero-cta-row">
-        <a class="btn btn-lime" href="mailto:producedbybraddollar@gmail.com">Let's Work</a>
-        <a class="btn btn-sky" href="credits.html">View Credits</a>
-        <a class="btn btn-outline" href="https://youtube.com/braddollar" target="_blank">YouTube</a>
+        <a class="btn btn-lime" href="#services">Book Studio / Mixing</a>
+        <a class="btn btn-sky" href="credits.html">View 1,000+ Credits</a>
+        <a class="btn btn-outline" href="#youtube">▶ Guitar &amp; Tone YouTube</a>
       </div>
     </div>
-
   </div>
-</section>
+</header>
 
-<!-- TICKER -->
-<div class="ticker-wrap">
+<!-- TICKER (Duplicated items for seamless CSS loop) -->
+<div class="ticker-wrap" aria-label="Selected Artist and Brand Credits">
   <div class="ticker-track" id="tickerTrack">
     <span class="ticker-item">Grateful Dead <span class="ticker-star">+</span></span>
     <span class="ticker-item">Bob Weir <span class="ticker-star">+</span></span>
-    <span class="ticker-item">G-Eazy <span class="ticker-star">+</span></span>
     <span class="ticker-item">Lukas Nelson <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Slightly Stoopid <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Alphabet Rockers <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Journey <span class="ticker-star">+</span></span>
+    <span class="ticker-item">G-Eazy <span class="ticker-star">+</span></span>
     <span class="ticker-item">The National <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Sammy Hagar <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Joe Satriani <span class="ticker-star">+</span></span>
     <span class="ticker-item">Primus <span class="ticker-star">+</span></span>
     <span class="ticker-item">Father John Misty <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Slightly Stoopid <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Alphabet Rockers <span class="ticker-star">+</span></span>
     <span class="ticker-item">Night Ranger <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Journey <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Keb Mo <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Keb' Mo' <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Kenny Aronoff <span class="ticker-star">+</span></span>
     <span class="ticker-item">Madame Gandhi <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Chickenfoot <span class="ticker-star">+</span></span>
     <span class="ticker-item">HBO <span class="ticker-star">+</span></span>
     <span class="ticker-item">Amazon <span class="ticker-star">+</span></span>
-    <span class="ticker-item">MTV <span class="ticker-star">+</span></span>
+    <!-- Seamless loop repeat -->
     <span class="ticker-item">Grateful Dead <span class="ticker-star">+</span></span>
     <span class="ticker-item">Bob Weir <span class="ticker-star">+</span></span>
-    <span class="ticker-item">G-Eazy <span class="ticker-star">+</span></span>
     <span class="ticker-item">Lukas Nelson <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Slightly Stoopid <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Alphabet Rockers <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Journey <span class="ticker-star">+</span></span>
+    <span class="ticker-item">G-Eazy <span class="ticker-star">+</span></span>
     <span class="ticker-item">The National <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Sammy Hagar <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Joe Satriani <span class="ticker-star">+</span></span>
     <span class="ticker-item">Primus <span class="ticker-star">+</span></span>
     <span class="ticker-item">Father John Misty <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Slightly Stoopid <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Alphabet Rockers <span class="ticker-star">+</span></span>
     <span class="ticker-item">Night Ranger <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Journey <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Keb Mo <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Keb' Mo' <span class="ticker-star">+</span></span>
+    <span class="ticker-item">Kenny Aronoff <span class="ticker-star">+</span></span>
     <span class="ticker-item">Madame Gandhi <span class="ticker-star">+</span></span>
-    <span class="ticker-item">Chickenfoot <span class="ticker-star">+</span></span>
     <span class="ticker-item">HBO <span class="ticker-star">+</span></span>
     <span class="ticker-item">Amazon <span class="ticker-star">+</span></span>
-    <span class="ticker-item">MTV <span class="ticker-star">+</span></span>
   </div>
 </div>
 
-<!-- BIO -->
-<section class="bio-section">
-  <div class="section-header section-header-with-avatar">
-    <div class="avatar-circle">
-      <img src="headshot.jpg" alt="Brad Dollar" />
+<main>
+  <!-- SERVICES / WORK WITH ME -->
+  <section class="section-wrap" id="services">
+    <div class="section-header">
+      <h2 class="section-label-block">Work With Me</h2>
+      <div class="section-label-line"></div>
     </div>
-    <div class="section-label-block">Who I Am</div>
-    <div class="section-label-line"></div>
+
+    <p class="section-intro">
+      Whether you're tracking a full band in <strong>Nashville</strong>, looking for an <strong>American record producer and mixing engineer</strong> from overseas, or building a long-term artist &amp; brand strategy, here is how we can collaborate.
+    </p>
+
+    <div class="services-grid">
+      <!-- Service 1: Nashville Engineering & Production -->
+      <article class="service-card">
+        <div>
+          <span class="service-tag">Studio &amp; Mixing</span>
+          <h3 class="service-title">Nashville Audio Engineering &amp; Record Production</h3>
+          <p class="service-desc">
+            Full-scale record production, studio tracking, vocal production, and analog/hybrid mixing in <strong>Nashville, TN</strong>. Certified Pro Tools expert with 25+ years capturing authentic performances across rock, Americana, indie, hip-hop, and pop.
+          </p>
+          <ul class="service-list">
+            <li>Nashville Studio Tracking</li>
+            <li>Mixing &amp; Stem Finishing</li>
+            <li>Full Record Production</li>
+            <li>Custom Guitar Tracking</li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-lime" href="mailto:producedbybraddollar@gmail.com?subject=Nashville%20Engineering%20%2F%20Production%20Inquiry">Book Studio / Mixing →</a>
+        </div>
+      </article>
+
+      <!-- Service 2: International & Japan Remote Production -->
+      <article class="service-card">
+        <div>
+          <span class="service-tag">Global Remote</span>
+          <h3 class="service-title">US Producer &amp; Engineer for International Artists</h3>
+          <p class="service-desc">
+            Seamless remote production, mixing, and Nashville session musician coordination for artists, labels, and agencies in <strong>Japan, Europe, and worldwide</strong> seeking authentic American rock, pop, and roots sound.
+          </p>
+          <ul class="service-list">
+            <li>Remote Mixing &amp; Production</li>
+            <li>US Session Musicians</li>
+            <li>High-Res Stem Delivery</li>
+            <li>Async &amp; Live Streamed Sessions</li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-sky" href="mailto:producedbybraddollar@gmail.com?subject=International%20%2F%20Japan%20Production%20%26%20Mixing%20Inquiry">Start a Global Project →</a>
+        </div>
+      </article>
+
+      <!-- Service 3: Artist Strategy & Creative Direction -->
+      <article class="service-card">
+        <div>
+          <span class="service-tag">Strategy &amp; Coaching</span>
+          <h3 class="service-title">Artist Strategy, Coaching &amp; Creative Direction</h3>
+          <p class="service-desc">
+            1-on-1 artist development, release strategy, and creative consulting for independent artists, music startups, and brands. Built on frameworks developed at <strong>ZOOLABS</strong>, <strong>Songfinch</strong>, and Stanford d.school design thinking.
+          </p>
+          <ul class="service-list">
+            <li>Artist Development</li>
+            <li>Audience &amp; Brand Strategy</li>
+            <li>Catalog &amp; Release Planning</li>
+            <li>Music Tech Consulting</li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-outline" href="mailto:producedbybraddollar@gmail.com?subject=Artist%20Strategy%20%26%20Coaching%20Inquiry">Book Strategy Session →</a>
+        </div>
+      </article>
+
+      <!-- Service 4: YouTube & Guitar Brand Partnerships -->
+      <article class="service-card">
+        <div>
+          <span class="service-tag">Content &amp; Gear</span>
+          <h3 class="service-title">Guitar Tone, Vintage Gear &amp; Brand Partnerships</h3>
+          <p class="service-desc">
+            Partner with a studio engineer and guitarist who knows why great gear matters in a real mix. Available for <strong>guitar, amplifier, pedal, and pro-audio</strong> deep dives, demos, and creative brand storytelling.
+          </p>
+          <ul class="service-list">
+            <li>YouTube Gear Features</li>
+            <li>Studio Tone Analysis</li>
+            <li>Vintage &amp; Modern Guitar Demos</li>
+            <li>Brand Strategy</li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-outline" href="mailto:producedbybraddollar@gmail.com?subject=YouTube%20%2F%20Brand%20Partnership%20Inquiry">Partner on YouTube →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- BILINGUAL JAPAN / INTERNATIONAL SPOTLIGHT -->
+    <div class="intl-banner" id="japan">
+      <div>
+        <span class="intl-badge">International &amp; Japan Clients • 海外・日本からのご依頼</span>
+        <h3 class="intl-title">Authentic American Sound, Delivered Worldwide</h3>
+        <p class="intl-text">
+          Working with artists and labels in Tokyo, Osaka, and across Japan looking to hire an experienced <strong>American music producer, recording engineer, or mixing engineer</strong>. Send your multitracks or demos from anywhere in the world — I handle full production, American guitar overdubs, Nashville session players, and final mixes ready for global release.
+        </p>
+      </div>
+      <div class="intl-jp-box" lang="ja">
+        <h4>日本のアーティスト・音楽制作関係者の皆様へ</h4>
+        <p>
+          ナッシュビルを拠点に活動する音楽プロデューサー／レコーディング＆ミックスエンジニアの<strong>ブラッド・ダラー（Brad Dollar）</strong>です。Grateful Dead、Bob Weir、Journey、Joe Satriani、Lukas Nelsonなど1,000作品以上の制作に携わってきました。日本からのリモートミックス、共同プロデュース、アメリカ人ミュージシャンによるギター録音・セッション手配まで柔軟に対応いたします。英語・翻訳ツールでのメール連絡も大歓迎です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="section-wrap" id="about" style="padding-top: 20px;">
+    <div class="section-header section-header-with-avatar">
+      <div class="avatar-circle">
+        <img src="headshot.jpg" alt="Brad Dollar - Nashville Audio Engineer and Music Producer" width="64" height="64" />
+      </div>
+      <h2 class="section-label-block">Who I Am</h2>
+      <div class="section-label-line"></div>
+    </div>
+
+    <div class="bio-grid">
+      <div class="bio-block">
+        <p>Oakland Bay Area born and raised and now based in <strong>Nashville, Tennessee</strong>, I've kept <strong>music, guitar, and artists at the center of my life</strong> since I was a kid. My mission is simple: replenish artists and music organizations with new possibilities in the studio and beyond.</p>
+      </div>
+      <div class="bio-block">
+        <p>From playing guitar in <strong>ska-punk and rock bands</strong> to engineering in the biggest recording studios in the world, I've been lucky to make music with the best: <strong>Grateful Dead, Bob Weir, G-Eazy, Lukas Nelson, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National, Journey, Joe Satriani,</strong> and many others.</p>
+      </div>
+      <div class="bio-block">
+        <p>I'm an active strategist and coach to creators worldwide and co-developed the nonprofit music accelerator <strong>ZOOLABS</strong>, helping hundreds of artists and startups align their art, business, and purpose. In 2021, I helped build the artist experience at <strong>Songfinch</strong>, connecting thousands of artists and fans.</p>
+      </div>
+      <div class="bio-block">
+        <p>Whether we are dialing in iconic <strong>electric and acoustic guitar tones</strong>, mixing your next record, or mapping out your next chapter as an artist, I'm dedicated to making the music industry more creative and sustainable. Reach out anytime!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar" aria-label="Career Statistics">
+    <div class="stats-inner">
+      <div class="stat">
+        <div class="stat-num">25+</div>
+        <div class="stat-label">Years Engineering &amp; Producing</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1000+</div>
+        <div class="stat-label">Released Titles</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">400+</div>
+        <div class="stat-label">Artists Collaborated With</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Guitar Tones Chased</div>
+      </div>
+    </div>
   </div>
 
-  <div class="bio-grid">
-    <div class="bio-block">
-      <p>Oakland Bay Area born and raised, I've kept <strong>music and artists at the center of my life</strong> since I was a kid. My mission is simple: replenish artists and music organizations with new possibilities in the studio and beyond. I geek out on equipping others to turn creativity into real audience connection.</p>
+  <!-- YOUTUBE SECTION -->
+  <section class="section-wrap" id="youtube">
+    <div class="section-header">
+      <h2 class="section-label-block">Guitar, Gear &amp; Studio YouTube</h2>
+      <div class="section-label-line"></div>
     </div>
-    <div class="bio-block">
-      <p>From playing guitar in <strong>ska-punk bands</strong> to working in the biggest recording studios in the world — I've been lucky to make music with the best. <strong>Grateful Dead, Bob Weir, G-Eazy, Lukas Nelson, Alphabet Rockers (GRAMMY winners), Slightly Stoopid, The National,</strong> and many others.</p>
-    </div>
-    <div class="bio-block">
-      <p>I'm an active coach to creators worldwide and co-developed the nonprofit accelerator <strong>ZOOLABS</strong>, helping hundreds of artists and startups align their art, business, and purpose. In 2021, began building <strong>Songfinch</strong> — the next gen song collaboration platform for artists and fans.</p>
-    </div>
-    <div class="bio-block">
-      <p>Long term, I'm going to do everything I can to help <strong>transform the music industry</strong> into something more compassionate, equitable, and sustainable. Reach out anytime — I'd love to help you get where you want to go with your music.</p>
-    </div>
-  </div>
-</section>
 
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat">
-      <div class="stat-num">25+</div>
-      <div class="stat-label">Years Active</div>
+    <p class="section-intro">
+      On the <strong>@braddollar YouTube channel</strong>, I break down electric and acoustic guitar equipment, vintage &amp; modern amp tones, studio recording techniques, and the real-world production secrets behind iconic records.
+    </p>
+
+    <div class="yt-topic-pills" aria-label="YouTube Channel Topics">
+      <span class="yt-pill">🎸 Electric &amp; Acoustic Guitar Gear</span>
+      <span class="yt-pill">🔊 Iconic Album Tone Breakdowns</span>
+      <span class="yt-pill">🎛️ Studio Engineering &amp; Mic Techniques</span>
+      <span class="yt-pill">🏆 Vintage Gibson, Fender &amp; Martin Deep Dives</span>
     </div>
-    <div class="stat">
-      <div class="stat-num">1000+</div>
-      <div class="stat-label">Released Titles</div>
+
+    <div class="yt-grid" id="ytGrid">
+      <a class="yt-card" href="https://www.youtube.com/watch?v=sNlTxCqQJoI" target="_blank" rel="noopener">
+        <div class="yt-thumb">
+          <img src="https://img.youtube.com/vi/sNlTxCqQJoI/hqdefault.jpg" alt="Brad Dollar Guitar Tone and Studio Production Video" loading="lazy" />
+          <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+        </div>
+        <div class="yt-info">
+          <div class="yt-title">Studio Guitar Tone, Gear &amp; Production Deep Dive</div>
+          <div class="yt-meta">@braddollar • Watch on YouTube</div>
+        </div>
+      </a>
+      <a class="yt-card" href="https://www.youtube.com/watch?v=6ILkirlSOHI" target="_blank" rel="noopener">
+        <div class="yt-thumb">
+          <img src="https://img.youtube.com/vi/6ILkirlSOHI/hqdefault.jpg" alt="Brad Dollar Guitar Gear Review and Tone Analysis" loading="lazy" />
+          <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+        </div>
+        <div class="yt-info">
+          <div class="yt-title">Guitar Equipment &amp; Recording Studio Breakdown</div>
+          <div class="yt-meta">@braddollar • Watch on YouTube</div>
+        </div>
+      </a>
+      <a class="yt-card" href="https://www.youtube.com/watch?v=vNBe0B1ncf8" target="_blank" rel="noopener">
+        <div class="yt-thumb">
+          <img src="https://img.youtube.com/vi/vNBe0B1ncf8/hqdefault.jpg" alt="Brad Dollar Electric Guitar Amp and Pedal Tone Session" loading="lazy" />
+          <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+        </div>
+        <div class="yt-info">
+          <div class="yt-title">Chasing Iconic Guitar Tones in the Studio</div>
+          <div class="yt-meta">@braddollar • Watch on YouTube</div>
+        </div>
+      </a>
+      <a class="yt-card" href="https://www.youtube.com/watch?v=m5Qc1oyk5mI" target="_blank" rel="noopener">
+        <div class="yt-thumb">
+          <img src="https://img.youtube.com/vi/m5Qc1oyk5mI/hqdefault.jpg" alt="Brad Dollar Audio Engineering and Guitar Production" loading="lazy" />
+          <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+        </div>
+        <div class="yt-info">
+          <div class="yt-title">Producer's Perspective: Guitars, Amps &amp; Mix Translation</div>
+          <div class="yt-meta">@braddollar • Watch on YouTube</div>
+        </div>
+      </a>
+      <a class="yt-card" href="https://www.youtube.com/watch?v=pUYB7YzXZfE" target="_blank" rel="noopener">
+        <div class="yt-thumb">
+          <img src="https://img.youtube.com/vi/pUYB7YzXZfE/hqdefault.jpg" alt="Brad Dollar Vintage and Modern Guitar Comparison" loading="lazy" />
+          <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+        </div>
+        <div class="yt-info">
+          <div class="yt-title">Guitar Gear, Tone Tweaks &amp; Studio Craft</div>
+          <div class="yt-meta">@braddollar • Watch on YouTube</div>
+        </div>
+      </a>
+      <a class="yt-card" href="https://www.youtube.com/watch?v=dj7-7ELmNVk" target="_blank" rel="noopener">
+        <div class="yt-thumb">
+          <img src="https://img.youtube.com/vi/dj7-7ELmNVk/hqdefault.jpg" alt="Brad Dollar Music Production and Guitar Channel" loading="lazy" />
+          <div class="yt-play"><div class="yt-play-icon">▶</div></div>
+        </div>
+        <div class="yt-info">
+          <div class="yt-title">Inside the Studio with Brad Dollar</div>
+          <div class="yt-meta">@braddollar • Watch on YouTube</div>
+        </div>
+      </a>
     </div>
-    <div class="stat">
-      <div class="stat-num">400+</div>
-      <div class="stat-label">Artists Collaborated With</div>
+
+    <div style="margin-top: 34px; text-align: center;">
+      <a class="btn btn-sky" href="https://youtube.com/@braddollar" target="_blank" rel="noopener">
+        ▶ Subscribe &amp; Watch All Videos on YouTube
+      </a>
     </div>
-    <div class="stat">
-      <div class="stat-num">∞</div>
-      <div class="stat-label">Still Going</div>
+  </section>
+
+  <!-- SPOTIFY -->
+  <section class="spotify-section" id="listen">
+    <div class="section-header">
+      <h2 class="section-label-block">Listen to Selected Work</h2>
+      <div class="section-label-line"></div>
     </div>
-  </div>
-</div>
-
-<!-- YOUTUBE SECTION -->
-<section class="yt-section" id="youtube">
-  <div class="section-header">
-    <div class="section-label-block">YouTube</div>
-    <div class="section-label-line"></div>
-  </div>
-
-  <div class="yt-grid" id="ytGrid">
-
-    <a class="yt-card" href="https://www.youtube.com/watch?v=sNlTxCqQJoI" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/sNlTxCqQJoI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=6ILkirlSOHI" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/6ILkirlSOHI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=vNBe0B1ncf8" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/vNBe0B1ncf8/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=m5Qc1oyk5mI" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/m5Qc1oyk5mI/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=pUYB7YzXZfE" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/pUYB7YzXZfE/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-    <a class="yt-card" href="https://www.youtube.com/watch?v=dj7-7ELmNVk" target="_blank" rel="noopener">
-      <div class="yt-thumb">
-        <img src="https://img.youtube.com/vi/dj7-7ELmNVk/mqdefault.jpg" alt="Brad Dollar YouTube" loading="lazy"/>
-        <div class="yt-play"><div class="yt-play-icon">▶</div></div>
-      </div>
-      <div class="yt-info">
-        <div class="yt-meta">@braddollar</div>
-      </div>
-    </a>
-  </div>
-
-  <div style="margin-top: 30px; text-align: center;">
-    <a class="btn btn-sky" href="https://youtube.com/braddollar" target="_blank" >
-      ▶ View All Videos on YouTube
-    </a>
-  </div>
-</section>
-
-<!-- SPOTIFY -->
-<section class="spotify-section">
-  <div class="section-header">
-    <div class="section-label-block">Listen</div>
-    <div class="section-label-line"></div>
-  </div>
-  <iframe style="border-radius:12px; display:block; margin-bottom:12px;" src="https://open.spotify.com/embed/artist/1ks7sy2RpFdZmnqhncQO6C?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2HAZM1fCLIIVu7Nf4TV4ht?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</section>
+    <iframe class="spotify-embed" title="Brad Dollar on Spotify" src="https://open.spotify.com/embed/artist/1ks7sy2RpFdZmnqhncQO6C?utm_source=generator&amp;theme=0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe class="spotify-embed" title="Produced and Engineered by Brad Dollar Spotify Playlist" src="https://open.spotify.com/embed/playlist/2HAZM1fCLIIVu7Nf4TV4ht?utm_source=generator&amp;theme=0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </section>
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -1885,90 +1440,127 @@ E html>
   <div class="footer-inner">
     <div class="footer-logo">BRAD <span>DOLLAR</span></div>
     <div class="footer-links">
+      <a class="footer-link" href="#services">Services</a>
+      <a class="footer-link" href="#japan">Japan / 海外</a>
       <a class="footer-link" href="credits.html">Credits</a>
-      <a class="footer-link" href="https://youtube.com/braddollar" target="_blank">YouTube</a>
-      <a class="footer-link" href="https://instagram.com/bradkdollar" target="_blank">Instagram</a>
+      <a class="footer-link" href="https://youtube.com/@braddollar" target="_blank" rel="noopener">YouTube</a>
+      <a class="footer-link" href="https://instagram.com/bradkdollar" target="_blank" rel="noopener">Instagram</a>
       <a class="footer-link" href="mailto:producedbybraddollar@gmail.com">Email</a>
     </div>
     <div class="footer-copy">© 2026 Brad Dollar</div>
+    <p class="footer-seo-tagline">
+      Brad Dollar — Nashville Audio Engineer, Record Producer, Mixing Engineer, Artist Strategist &amp; Guitar YouTube Creator. Serving Nashville, Oakland, Chicago, Tokyo/Japan (ナッシュビル 音楽プロデューサー / ミックスエンジニア), and remote clients worldwide.
+    </p>
   </div>
 </footer>
 
 <script>
-  // YouTube RSS via noembed / public RSS API approach
-  // Using YouTube RSS feed via a public CORS proxy fallback
   const CHANNEL_ID = 'UCvKrCL9i9Hth8GkQm7X2e4w';
-  const CHANNEL_HANDLE = 'braddollar';
+
+  function extractYouTubeId(link, guid) {
+    const combined = `${link || ''} ${guid || ''}`;
+    const match = combined.match(/(?:v=|\/shorts\/|\/vi\/|youtu\.be\/|yt:video:)([a-zA-Z0-9_-]{11})/);
+    return match ? match[1] : null;
+  }
 
   async function loadYouTubeVideos() {
     const grid = document.getElementById('ytGrid');
-    const loading = document.getElementById('ytLoading');
+    if (!grid) return;
 
     try {
-      // Use YouTube's public RSS feed via a CORS-friendly approach
       const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
-      // Try rss2json first, then fall back to corsproxy
-      let data;
+      let items = [];
+
       try {
-        const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=6&api_key=`;
+        // Note: Do not pass &count= without an API key on rss2json free tier (causes HTTP 422)
+        const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
         const res = await fetch(proxyUrl);
         if (!res.ok) throw new Error('rss2json failed');
-        data = await res.json();
+        const data = await res.json();
         if (!data.items || data.items.length === 0) throw new Error('no items');
-      } catch(e2) {
-        // Fallback: fetch raw XML via corsproxy.io
+        items = data.items;
+      } catch (e2) {
         const xmlRes = await fetch(`https://corsproxy.io/?${encodeURIComponent(rssUrl)}`);
         if (!xmlRes.ok) throw new Error('corsproxy failed');
         const xml = await xmlRes.text();
         const parser = new DOMParser();
         const doc = parser.parseFromString(xml, 'text/xml');
-        const entries = Array.from(doc.querySelectorAll('entry'));
-        data = {
-          items: entries.map(e => ({
-            title: e.querySelector('title')?.textContent || '',
-            link: e.querySelector('link')?.getAttribute('href') || '',
-            pubDate: e.querySelector('published')?.textContent || '',
-            guid: e.querySelector('videoId')?.textContent || ''
-          }))
-        };
-        if (!data.items.length) throw new Error('no xml items');
+        const entries = Array.from(doc.getElementsByTagName('entry'));
+        items = entries.map(e => {
+          const linkEl = e.getElementsByTagName('link')[0];
+          const vidEl = e.getElementsByTagName('yt:videoId')[0] || e.getElementsByTagName('videoId')[0];
+          return {
+            title: e.getElementsByTagName('title')[0]?.textContent || '',
+            link: linkEl?.getAttribute('href') || '',
+            pubDate: e.getElementsByTagName('published')[0]?.textContent || '',
+            guid: vidEl ? `yt:video:${vidEl.textContent}` : ''
+          };
+        });
+        if (!items.length) throw new Error('no xml items');
       }
 
-      loading.remove();
+      const validItems = items
+        .map(item => ({ ...item, videoId: extractYouTubeId(item.link, item.guid) }))
+        .filter(item => Boolean(item.videoId))
+        .slice(0, 6);
 
-      data.items.slice(0, 6).forEach(item => {
-        // Extract video ID from link
-        const videoId = item.link.split('v=')[1]?.split('&')[0] || item.guid.split(':').pop();
-        const thumb = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
-        const pubDate = new Date(item.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+      if (!validItems.length) throw new Error('no valid video IDs parsed');
+
+      grid.innerHTML = '';
+
+      validItems.forEach(item => {
+        const thumb = `https://img.youtube.com/vi/${item.videoId}/hqdefault.jpg`;
+        const parsedDate = item.pubDate ? new Date(item.pubDate) : null;
+        const pubDateStr = parsedDate && !isNaN(parsedDate)
+          ? parsedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+          : 'Watch on YouTube';
 
         const card = document.createElement('a');
         card.className = 'yt-card';
-        card.href = item.link;
+        card.href = item.link || `https://www.youtube.com/watch?v=${item.videoId}`;
         card.target = '_blank';
         card.rel = 'noopener';
-        card.innerHTML = `
-          <div class="yt-thumb">
-            <img src="${thumb}" alt="${item.title}" loading="lazy" />
-            <div class="yt-play">
-              <div class="yt-play-icon">▶</div>
-            </div>
-          </div>
-          <div class="yt-info">
-            <div class="yt-title">${item.title}</div>
-            <div class="yt-meta">${pubDate}</div>
-          </div>
-        `;
+
+        const thumbWrap = document.createElement('div');
+        thumbWrap.className = 'yt-thumb';
+
+        const img = document.createElement('img');
+        img.src = thumb;
+        img.alt = `${item.title || 'Brad Dollar Video'} - Brad Dollar YouTube`;
+        img.loading = 'lazy';
+
+        const playOverlay = document.createElement('div');
+        playOverlay.className = 'yt-play';
+        playOverlay.innerHTML = '<div class="yt-play-icon">▶</div>';
+
+        thumbWrap.appendChild(img);
+        thumbWrap.appendChild(playOverlay);
+
+        const info = document.createElement('div');
+        info.className = 'yt-info';
+
+        const titleEl = document.createElement('div');
+        titleEl.className = 'yt-title';
+        titleEl.textContent = item.title || 'Brad Dollar YouTube';
+
+        const metaEl = document.createElement('div');
+        metaEl.className = 'yt-meta';
+        metaEl.textContent = `${pubDateStr} • @braddollar`;
+
+        info.appendChild(titleEl);
+        info.appendChild(metaEl);
+
+        card.appendChild(thumbWrap);
+        card.appendChild(info);
         grid.appendChild(card);
       });
-
     } catch (err) {
-      // Fallback: show a clean link-out state
-      loading.remove();
-      grid.innerHTML = `
-        <div style="grid-column:1/-1; padding: 40px; border: 3px solid rgba(255,255,255,0.12); text-align: center;">
-          <div style="font-family:'Black Han Sans',sans-serif; font-size:48px; color: rgba(245,245,240,0.15); letter-spacing:4px; margin-bottom:16px;">YOUTUBE</div>
-          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px; letter-spacing:2px; text-transform:uppercase; color:rgba(245,245,240,0.5); margin-bottom:24px;">
-            Videos, sessions, and music content
-          </div>
-          <a class="btn btn-sky" href="ht
+      // Preserves the 6 hardcoded SEO-friendly video cards if proxies are offline
+      console.info('Using static YouTube cards fallback.');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadYouTubeVideos);
+</script>
+</body>
+</html>
